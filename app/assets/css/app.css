@@ -5,25 +5,20 @@
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
-
 .menu:before {
   content: "[";
 }
-
 .menu:after {
   content: "]";
 }
-
-.menu > li {
+.menu li {
   display: inline;
 }
-
-.menu > li:before {
+.menu li:before {
   content: "|";
   padding-right: 0.3em;
 }
-
-.menu > li:nth-child(1):before {
+.menu li:nth-child(1):before {
   content: "";
   padding: 0;
 }
@@ -40,7 +35,6 @@ form input {
   background: white;
   width: 100%;
 }
-
 .header .container {
   background: url("../img/backgrounds/header.png") no-repeat;
   height: 167px;
@@ -74,7 +68,6 @@ form input {
   border-top: 1px solid #ccc;
   margin: 0 20px;
 }
-
 #lista .sucursal {
   text-align: center;
   font-family: Helvetica;
@@ -82,7 +75,6 @@ form input {
   padding: 5px;
   border-bottom: 1px solid #ccc;
 }
-
 #lista .sucursal a {
   color: #666;
 }
@@ -120,7 +112,6 @@ form input {
 .evento {
   padding: 20px;
 }
-
 .evento .title {
   font-family: 'Droid Serif', serif;
   font-weight: 700;
@@ -128,12 +119,10 @@ form input {
   font-style: italic;
   padding: 5px 0;
 }
-
 .evento .body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-
 .evento .date,
 .evento .location {
   font-family: 'Droid Serif', serif;
@@ -142,22 +131,18 @@ form input {
   font-style: italic;
   padding: 5px 0;
 }
-
 .evento .panel-heading,
 .evento .panel-footer {
   padding: 0;
   background: none;
   border: none;
 }
-
 .evento .panel-body {
   height: 220px;
 }
-
 .evento .panel-footer {
   padding: 15px;
 }
-
 .evento .ver-mas {
   background: white;
   color: #333;
@@ -176,7 +161,6 @@ form input {
   margin: 15px 0;
   /*color: #6A3360;*/
 }
-
 .sucursal .subtitle {
   font-family: 'Droid Serif', serif;
   font-weight: 700;
@@ -185,7 +169,6 @@ form input {
   margin: 15px 0;
   /*color: #6A3360;*/
 }
-
 .sucursal .body,
 .sucursal .servicios {
   font-family: 'Open Sans', sans-serif;

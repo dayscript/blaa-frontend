@@ -5,46 +5,41 @@
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
+  &:before{
+    content: "[";
+  }
+  &:after {
+    content: "]";
+  }
+  li {
+    display: inline;
+    &:before {
+      content: "|";
+      padding-right: 0.3em;
+    }
+    &:nth-child(1):before {
+      content: "";
+      padding: 0;
+    }
+  }
 }
-
-.menu:before {
-  content: "[";
+form {
+  input {
+    margin-bottom: 0.5em;
+  }
 }
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
-
-form input {
-  margin-bottom: 0.5em;
-}
-
 .container{
   width:960px !important;
 }
 .header{
   background: white;
   width: 100%;
+  .container{
+    background: url('../img/backgrounds/header.png') no-repeat;
+    height: 167px;
+  }
 }
-.header .container{
-  background: url('../img/backgrounds/header.png') no-repeat;
-  height: 167px;
-}
-.main{
+.main {
   background: url('../img/backgrounds/main.png');
   min-height: 500px;
 }
@@ -66,16 +61,16 @@ form input {
 #lista{
   border-top: 1px solid #ccc;
   margin: 0 20px;
-}
-#lista .sucursal{
-  text-align: center;
-  font-family: Helvetica;
-  font-weight: 100;
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-}
-#lista .sucursal a{
-  color: #666;
+  .sucursal{
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 100;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    a{
+      color: #666;
+    }
+  }
 }
 .destacados{
   background: url('../img/contents/destacados.png') no-repeat center;
@@ -89,7 +84,6 @@ form input {
   background: url('../img/backgrounds/darkbar.png');
   min-height: 38px;
 }
-
 .menu3{
   background: url('../img/backgrounds/menu3.png') no-repeat center;
   height: 38px;
@@ -102,70 +96,71 @@ form input {
   background: url('../img/backgrounds/footercontent.png') no-repeat center;
   height: 273px;
 }
-
 .evento{
   padding: 20px;
+  .title{
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px 0;
+  }
+  .body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+  .date,
+  .location{
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px 0;
+  }
+  .panel-heading,
+  .panel-footer{
+    padding: 0;
+    background: none;
+    border: none;
+  }
+  .panel-body{
+    height: 220px;
+  }
+  .panel-footer{
+    padding: 15px;
+  }
+  .ver-mas{
+    background: white;
+    color: #333;
+    font-family: 'Droid Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid #333;
+    font-size: 12px;
+  }
 }
-.evento .title{
-  font-family: 'Droid Serif', serif;
-  font-weight: 700;
-  font-size: 16px;
-  font-style: italic;
-  padding: 5px 0;
-}
-.evento .body{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-.evento .date,
-.evento .location{
-  font-family: 'Droid Serif', serif;
-  font-weight: 700;
-  font-size: 10px;
-  font-style: italic;
-  padding: 5px 0;
-}
-.evento .panel-heading,
-.evento .panel-footer{
-  padding: 0;
-  background: none;
-  border: none;
-}
-.evento .panel-body{
-  height: 220px;
-}
-.evento .panel-footer{
-  padding: 15px;
-}
-.evento .ver-mas{
-  background: white;
-  color: #333;
-  font-family: 'Droid Serif', serif;
-  font-weight: 400;
-  font-style: italic;
-  border: 1px solid #333;
-  font-size: 12px;
-}
-.sucursal .title{
-  font-family: 'Droid Serif', serif;
-  font-weight: 700;
-  font-size: 18px;
-  font-style: italic;
-  margin: 15px 0;
-  /*color: #6A3360;*/
-}
-.sucursal .subtitle{
-  font-family: 'Droid Serif', serif;
-  font-weight: 700;
-  font-size: 16px;
-  font-style: italic;
-  margin: 15px 0;
-  /*color: #6A3360;*/
-}
-.sucursal .body,
-.sucursal .servicios{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  letter-spacing: 1px;
+.sucursal {
+  .title{
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    margin: 15px 0;
+    /*color: #6A3360;*/
+  }
+  .subtitle{
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: italic;
+    margin: 15px 0;
+    /*color: #6A3360;*/
+  }
+  .body,
+  .servicios{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
 }
