@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="blaa" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="blaa" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="blaa" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="blaa" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Áreas Culturales Banco de la República</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://blaa.demodayscript.com/sites/default/files/favicon_2.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Droid+Serif:400,700italic|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <base href="/">
+</head>
+<body>
+<div class="header"><div class="container"></div></div>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <a href="/sucursales"><img src="/images/backgrounds/menu.png" alt="Areas"></a>
+        </div>
+    </div>
+
+    <div class="container" ng-view>
+    </div>
+    <div class="container destacados"></div>
+    <div class="container menu2"></div>
+</div>
+<div class="darkbar">
+    <div class="container menu3"></div>
+</div>
+<div class="footer">
+    <div class="container footercontent"></div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="angular-drupal/build/angular-drupal.min.js"></script>
+<script src="app.js"></script>
+<script src="modules/sucursales/sucursales.js"></script>
+</body>
+</html>

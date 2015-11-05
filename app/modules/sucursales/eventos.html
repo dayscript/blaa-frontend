@@ -1,0 +1,39 @@
+<div class="row eventos-list">
+    <div class="col-md-12 sucursal">
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-5">
+                <div class="title">{{ sucursal.title }}</div>
+                <div class="body">{{ sucursal.body }}</div>
+                <div ng-if="sucursal.servicios">
+                    <div class="subtitle">Servicios</div>
+                    <ul class="servicios">
+                        <li ng-repeat="servicio in sucursal.servicios.split(',')">
+                            {{ servicio }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="col-md-4 evento" ng-repeat="evento in eventos">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="image">
+                    <img src="{{ evento.imagen.src }}" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="title">{{ evento.title }}</div>
+                <div class="date">{{ evento.fecha}}</div>
+                <div class="location">{{ evento.location}}</div>
+                <div class="body">{{ evento.body }}</div>
+            </div>
+            <div class="panel-footer">
+                <a href="#" class="btn ver-mas">ver más</a>
+            </div>
+        </div>
+    </div>
+</div>
+

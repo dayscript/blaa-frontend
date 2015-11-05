@@ -1,0 +1,171 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+form input {
+  margin-bottom: 0.5em;
+}
+
+.container{
+  width:960px !important;
+}
+.header{
+  background: white;
+  width: 100%;
+}
+.header .container{
+  background: url('/images/backgrounds/header.png') no-repeat;
+  height: 167px;
+}
+.main{
+  background: url('/images/backgrounds/main.png');
+  min-height: 500px;
+}
+.eventos-list{
+  background: white;
+  min-height: 400px;
+}
+.sucursales-list{
+  background: url('/images/backgrounds/main_dark.png');
+  height: 400px;
+}
+.sucursales-mapa{
+  background: white;
+  height: 400px;
+}
+#elijasede{
+  padding: 30px 20px 10px 20px;
+}
+#lista{
+  border-top: 1px solid #ccc;
+  margin: 0 20px;
+}
+#lista .sucursal{
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: 100;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+#lista .sucursal a{
+  color: #666;
+}
+.destacados{
+  background: url('/images/contents/destacados.png') no-repeat center;
+  height: 206px;
+}
+.menu2{
+  background: url('/images/backgrounds/menu2.png');
+  height: 52px;
+}
+.darkbar{
+  background: url('/images/backgrounds/darkbar.png');
+  min-height: 38px;
+}
+
+.menu3{
+  background: url('/images/backgrounds/menu3.png') no-repeat center;
+  height: 38px;
+}
+.footer{
+  background: url('/images/backgrounds/main_dark.png');
+  min-height: 273px;
+}
+.footercontent{
+  background: url('/images/backgrounds/footercontent.png') no-repeat center;
+  height: 273px;
+}
+
+.evento{
+  padding: 20px;
+}
+.evento .title{
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: italic;
+  padding: 5px 0;
+}
+.evento .body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.evento .date,
+.evento .location{
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+  font-size: 10px;
+  font-style: italic;
+  padding: 5px 0;
+}
+.evento .panel-heading,
+.evento .panel-footer{
+  padding: 0;
+  background: none;
+  border: none;
+}
+.evento .panel-body{
+  height: 220px;
+}
+.evento .panel-footer{
+  padding: 15px;
+}
+.evento .ver-mas{
+  background: white;
+  color: #333;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  border: 1px solid #333;
+  font-size: 12px;
+}
+.sucursal .title{
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: italic;
+  margin: 15px 0;
+  /*color: #6A3360;*/
+}
+.sucursal .subtitle{
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: italic;
+  margin: 15px 0;
+  /*color: #6A3360;*/
+}
+.sucursal .body,
+.sucursal .servicios{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
