@@ -41,11 +41,11 @@ form input {
   width: 100%;
 }
 .header .container{
-  background: url('/images/backgrounds/header.png') no-repeat;
+  background: url('../img/backgrounds/header.png') no-repeat;
   height: 167px;
 }
 .main{
-  background: url('/images/backgrounds/main.png');
+  background: url('../img/backgrounds/main.png');
   min-height: 500px;
 }
 .eventos-list{
@@ -53,7 +53,7 @@ form input {
   min-height: 400px;
 }
 .sucursales-list{
-  background: url('/images/backgrounds/main_dark.png');
+  background: url('../img/backgrounds/main_dark.png');
   height: 400px;
 }
 .sucursales-mapa{
@@ -78,28 +78,28 @@ form input {
   color: #666;
 }
 .destacados{
-  background: url('/images/contents/destacados.png') no-repeat center;
+  background: url('../img/contents/destacados.png') no-repeat center;
   height: 206px;
 }
 .menu2{
-  background: url('/images/backgrounds/menu2.png');
+  background: url('../img/backgrounds/menu2.png');
   height: 52px;
 }
 .darkbar{
-  background: url('/images/backgrounds/darkbar.png');
+  background: url('../img/backgrounds/darkbar.png');
   min-height: 38px;
 }
 
 .menu3{
-  background: url('/images/backgrounds/menu3.png') no-repeat center;
+  background: url('../img/backgrounds/menu3.png') no-repeat center;
   height: 38px;
 }
 .footer{
-  background: url('/images/backgrounds/main_dark.png');
+  background: url('../img/backgrounds/main_dark.png');
   min-height: 273px;
 }
 .footercontent{
-  background: url('/images/backgrounds/footercontent.png') no-repeat center;
+  background: url('../img/backgrounds/footercontent.png') no-repeat center;
   height: 273px;
 }
 

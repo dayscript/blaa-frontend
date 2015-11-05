@@ -26,10 +26,10 @@
 # </IfModule>
 
 # ----------------------------------------------------------------------
-# | Cross-origin images                                                |
+# | Cross-origin img                                                |
 # ----------------------------------------------------------------------
 
-# Send the CORS header for images when browsers request it.
+# Send the CORS header for img when browsers request it.
 #
 # https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
 # https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
@@ -203,7 +203,7 @@ Options -MultiViews
     AddType video/x-flv                                 flv
 
     # Serving `.ico` image files with a different media type
-    # prevents Internet Explorer from displaying then as images:
+    # prevents Internet Explorer from displaying then as img:
     # https://github.com/h5bp/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee
 
     AddType image/x-icon                                cur ico
@@ -868,7 +868,7 @@ FileETag None
     ExpiresByType text/xml                              "access plus 0 seconds"
 
 
-  # Favicon (cannot be renamed!) and cursor images
+  # Favicon (cannot be renamed!) and cursor img
 
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
     ExpiresByType image/x-icon                          "access plus 1 week"
