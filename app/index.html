@@ -22,24 +22,15 @@
     <base href="/">
 </head>
 <body>
-<div class="header"><div class="container"></div></div>
+<div ng-include="templates/header.html"></div>
 <div class="main">
-    <div class="container">
-        <div class="row">
-            <a href="/sucursales"><img src="/assets/img/backgrounds/menu.png" alt="Areas"></a>
-        </div>
-    </div>
-
+    <div ng-include="templates/menu.html"></div>
     <div class="container" ng-view></div>
-    <div class="container destacados"></div>
-    <div class="container menu2"></div>
+    <div ng-include="templates/destacados.html"></div>
+    <div ng-include="templates/menu2.html"></div>
 </div>
-<div class="darkbar">
-    <div class="container menu3"></div>
-</div>
-<div class="footer">
-    <div class="container footercontent"></div>
-</div>
+<div ng-include="templates/menu3.html"></div>
+<div ng-include="templates/footer.html"></div>
 
 <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
