@@ -9,7 +9,7 @@ angular.module('blaa.sucursales', ['ngRoute', 'angular-drupal']).run(['drupal', 
         }).when( '/sucursales/:id', {
             controller: 'EventosController',
             templateUrl: 'modules/sucursales/eventos.html'
-        });
+        }).otherwise({redirectTo: '/sucursales'});
     })
     .controller('SucursalesCtrl', ['$scope', 'drupal','$interval', function ($scope, drupal, $interval) {
         $scope.path = 'sucursales/json';
