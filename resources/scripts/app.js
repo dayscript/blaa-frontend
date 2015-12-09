@@ -4,6 +4,7 @@
 angular.module('blaa', [
     'ngRoute',
     'blaa.sucursales',
+    'blaa.musica',
     'angular-drupal'
 ]).
     config( function ($routeProvider, $locationProvider) {

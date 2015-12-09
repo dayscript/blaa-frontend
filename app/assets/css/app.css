@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* app css stylesheet */
 .menu {
   list-style: none;
@@ -175,4 +176,104 @@ form input {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+.sinpadding [class*="col-"], .nopadding {
+  padding: 0;
+}
+
+.nopadding-left {
+  padding-left: 0;
+}
+
+/* Estilos de la secci├│n musica (Opus) */
+.col-center-opus {
+  color: white;
+}
+.col-center-opus a {
+  color: red;
+}
+.col-center-opus .opus-acerca {
+  padding: 10px 40px !important;
+}
+.col-center-opus .help-text {
+  padding: 10px 40px !important;
+  background-color: #8E162E;
+}
+.col-center-opus .form-search-opus {
+  padding: 10px 40px !important;
+  background-color: #B21837;
+  overflow: hidden;
+}
+.col-center-opus .form-search-opus button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.opus-acerca:after {
+  content: " ";
+  position: absolute;
+  margin-top: 30px;
+  left: 2%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 10px 0 10px;
+  border-color: #F5F5F5 transparent transparent transparent;
+}
+
+.musica-acerca {
+  padding: 0 20px;
+  color: #9E2C44;
+}
+.musica-acerca h2, .musica-acerca h2 small {
+  color: #CC1F43;
+}
+.musica-acerca .musica-text ul {
+  padding-left: 16px;
+}
+
+.conciertos .filter-search .head {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.conciertos .filter-search .active {
+  background-color: #8E1730;
+  color: white;
+}
+.conciertos .filter-search .panel-default {
+  border-color: transparent;
+}
+.conciertos .filter-search .panel-default .panel-collapse {
+  background-color: rgba(223, 223, 223, 0.6);
+}
+.conciertos .filter-search .panel-heading {
+  border-radius: 0;
+}
+.conciertos .filter-search .panel-default > .panel-heading {
+  background-color: #B91737;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.conciertos .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.conciertos .results {
+  background-color: white;
+  padding: 23px;
+}
+.conciertos .results .single-result {
+  border-bottom: 1px solid #7A303E;
+}
+.conciertos .results .single-result small, .conciertos .results .single-result .single-filter {
+  color: #666666;
+}
+.conciertos .results .single-result .media-heading {
+  color: #CC1F43;
+}
+.conciertos .results .single-result .single-title {
+  color: #92263B;
 }

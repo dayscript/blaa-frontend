@@ -164,3 +164,109 @@ form {
     letter-spacing: 1px;
   }
 }
+
+.sinpadding [class*="col-"], .nopadding {
+    padding: 0;
+}
+
+.nopadding-left {
+  padding-left: 0;
+}
+
+/* Estilos de la sección musica (Opus) */
+.col-center-opus {
+  color: white;
+  a {
+    color: red;
+  }
+  .opus-acerca {
+    padding: 10px 40px !important;
+  }
+  .help-text {
+    padding: 10px 40px !important;
+    background-color: #8E162E;
+  }
+  .form-search-opus {
+    padding: 10px 40px !important;
+    background-color: #B21837;
+    overflow: hidden;
+    button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+  }
+}
+
+.opus-acerca:after {
+  content: " ";
+  position: absolute;
+  margin-top: 30px;
+  left: 2%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 10px 0 10px;
+  border-color: #F5F5F5 transparent transparent transparent;
+}
+
+.musica-acerca {
+  padding: 0 20px;
+  color: #9E2C44;
+  h2, h2 small {
+    color: #CC1F43;
+  }
+  .musica-text {
+    ul {
+      padding-left: 16px;
+    }
+  }
+}
+
+.conciertos {
+  .filter-search {
+    .head {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .active {
+      background-color: #8E1730;
+      color: white;
+    }
+    .panel-default {
+      border-color: transparent;
+      .panel-collapse {
+        background-color: rgba(223, 223, 223, 0.6);
+      }
+    }
+    .panel-heading {
+      border-radius: 0;
+    }
+    .panel-default>.panel-heading {
+      background-color: #B91737;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+    }
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .results {
+    background-color: white;
+    padding: 23px;
+    .single-result {
+      border-bottom: 1px solid #7A303E;
+      small, .single-filter {
+        color: #666666;
+      }
+      .media-heading {
+        color: #CC1F43;
+      }
+      .single-title {
+        color: #92263B;
+      }
+    }
+  }
+}
