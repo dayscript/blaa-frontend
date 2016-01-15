@@ -13,15 +13,9 @@
 					<input type="button" value="Enviar" class="btnSearch">
 				</form>
 			</div>
-			<nav class="mainMenu large-12 "> 
+			<nav class="mainMenu large-12" ng-controller="MenuController">
 				<ul class="menu">
-					<li ><a href="index.html" class="active"><span>ACTIVIDAD CULTURAL <br>DEL BANCO DE LA REPUBLICA</span></a></li>
-					<li ><a href="areas.html" class="cAreas"><span>ÁREAS CULTURALES <br>EN EL PAÍS</span></a></li>
-					<li ><a href="arte.html" class="cArte"><span>ARTE Y NUMISMÁTICA</span></a></li>
-					<li ><a href="bibliotecas.html" class="cBiblio"><span>BIBLIOTECAS</span></a></li>
-					<li ><a href="bvirtual.html" class="cBvirtual"><span>BVIRTUAL</span></a></li>
-					<li ><a href="museo.html" class="cMuseo"><span>MUSEO DEL ORO</span></a></li>
-					<li ><a href="musica.html" class="cMusica"><span>MÚSICA</span></a></li>
+						<li ng-repeat="(url,option) in menu"><a href="\{{ option.url }}" class="\{{ option.style }}" ng-class="location.path()==option.url?'active':''"><span ng-bind-html="option.label"></span></a></li>
 				</ul>
 			</nav> 
 		</div>

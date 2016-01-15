@@ -6,9 +6,10 @@ var panini   = require('panini');
 var rimraf   = require('rimraf');
 var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
-
+var minify   = require('gulp-minify');
 // Check for --production flag
 var isProduction = !!(argv.production);
+
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -27,7 +28,12 @@ var PATHS = {
     'bower_components/motion-ui/src/'
   ],
   javascript: [
+    'src/assets/js/prefixfree.min.js',
     'bower_components/jquery/dist/jquery.js',
+    'src/assets/js/jquery-ui.min.js',
+    'src/assets/js/jquery.cycle2.min.js',
+    'src/assets/js/jquery.colorbox-min.js',
+    'src/assets/js/interface.js',
     'bower_components/what-input/what-input.js',
     'bower_components/foundation-sites/js/foundation.core.js',
     'bower_components/foundation-sites/js/foundation.util.*.js',
@@ -51,15 +57,13 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.tabs.js',
     'bower_components/foundation-sites/js/foundation.toggler.js',
     'bower_components/foundation-sites/js/foundation.tooltip.js',
-    'src/assets/js/!(app.js)**/*.js',
+    'node_modules/angular/angular.js',
+    'node_modules/angular-sanitize/angular-sanitize.js',
+    //'src/assets/js/jquery-1.11.3.min.js',
+    //'src/assets/js/!(app.js)/*.js',
     'src/assets/js/app.js',
-    'src/assets/js/prefixfree.min.js',
-    'src/assets/js/jquery-1.11.3.min.js',
-    'src/assets/js/jquery-ui.min.js',
-    'src/assets/js/jquery.cycle2.min.js',
-    'src/assets/js/jquery.colorbox-min.js',
-    'src/assets/js/interface.js',
-
+    'src/assets/js/angular/main.js',
+    'src/assets/js/angular/**/*.js'
   ]
 };
   
@@ -74,6 +78,8 @@ gulp.task('clean', function(done) {
 gulp.task('copy', function() {
   gulp.src(PATHS.assets)
     .pipe(gulp.dest('dist/assets'));
+  gulp.src('src/includes/*/*')
+    .pipe(gulp.dest('dist/includes'));
 });
 
 // Copy page templates into finished HTML files
@@ -125,7 +131,8 @@ gulp.task('sass', function() {
       browsers: COMPATIBILITY
     }))
     .pipe(uncss)
-    .pipe(minifycss)
+    //.pipe(minifycss)
+    .pipe($.minifyCss())
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/css'));
 });
@@ -141,7 +148,7 @@ gulp.task('javascript', function() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
     .pipe($.concat('app.js'))
-    .pipe(uglify)
+    .pipe(minify({}))
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/js'));
 });
@@ -175,6 +182,7 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
   gulp.watch(['src/pages/**/*.html'], ['pages', browser.reload]);
   gulp.watch(['src/{layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);
+  gulp.watch(['src/includes/*/*.html'], ['pages:reset', browser.reload]);
   gulp.watch(['src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['javascript', browser.reload]);
   gulp.watch(['src/assets/img/**/*'], ['images', browser.reload]);
