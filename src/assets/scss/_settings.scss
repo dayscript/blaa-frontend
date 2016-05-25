@@ -42,9 +42,9 @@
 @import 'util/util';
 
 // 1. Global
-// ---------
+// --------- 
 
-$global-width: rem-calc(960);
+$global-width: rem-calc(1240);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
 $primary-color: #2199e8;
@@ -540,4 +540,3 @@ $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
-

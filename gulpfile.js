@@ -7,6 +7,7 @@ var rimraf   = require('rimraf');
 var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
 var minify   = require('gulp-minify');
+var fileinclude = require('gulp-file-include');
 // Check for --production flag
 var isProduction = !!(argv.production);
 
@@ -28,17 +29,18 @@ var PATHS = {
     'bower_components/motion-ui/src/'
   ],
   javascript: [
-    'src/assets/js/prefixfree.min.js',
-    'bower_components/jquery/dist/jquery.js',
-    'src/assets/js/jquery-ui.min.js',
-    'src/assets/js/jquery.cycle2.min.js',
+    'src/assets/js/jquery-1.11.3.min.js',
     'src/assets/js/jquery.colorbox-min.js',
-    'src/assets/js/interface.js',
+    'src/assets/js/jquery-ui.min.js',
+    'src/assets/js/jquery.colorbox-min.js',
+    /*'src/assets/js/interface.js',
+    'src/assets/js/prefixfree.min.js',
+    'src/assets/js/jquery.cycle2.min.js',*/
     'bower_components/what-input/what-input.js',
     'bower_components/foundation-sites/js/foundation.core.js',
     'bower_components/foundation-sites/js/foundation.util.*.js',
     // Paths to individual JS components defined below
-    'bower_components/foundation-sites/js/foundation.abide.js',
+    /*'bower_components/foundation-sites/js/foundation.abide.js',
     'bower_components/foundation-sites/js/foundation.accordion.js',
     'bower_components/foundation-sites/js/foundation.accordionMenu.js',
     'bower_components/foundation-sites/js/foundation.drilldown.js',
@@ -47,30 +49,44 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.equalizer.js',
     'bower_components/foundation-sites/js/foundation.interchange.js',
     'bower_components/foundation-sites/js/foundation.magellan.js',
-    'bower_components/foundation-sites/js/foundation.offcanvas.js',
+    'bower_components/foundation-sites/js/foundation.offcanvas.js',*/
     'bower_components/foundation-sites/js/foundation.orbit.js',
-    'bower_components/foundation-sites/js/foundation.responsiveMenu.js',
+    /*'bower_components/foundation-sites/js/foundation.responsiveMenu.js',
     'bower_components/foundation-sites/js/foundation.responsiveToggle.js',
     'bower_components/foundation-sites/js/foundation.reveal.js',
     'bower_components/foundation-sites/js/foundation.slider.js',
     'bower_components/foundation-sites/js/foundation.sticky.js',
     'bower_components/foundation-sites/js/foundation.tabs.js',
     'bower_components/foundation-sites/js/foundation.toggler.js',
-    'bower_components/foundation-sites/js/foundation.tooltip.js',
+    'bower_components/foundation-sites/js/foundation.tooltip.js',*/
     'node_modules/angular/angular.js',
+    'bower_components/angular-route/angular-route.min.js',
+    'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+    'bower_components/angular-breadcrumb/release/angular-breadcrumb.js',
     'node_modules/angular-sanitize/angular-sanitize.js',
-    //'src/assets/js/jquery-1.11.3.min.js',
-    //'src/assets/js/!(app.js)/*.js',
+    'bower_components/ng-prettyjson/dist/ng-prettyjson.min.js',
+    'bower_components/oclazyload/dist/ocLazyLoad.min.js',
     'src/assets/js/app.js',
     'src/assets/js/angular/main.js',
-    'src/assets/js/angular/**/*.js'
+    'src/assets/js/angular/**/*.js',
   ]
 };
-  
+
 // Delete the "dist" folder
 // This happens every time a build starts
 gulp.task('clean', function(done) {
   rimraf('dist', done);
+});
+
+// allow @nclude in templates
+
+gulp.task('fileinclude', function() {
+  gulp.src('src/templates/**/*.html')
+    .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+    }))
+    .pipe(gulp.dest('dist/templates'));
 });
 
 // Copy files out of the assets folder
@@ -78,7 +94,7 @@ gulp.task('clean', function(done) {
 gulp.task('copy', function() {
   gulp.src(PATHS.assets)
     .pipe(gulp.dest('dist/assets'));
-  gulp.src('src/includes/*/*')
+  gulp.src('src/includes/**/*')
     .pipe(gulp.dest('dist/includes'));
 });
 
@@ -167,18 +183,20 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], 'styleguide', done);
+  sequence('clean', ['fileinclude','pages', 'sass', 'javascript', 'images', 'copy'], 'styleguide', done);
 });
 
 // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
   browser.init({
-    server: 'dist', port: PORT
+    server: 'dist',
+    port: PORT,
   });
 });
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
+  gulp.watch('src/templates/**/*.html', ['fileinclude', browser.reload]);
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
   gulp.watch(['src/pages/**/*.html'], ['pages', browser.reload]);
   gulp.watch(['src/{layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);

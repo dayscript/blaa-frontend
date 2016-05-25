@@ -2,8 +2,7 @@
 * Stylesheet/Hoja de estilos: style-header.css
 * Project/Proyecto: Web Banco de la republica
 * Author/Autor: Jesús Piedrahita, Mottif - jesus.piedrahita@mottif.com / www.mottif.com */
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic|Roboto:400,400italic,700,700italic,500italic,500);
-
+//@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic|Roboto:400,400italic,700,700italic,500italic,500);
 /*Fuentes:
 font-family: 'Droid Serif', serif;
 font-family: 'Roboto', sans-serif; */
@@ -2090,6 +2089,10 @@ a {
 .cAreas .subMenu ul {
   background-color: #733D69;
 }
+.subMenu.cAreas ul {
+  background-color: #733D69;
+}
+
 
 .cAreas .subMenu ul li:hover > a, .cAreas .subMenu ul li a.active, .cAreas .menuFooter ul li a:hover {
   background-color: #501F47;
@@ -2101,6 +2104,9 @@ a {
 }
 
 .cArte .subMenu ul {
+  background-color: #EDA64C;
+}
+.subMenu.cArte ul {
   background-color: #EDA64C;
 }
 
@@ -2116,6 +2122,9 @@ a {
 .cBiblio .subMenu ul {
   background-color: #ACC561;
 }
+.subMenu.cBiblio ul {
+  background-color: #ACC561;
+}
 
 .cBiblio .subMenu ul li:hover > a, .cBiblio .subMenu ul li a.active, .cBiblio .menuFooter ul li a:hover {
   background-color: #89A33A;
@@ -2129,6 +2138,9 @@ a {
 .cBvirtual .subMenu ul {
   background-color: #7BB1CE;
 }
+.subMenu.cBvirtual ul {
+  background-color: #7BB1CE;
+}
 
 .cBvirtual .subMenu ul li:hover > a, .cBvirtual .subMenu ul li a.active, .cBvirtual .menuFooter ul li a:hover {
   background-color: #62879B;
@@ -2140,6 +2152,9 @@ a {
 }
 
 .cMuseo .subMenu ul {
+  background-color: #AE8155;
+}
+.subMenu.cMuseo ul {
   background-color: #AE8155;
 }
 
@@ -2161,7 +2176,30 @@ a {
 .cMusica .subMenu ul {
   background-color: $color-musica-light;
 }
+.subMenu .cMusica ul {
+  background-color: $color-musica-light;
+}
 
 .cMusica .subMenu ul li:hover > a, .cMusica .subMenu ul li a.active, .cMusica .menuFooter ul li a:hover {
   background-color: $color-musica-dark;
+}
+.subMenu .customSelect{
+  display: block!important;
+  float: right;
+  background: #7D7D7D!important;
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: .06rem;
+  option{
+    background: #7D7D7D!important;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: .8rem!important;
+    line-height: 1rem;
+    letter-spacing: .06rem;
+  }
+} 
+span.ui-selectmenu-button{
+  display: none!important;
 }

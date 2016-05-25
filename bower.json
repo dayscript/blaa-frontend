@@ -16,7 +16,11 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.0.0",
-    "motion-ui": "~1.1.0"
+    "motion-ui": "~1.1.0",
+    "angular-route" :  "1.4.x",
+    "angular-ui-router": "0.2.15",
+    "ng-prettyjson": "0.2.0"
+
   },
   "private": true
 }

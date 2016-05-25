@@ -1,0 +1,44 @@
+<!--Slider Eventos-->
+<section class="contCarousel gEvents large-12 " ng-controller="EventosController">
+	<h2>Eventos</h2>
+	<div class="gCarousel">
+		<article  class="large-4" ng-repeat="event in events">
+			<figure style="background-image:url(' \{{  event['imagen']['src'] }}')">
+				<a href="#"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></a>
+			</figure>
+			<header> 
+				<span class="cate">EXPOSICIÓN</span>
+				<h2><a href="#">{{ event['title'] }}</a></h2>
+				<p class="subInfo">Agosto 1° a Noviembre 3 de 2014 <br>Bogotá | Museo de Arte del BR <br>Sala Lorem Ipsum Dolor</p>
+				<div class="desc">
+					 {{ event['body'] }}
+				</div>
+			</header>
+		</article>  
+	</div>
+	<div class="contArrows">
+		<span class="btnPrev">prev</span><div class="contPager"></div><span class="btnNext">next</span>
+	</div>
+</section>
+<!--Fin Slider Eventos-->
+<!--Banner 50%--> 
+<div style="text-align: center;">
+	<div class="gAnuncio medium-12 large-5 ">
+		<a href="#">
+			<figure ><img src="../../assets/img/banners/anuncio3.jpg" alt="Nombre imagen"></figure>
+			<div>
+				<h2>Descargue aquí <br>la programación de noviembre</h2>
+			</div>
+		</a>
+	</div>
+	<div class="gAnuncio medium-12 large-6 ">
+		<div>
+			<figure ><img src="../../assets/img/banners/anuncio3.jpg" alt="Nombre imagen"></figure>
+			<div>
+				<h2>Anuncio pequeño <br>lorem ipsum</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Fin Banner 50%-->

@@ -1,0 +1,49 @@
+<!--Calendario Eventos-->
+		<div class="contCalendar large-12" ng-controller="LineaDeTiempoController">
+			<!--Filtro-->
+			<ul class="gEFilter">
+				<li>
+					<select class="customSelect">
+						<option>BOGOTÁ</option>
+						<option ng-repeat="sucursal in sucursales"  value="{{sucursal.node.id}}" >{{sucursal.node.title.toUpperCase()}}</option>
+					</select>
+				</li>
+				<li>
+					<a href="#" class="btnPrev">prev</a>
+					<a href="#" class="btnNext">next</a>
+					<p><em>Noviembre</em> 2015</p>
+				</li>
+				<li>
+					<select class="customSelect">
+						<option>TIPO DE EVENTO: TODOS</option>
+						<option ng-repeat="tipoEvento in tipoEventos"  value="{{tipoEvento.node.id}}" >{{tipoEvento.name.toUpperCase()}}</option>
+					</select>
+				</li>
+				<li><a href="#" class="btnToday">HOY</a></li>
+			</ul><!--Fin Filtro-->
+			<!--Dias-->
+			<div class="contLDays large-12">
+				<a href="#" class="btnPrev">prev</a>
+				<a href="#" class="btnNext">next</a>
+				<ul>
+					<li><a href="#">NOV. <em>03</em> <span>Martes <span class="circle">3</span></span></a></li>
+					<li><a href="#">NOV. 04 <strong>HOY</strong> <span>Miércoles <span class="circle">15</span></span></a></li>
+					<li><a href="#" class="active">NOV. <em>05</em> <span>Jueves <span class="alert"></span></span></a></li>
+					<li><a href="#">NOV. <em>06</em> <span>Viernes <span class="circle">8</span></span></a></li>
+					<li><a href="#">NOV. <em>07</em> <span>Sábado <span class="circle">10</span></span></a></li>
+					<li><a href="#">NOV. <em>08</em> <span>Domingo <span class="circle">12</span></span></a></li>
+					<li><a href="#">NOV. <em>09</em> <span>Lunes <span class="circle">5</span></span></a></li>
+					<li><a href="#">NOV. <em>10</em> <span>Martes <span class="circle">3</span></span></a></li>
+				</ul>
+			</div><!--Fin Dias-->
+			<!--Listado eventos-->
+			<section class="contGLEvents large-12">
+				<h2>Banco cerrado</h2>
+				<div class="gListEvents">
+					<div class="gMsg">
+						<h2>Esta sede del Banco de la República estará cerrada</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris.</p>
+					</div>
+				</div>
+			</section><!--Fin Listado eventos-->
+		</div><!--Fin Calendario Eventos-->

@@ -1,53 +1,53 @@
 <!--Slider Eventos-->
-<section class="contCarousel gEvents large-12">
+<section class="contCarousel gEvents large-12 " ng-controller="EventosController">
 	<h2>Eventos</h2>
-	<div class="gCarousel">
-		<article  class="large-3">
-			<figure style="background-image:url(../../assets/img/banners/carousel1.jpg);">
+<!--<div class="gCarousel">
+		<article  class="large-4" ng-repeat="event in events">
+			<figure style="background-image:url(' \{{  event['imagen']['src'] }}')">
 				<a href="#"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></a>
 			</figure>
 			<header>
 				<span class="cate">EXPOSICIÓN</span>
-				<h2><a href="#">Durero <br>Grabados 1496-1522</a></h2>
+				<h2><a href="#">\{{ event['title'] }}</a></h2>
 				<p class="subInfo">Agosto 1° a Noviembre 3 de 2014 <br>Bogotá | Museo de Arte del BR <br>Sala Lorem Ipsum Dolor</p>
 				<div class="desc">
-					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget ex cursus, lobortis arcu sed, congue ex. 
-				</div>
-			</header>
-		</article> 
-		<article class="large-3">
-			<figure style="background-image:url(../../assets/img/banners/carousel2.jpg);">
-				<a href="#"><img src="../../assets/img/banners/carousel2.jpg" alt="Nombre imagen"></a>
-			</figure>
-			<header>
-				<span class="cate">LABORATORIO</span>
-				<h2><a href="#">Laboratorio de <br>pensamiento creativo</a></h2>
-				<p class="subInfo">Septiembre 24 al 27 de 2014 <br>Bogotá | Av. Las Américas Nº 50-51</p>
-				<div class="desc">
-					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget ex cursus, lobortis arcu sed, congue ex. <br><br>
+					 \{{ event['body'] }}
 				</div>
 			</header>
 		</article>
-		<article class="large-3">
-			<figure style="background-image:url(../../assets/img/banners/carousel3.jpg);">
-				<a href="#"><img src="../../assets/img/banners/carousel3.jpg" alt="Nombre imagen"></a>
-			</figure>
-			<header>
-				<span class="cate">EXPOSICIÓN</span>
-				<h2><a href="#">Emmet Gowin</a></h2>
-				<p class="subInfo">Septiembre 5 a Diciembre 7 de 2014 <br>Bogotá | Museo de Arte del BR <br>Sala Lorem Ipsum Dolor</p>
-				<div class="desc">
-					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget ex cursus, lobortis arcu sed, congue ex. <br><br>
-				</div>
-			</header>
-		</article>
-	</div>
+	</div>-->
+
+	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
+        <ul class="orbit-container">
+          <li class="is-active orbit-slide" ng-repeat="event in events">
+						<div class="gCarousel">
+								<article  class="large-4">
+									<figure style="background-image:url(' \{{  event['imagen']['src'] }}')">
+										<a href="#"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></a>
+									</figure>
+									<header>
+										<span class="cate">EXPOSICIÓN</span>
+										<h2><a href="#">\{{ event['title'] }}</a></h2>
+										<p class="subInfo">Agosto 1° a Noviembre 3 de 2014 <br>Bogotá | Museo de Arte del BR <br>Sala Lorem Ipsum Dolor</p>
+										<div class="desc">
+											 \{{ event['body'] }}
+										</div>
+									</header>
+								</article>
+							</div>
+        	</li>
+        </ul>
+        <nav class="orbit-bullets">
+         <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+      	</nav>
+  </div>
 	<div class="contArrows">
 		<span class="btnPrev">prev</span><div class="contPager"></div><span class="btnNext">next</span>
 	</div>
 </section>
 <!--Fin Slider Eventos-->
-<!--Banner 50%--> 
+<!--Banner 50%-->
 <div class="gAnuncio medium-12 large-6 ">
 	<a href="#">
 		<figure ><img src="../../assets/img/banners/anuncio3.jpg" alt="Nombre imagen"></figure>

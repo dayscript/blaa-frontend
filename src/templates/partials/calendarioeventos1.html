@@ -1,0 +1,98 @@
+<!--Calendario Eventos-->
+<div class="contCalendar large-12" ng-controller="LineaDeTiempoController">
+	<!--Filtro-->
+	<ul class="gEFilter">
+		<li> 
+			<select class="customSelect"> 
+				<option>BOGOTÁ</option>
+				<option ng-repeat="sucursal in sucursales"  value="{{sucursal.node.id}}" >{{sucursal.node.title.toUpperCase()}}</option>
+			</select>
+		</li>
+		<li>
+			<a href="#" class="btnPrev">prev</a>
+			<a href="#" class="btnNext">next</a>
+			<p><em>Noviembre</em> 2015</p>
+		</li>
+		<li>
+			<select class="customSelect">
+				<option>TIPO DE EVENTO: TODOS</option>
+				<option ng-repeat="tipoEvento in tipoEventos"  value="{{tipoEvento.node.id}}" >{{tipoEvento.name.toUpperCase()}}</option>
+				
+				
+			</select>
+		</li>
+		<li><a href="#" class="btnToday">HOY</a></li>
+	</ul><!--Fin Filtro-->
+	<!--Dias-->
+	<div class="contLDays">
+		<a href="#" class="btnPrev">prev</a>
+		<a href="#" class="btnNext">next</a>
+		<ul>
+			<li><a href="#">NOV. <em>03</em> <span>Martes <span class="circle">3</span></span></a></li>
+			<li><a href="#" class="active">NOV. 04 <strong>HOY</strong> <span>Miércoles <span class="circle">15</span></span></a></li>
+			<li><a href="#">NOV. <em>05</em> <span>Jueves <span class="alert"></span></span></a></li>
+			<li><a href="#">NOV. <em>06</em> <span>Viernes <span class="circle">8</span></span></a></li>
+			<li><a href="#">NOV. <em>07</em> <span>Sábado <span class="circle">10</span></span></a></li>
+			<li><a href="#">NOV. <em>08</em> <span>Domingo <span class="circle">12</span></span></a></li>
+			<li><a href="#">NOV. <em>09</em> <span>Lunes <span class="circle">5</span></span></a></li>
+			<li><a href="#">NOV. <em>10</em> <span>Martes <span class="circle">3</span></span></a></li>
+		</ul>
+	</div><!--Fin Dias-->
+	<!--Listado eventos-->
+	<section class="contGLEvents">
+		<h2>Eventos 1-3 de 15</h2>
+		<a href="#" class="btnPrev">prev</a>
+		<a href="#" class="btnNext">next</a>
+		<div class="contPager">
+			<span></span><span class="active"></span><span></span>
+		</div>
+		<div class="gListEvents">
+			<article>
+				<figure style="background-image:url(../../assets/img/banners/carousel1.jpg);"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></figure>
+				<header>
+					<span class="cate">EXPOSICIÓN</span>
+					<h2>Durero <br>Grabados 1496-1522</h2>
+					<p class="subInfo">Del 1º de Enero al 15 de Febrero <br>7:00 a.m a 8:00 p.m. <br>Museo de Arte del BR</p>
+					<a href="#" class="btnMore">ver más</a>
+					<ul class="listShare">
+						<li><a href="#" class="calendar">calendar</a></li>
+						<li><a href="#" class="email">email</a></li>
+						<li><a href="#" class="facebook">facebook</a></li>
+						<li><a href="#" class="twitter">twitter</a></li>
+					</ul>
+				</header>
+			</article>
+			<article>
+				<figure style="background-image:url(../../assets/img/banners/carousel2.jpg);"><img src="../../assets/img/banners/carousel2.jpg" alt="Nombre imagen"></figure>
+				<header>
+					<span class="cate">CONCIERTO</span>
+					<h2>Laboratorio de <br>pensamiento creativo</h2>
+					<p class="subInfo">Del 1º de Enero al 15 de Febrero <br>7:00 a.m a 8:00 p.m. <br>Museo de Arte del BR</p>
+					<a href="#" class="btnMore">ver más</a>
+					<ul class="listShare">
+						<li><a href="#" class="calendar">calendar</a></li>
+						<li><a href="#" class="email">email</a></li>
+						<li><a href="#" class="facebook">facebook</a></li>
+						<li><a href="#" class="twitter">twitter</a></li>
+					</ul>
+				</header>
+			</article>
+			<article>
+				<figure style="background-image:url(../../assets/img/banners/carousel3.jpg);"><img src="../../assets/img/banners/carousel3.jpg" alt="Nombre imagen"></figure>
+				<header>
+					<span class="cate">CONFERENCIA</span>
+					<h2>Mujeres constructoras de la paz. Por: Lydia Cacho</h2>
+					<p class="subInfo">Del 1º de Enero al 15 de Febrero <br>7:00 a.m a 8:00 p.m. <br>Museo de Arte del BR</p>
+					<a href="#" class="btnMore">ver más</a>
+					<ul class="listShare">
+						<li><a href="#" class="calendar">calendar</a></li>
+						<li><a href="#" class="email">email</a></li>
+						<li><a href="#" class="facebook">facebook</a></li>
+						<li><a href="#" class="twitter">twitter</a></li>
+					</ul>
+				</header>
+			</article>
+		</div>
+	</section><!--Fin Listado eventos-->
+</div>
+<!--Fin Calendario Eventos-->

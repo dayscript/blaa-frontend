@@ -15,7 +15,7 @@
 			</div>
 			<nav class="mainMenu large-12" ng-controller="MenuController">
 				<ul class="menu">
-						<li ng-repeat="(url,option) in menu"><a href="\{{ option.url }}" class="\{{ option.style }}" ng-class="location.path()==option.url?'active':''"><span ng-bind-html="option.label"></span></a></li>
+						<li ng-repeat="(url,option) in menu"><a ui-sref="\{{ option.url }}" class="\{{ option.style }}" ng-class=" path == option.url?'active':''"><span ng-bind-html="option.label"></span></a></li>
 				</ul>
 			</nav> 
 		</div>
