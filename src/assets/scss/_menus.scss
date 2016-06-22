@@ -1,0 +1,584 @@
+/*Menu principal*/
+.mainMenu {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  padding: 0px;
+  margin: 0px auto;
+  background: none;
+  color: #999999;
+  line-height: 0.8rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  clear: both;
+}
+
+.mainMenu ul, .subMenu > ul, .menuFooter > ul {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  list-style: none;
+}
+
+.mainMenu ul li, .subMenu > ul > li, .menuFooter > ul > li {
+  margin: 0px;
+  padding: 0px;
+  flex-grow: 1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.mainMenu ul li a, .subMenu ul li a, .menuFooter ul li a {
+  display: table !important; //->>
+  width: 100%;
+  color: #FFF;
+  padding: 0px;
+}
+
+.mainMenu ul li a {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  background: #7D7D7D url(../../assets/img/textura.png) repeat top left;
+}
+
+.mainMenu ul li a span, .subMenu ul li a span, .menuFooter ul li a span {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainMenu ul li a span {
+  height: 50px;
+  padding: 0px 17px;
+  border: none;
+  background: none;
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+.pageHeader .mainMenu ul li a span {
+  height: 40px;
+  border-left: 1px solid #E1E1E1;
+  background: #FFF;
+}
+.pageHeader .mainMenu {
+  padding: 30px 0px 0px;
+  background: #FFF;
+}
+
+
+.pageHeader .mainMenu ul li a {
+  padding: 0px 0px 9px;
+  color: #999999;
+}
+
+
+.mainMenu ul li:first-child a span {
+  border: none;
+}
+
+.pageHeader .mainMenu ul li a:hover span, .pageHeader .mainMenu ul li a.active span {
+  color: #FFF;
+  background: none;
+  border-color: transparent;
+}
+
+/*Menu seccion*/
+.subMenu {
+  color: #FFF;
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 960px;
+  padding: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+.subMenu h2 {
+  display: block;
+  padding: 15px 30px 12px;
+  line-height: 1.7rem;
+  font-size: 1.8rem;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  //background:#7D7D7D url(../../assets/img/textura.png) repeat top left;
+  letter-spacing: 0.06rem;
+  position: relative;
+  z-index: 3;
+  //box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.subMenu h2 em {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.subMenu .lFiltro {
+  display: block;
+  //position:absolute;
+  //top:25px;
+  //right:20px;
+  z-index: 4;
+  text-align: right; //->>
+  position: relative; //->>
+  padding-top: 25px; //->>
+  padding-bottom: 25px; //->>
+
+}
+
+.subMenu .lFiltro select {
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 30px;
+  width: 190px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  color: #FFF;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.06rem;
+  border-radius: 0px;
+}
+
+.subMenu > ul {
+  line-height: 0.8rem;
+  font-size: 0.65rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
+  background: #8F8F8F url(../../assets/img/textura.png) repeat top left;
+}
+
+.subMenu ul li a {
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+  background: none;
+  padding: 0 !important; //->
+}
+
+.subMenu ul li:hover > a, .subMenu ul li a.active {
+  background-color: #636363;
+}
+
+.subMenu ul li a span {
+  height: 35px;
+  padding: 1px 10px 0px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.subMenu > ul > li:first-child a span {
+  border-left: none;
+}
+
+.subMenu > ul > li:last-child a span {
+  border-right: none;
+}
+
+.subMenu > ul > li ul {
+  background: #8F8F8F url(../../assets/img/textura.png) repeat top left;
+}
+
+.subMenu > ul > li > ul, .subMenu > ul > li > ul > li ul {
+  display: block;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s ease, opacity 0.25s ease;
+}
+
+.subMenu > ul > li > ul {
+  top: 100%;
+  left: 0px;
+}
+
+.subMenu > ul > li > ul a span {
+  padding: 0px 7px;
+}
+
+.subMenu > ul > li > ul li a {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.subMenu > ul > li > ul > li ul {
+  top: 0px;
+  left: 100%;
+}
+
+.subMenu > ul > li:hover > ul, .subMenu > ul > li > ul > li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subMenu {
+  .subContent {
+    display: inline-flex;
+    background: #7D7D7D url("../../assets/img/textura.png") repeat top left;
+    letter-spacing: 0.06rem;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    margin: 0;
+  }
+  &.cMusica .subContent{ background-color: $color-musica;}
+  &.cMusica>ul{ background-color: $color-musica-light;}
+  &.cMuseo .subContent{ background-color: $color-museo;}
+  &.cArte .subContent{ background-color: $color-arte;}
+  &.cBvirtual .subContent{ background-color: $color-bvirtual;}
+  &.cBiblio .subContent{ background-color: $color-biblio;}
+  &.cAreas .subContent{ background-color: $color-areas;}
+  &.cIndex .subContent{ background-color: $color-index;}
+}
+
+/*Menus pie de pagina*/
+
+.menuFooter {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background: #7D7D7D url(../../assets/img/textura.png) repeat top left;
+  color: #FFF;
+}
+
+.menuFooter > ul {
+  max-width: 960px;
+}
+
+.menuFooter ul li {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menuFooter ul li:first-child {
+  border: none;
+}
+
+.menuFooter ul li a {
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  transition: background-color 0.5s ease;
+}
+
+.menuFooter ul li a span {
+  height: 40px;
+  padding: 0px 10px;
+}
+
+.menuFooter ul li a:hover {
+  background: #636363;
+}
+
+
+
+.ui-selectmenu-button {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+  outline: none;
+}
+
+.ui-selectmenu-button.ui-state-focus {
+  background: #AAAAAA;
+  border-color: #AAAAAA;
+}
+
+.cIndex .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #733D69;
+  border-color: #733D69;
+}
+
+.cAreas .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #733D69;
+  border-color: #733D69;
+}
+
+.cArte .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #EDA64C;
+  border-color: #EDA64C;
+}
+
+.cBiblio .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #ACC561;
+  border-color: #ACC561;
+}
+
+.cBvirtual .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #7BB1CE;
+  border-color: #7BB1CE;
+}
+
+.cMuseo .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #AE8155;
+  border-color: #AE8155;
+}
+
+.cMusica .subMenu .ui-selectmenu-button.ui-state-focus {
+  background-color: #D13152;
+  border-color: #D13152;
+}
+
+.ui-selectmenu-button span.ui-selectmenu-text, .ui-selectmenu-menu .ui-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  letter-spacing: 0.06rem;
+}
+
+.ui-selectmenu-button span.ui-selectmenu-text {
+  box-sizing: border-box;
+  padding: 7px 15px;
+  outline: none;
+}
+
+.ui-selectmenu-button span.ui-icon {
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid #ECECFB;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: none;
+  margin: -3px 0px 0px 0px;
+  right: 15px;
+}
+
+.ui-selectmenu-menu .ui-menu {
+  padding: 0px;
+  background: #AAAAAA;
+  color: #FFF;
+}
+
+.cIndex .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #733D69;
+}
+
+.cAreas .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #733D69;
+}
+
+.cArte .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #EDA64C;
+}
+
+.cBiblio .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #ACC561;
+}
+
+.cBvirtual .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #7BB1CE;
+}
+
+.cMuseo .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #AE8155;
+}
+
+.cMusica .subMenu .ui-selectmenu-menu .ui-menu {
+  background-color: #D13152;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+  display: block;
+  padding: 7px 15px;
+  margin: 0px;
+  list-style: outside none none;
+  outline: medium none;
+  background: transparent none repeat scroll 0% 0%;
+  transition: background-color 0.5s ease 0s;
+  width: 100%;
+  font-size: inherit;
+  text-align: left;
+  border: none;
+  height: auto;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item:hover, .ui-selectmenu-menu .ui-menu .ui-menu-item.ui-state-focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.gEFilter .ui-selectmenu-button, .gEFilter .ui-selectmenu-button span.ui-selectmenu-text {
+  height: 100%;
+}
+
+.gEFilter .ui-selectmenu-button.ui-state-focus {
+  color: #FFF;
+}
+
+.gEFilter .ui-selectmenu-button span.ui-selectmenu-text {
+  line-height: 1.2rem;
+}
+
+.gEFilter .ui-selectmenu-button span.ui-icon {
+  border-top-color: #787878;
+}
+
+/*Colores menu*/
+
+/*Index*/
+.mainMenu ul li a.cIndex,
+.cIndex .subMenu h2,
+.cIndex .menuFooter,
+.cIndex .gSquare > h2,
+.cIndex .contCarousel > h2,
+.cIndex .gCarousel article .date,
+.cIndex .gSlider75 article .date {
+  background-color: $color-index;
+}
+
+.cIndex .subMenu ul {
+  background-color: #733D69;
+}
+
+.cIndex .subMenu ul li:hover > a,
+.cIndex .subMenu ul li a.active,
+.cIndex .menuFooter ul li a:hover {
+  background-color: #501F47;
+}
+
+/*Areas culturales*/
+.mainMenu ul li a.cAreas,
+.cAreas .subMenu h2,
+.cAreas .menuFooter,
+.cAreas .gSquare > h2,
+.cAreas .contCarousel > h2,
+.cAreas .gCarousel article .date,
+.cAreas .gSlider75 article .date {
+  background-color: $color-areas;
+}
+
+.cAreas .subMenu ul {
+  background-color: #733D69;
+}
+.subMenu.cAreas ul {
+  background-color: #733D69;
+}
+
+
+.cAreas .subMenu ul li:hover > a, .cAreas .subMenu ul li a.active, .cAreas .menuFooter ul li a:hover {
+  background-color: #501F47;
+}
+
+/*Arte y numismatica*/
+.mainMenu ul li a.cArte, .cArte .subMenu h2, .cArte .menuFooter, .cArte .gSquare > h2, .cArte .contCarousel > h2, .cArte .gCarousel article .date, .cArte .gSlider75 article .date {
+  background-color: $color-arte;
+}
+
+.cArte .subMenu ul {
+  background-color: #EDA64C;
+}
+.subMenu.cArte ul {
+  background-color: #EDA64C;
+}
+
+.cArte .subMenu ul li:hover > a, .cArte subMenu ul li a.active, .cArte .menuFooter ul li a:hover {
+  background-color: #D78015;
+}
+
+/*Bibliotecas*/
+.mainMenu ul li a.cBiblio, .cBiblio .subMenu h2, .cBiblio .menuFooter, .cBiblio .gSquare > h2, .cBiblio .contCarousel > h2, .cBiblio .gCarousel article .date, .cBiblio .gSlider75 article .date {
+  background-color: $color-biblio;
+}
+
+.cBiblio .subMenu ul {
+  background-color: #ACC561;
+}
+.subMenu.cBiblio ul {
+  background-color: #ACC561;
+}
+
+.cBiblio .subMenu ul li:hover > a, .cBiblio .subMenu ul li a.active, .cBiblio .menuFooter ul li a:hover {
+  background-color: #89A33A;
+}
+
+/*b virtual*/
+.mainMenu ul li a.cBvirtual, .cBvirtual .subMenu h2, .cBvirtual .menuFooter, .cBvirtual .gSquare > h2, .cBvirtual .contCarousel > h2, .cBvirtual .gCarousel article .date, .cBvirtual .gSlider75 article .date {
+  background-color: $color-bvirtual;
+}
+
+.cBvirtual .subMenu ul {
+  background-color: #7BB1CE;
+}
+.subMenu.cBvirtual ul {
+  background-color: #7BB1CE;
+}
+
+.cBvirtual .subMenu ul li:hover > a, .cBvirtual .subMenu ul li a.active, .cBvirtual .menuFooter ul li a:hover {
+  background-color: #62879B;
+}
+
+/*Museo del oro*/
+.mainMenu ul li a.cMuseo, .cMuseo .subMenu h2, .cMuseo .menuFooter, .cMuseo .gSquare > h2, .cMuseo .contCarousel > h2, .cMuseo .gCarousel article .date, .cMuseo .gSlider75 article .date {
+  background-color: $color-museo;
+}
+
+.cMuseo .subMenu ul {
+  background-color: #AE8155;
+}
+.subMenu.cMuseo ul {
+  background-color: #AE8155;
+}
+
+.cMuseo .subMenu ul li:hover > a, .cMuseo .subMenu ul li a.active, .cMuseo .menuFooter ul li a:hover {
+  background-color: #8B6034;
+}
+
+/*Musica*/
+.mainMenu ul li a.cMusica,
+.cMusica .subMenu h2,
+.cMusica .menuFooter,
+.cMusica .gSquare > h2,
+.cMusica .contCarousel > h2,
+.cMusica .gCarousel article .date,
+.cMusica .gSlider75 article .date {
+  background-color: $color-musica;
+}
+
+.cMusica .subMenu ul {
+  background-color: $color-musica-light;
+}
+.subMenu .cMusica ul {
+  background-color: $color-musica-light;
+}
+
+.cMusica .subMenu ul li:hover > a, .cMusica .subMenu ul li a.active, .cMusica .menuFooter ul li a:hover {
+  background-color: $color-musica-dark;
+}
+.subMenu .customSelect{
+  display: block!important;
+  float: right;
+  background: #7D7D7D!important;
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: .06rem;
+  option{
+    background: #7D7D7D!important;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: .8rem!important;
+    line-height: 1rem;
+    letter-spacing: .06rem;
+  }
+}
+span.ui-selectmenu-button{
+  display: none!important;
+}

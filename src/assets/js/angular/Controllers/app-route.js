@@ -1,27 +1,36 @@
-blaaApp.config(['$locationProvider','$stateProvider', '$urlRouterProvider','$breadcrumbProvider',function($locationProvider,$stateProvider,$urlRouterProvider,$breadcrumbProvider) {
-             $breadcrumbProvider.setOptions({
-                template: '<div class="breadcrumbs large-12">'
-                                + '<ul>'
-                                +   '<li ng-repeat="step in steps"><a ui-sref="{{step.ncyBreadcrumbLink}}"> {{step.ncyBreadcrumbLabel}}/ </a></li>'
-                                + '</ul>'
-                              +'</div>'
-            });
-            $urlRouterProvider.otherwise('/');
-            $stateProvider
-            .state('/', {
-                    url: '/',
-                    controller:'SucursalController',
-                    ncyBreadcrumb:{
-                        label:'{{breadcrumbs}}'
-                    }
-            })
-            /*.state('/areas-culturales', {
-                    url: '/areas-culturales',
-                    controller:'SucursalController',
-                    ncyBreadcrumb:{
-                        label:'{{breadcrumbs}}'
-                    }
-            })*/
+blaaApp.config(['$routeProvider','$locationProvider',function($routeProvider, $locationProvider) {
+  $routeProvider
+  .otherwise({
+      redirectTo: '/404'
+    })
+   .when('/', {
+    templateUrl: 'home.html',
+    resolve: {
+      // I will cause a 1 second delay
+      delay: function($q, $timeout) {
+        var delay = $q.defer();
+        $timeout(delay.resolve, 1000);
+        return delay.promise;
+      }
+    }
+  })
 
-            $locationProvider.html5Mode(true);
+  .when('/bibliotecas/memorias-orales', {
+    templateUrl: 'memorias-orales.html',
+    controller:'PageController',
+    resolve:{
+      delay:function($q,$timeout){
+        var delay = $q.defer();
+        $timeout(delay.resolve,1000);
+        return delay.resolve;
+      }
+    }
+  });
+  // configure html5 to get links working on jsfiddle
+  $locationProvider.html5Mode(true);
+  $locationProvider.hashPrefix('!');
 }]);
+
+/*blaaApp.run(['$location', function AppRun($location) {
+    debugger;
+}]);*/

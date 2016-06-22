@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+@import 'fonts';
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -7,11 +8,16 @@
 @import 'jquery-ui.structure.min';
 @import 'reset.min';
 @import "components/colors";
+
+@import 'header';
 @import 'styles';
-@import 'fonts';
-
-
-
+@import 'memorias';
+@import 'menus';
+@import 'footer';
+@import 'breadcrumbs';
+@import 'anuncios';
+@import 'banners';
+@import 'sliders';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -50,5 +56,3 @@
 @include foundation-top-bar;
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
-

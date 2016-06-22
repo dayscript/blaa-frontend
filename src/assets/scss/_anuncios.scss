@@ -1,0 +1,75 @@
+/*Anuncios*/
+.gAnuncio {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 0px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.gAnuncio.col2 {
+  margin: 10px 1.041%;
+  width: 47.91%;
+}
+
+.gAnuncio > div, .gAnuncio > a {
+  display: table;
+  width: 100%;
+  height: 120px;
+  padding: 0px;
+  margin: 0px;
+  color: #FFF;
+  line-height: 1.1rem;
+  letter-spacing: 0.06rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.gAnuncio > div > div, .gAnuncio > a > div {
+  display: table-cell;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 20px 35px;
+  position: relative;
+  z-index: 3;
+  text-align: left;
+}
+
+.gAnuncio h2 {
+  font-family: "Droid Serif", serif;
+  font-style: italic;
+  line-height: 1.6rem;
+  margin: 0px 0px 10px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.gAnuncio > div > div *:last-child, .gAnuncio > a > div *:last-child {
+  margin-bottom: 0px;
+}
+
+.gAnuncio figure {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1s linear;
+}
+
+.gAnuncio a:hover figure {
+  transform: scale(1.015);
+}
+
+.gAnuncio figure img {
+  //display:none;
+}

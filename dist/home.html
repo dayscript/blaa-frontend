@@ -1,0 +1,649 @@
+<!--Encabezado-->
+<header class="pageHeader row">
+	<div class="headerTop large-12">
+		<h1 class="large-7 columns"><a href="#">Banco de la República Actividad Cultural</a></h1>
+		<div class="cRight large-5 columns">
+			<ul class="socialNetworks large-4 columns">
+				<li><a href="#" target="_blank" class="facebook">facebook</a></li>
+				<li><a href="#" target="_blank" class="twitter">twitter</a></li>
+				<li><a href="#" target="_blank" class="youtube">youtube</a></li>
+			</ul>
+			<form class="large-8 columns">
+				<input class="large-12 columns " type="text" placeholder="| Buscar">
+				<input type="button" value="Enviar" class="btnSearch">
+			</form>
+		</div>
+		<nav class="mainMenu large-12" ng-controller="MenuController">
+			<ul class="menu">
+					<li ng-repeat="(url,option) in menu">
+						<a ng-href="{{ option.url }}" class="{{ option.style }}" ng-class=" path == option.url?'active':''">
+							<span ng-bind-html="option.label"></span>
+						</a>
+					</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!--Fin Encabezado-->
+
+<!--Menu seccion-->
+<nav class="subMenu large-12" ng-controller="MenuController" ng-class="menu[path].style">
+	<div class="subContent large-12">
+		<div class="large-8 columns">
+			<h2>
+				<span ng-bind-html="menu[path].title"></span>
+				<em>{{ menu[path].subtitle }}</em>
+			</h2>
+		</div>
+		<div class="lFiltro large-4 columns">
+			<select class="customSelect" style="display:block!important" ng-model='sucursal' ng-change="onChangeCiudad()" >
+				<option>Bogotá</option>
+				<option ng-repeat="sucursal in sucursales"  value="{{sucursal.node.title}}" >{{sucursal.node.title}}</option>
+			</select>
+		</div>
+	</div>
+	<ul class="menu">
+		<li ng-repeat="(url,suboption) in menu[path].options">
+			<a ui-sref="{{ suboption.url }}">
+				<span ng-bind-html="suboption.label"></span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<!--Fin menu seccion-->
+
+<div class="breadcrumbs large-12" ng-model='Inicio' ncy-breadcrumb>
+	<ul >
+		<li  ncy-breadcrumb ng-repeat="path in ncyBreadcrumb" ><a href="#">{{ path }}</a></li>
+		<li>Nombre subcategoría</li>
+	</ul>
+</div>
+<!--Fin Miga de pan-->
+
+<!--Banner principal-->
+<section class="contBanner large-12" ng-controller="BannerPrincipalController">
+	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="fh9ekq-orbit" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+	        <ul class="orbit-container">
+	          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+	          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+	          <li class="orbit-slide" ng-repeat=" banner in banners">
+							<div class="sliderBig">
+									<article class="" >
+										<figure class="large-12"  class="large-12" style="background-image:url({{ banner['Imagen']['src'] }});">
+											<img src="" alt="Nombre imagen"></figure>
+										<header>
+											<div>
+												<h2>{{ banner['title'] }}</h2>
+												<p>{{ banner['Subtítulo'] }}</p>
+												<a href="#" class="btnMore">ver más</a>
+											</div>
+										</header>
+									</article>
+								</div>
+	          </li>
+	        </ul>
+	        <nav class="orbit-bullets contPager">
+	         <span class="is-active cycle-pager-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></span>
+	         <span data-slide="1"><span class="show-for-sr">Second slide details.</span></span>
+	       </nav>
+	  </div>
+</section>
+<!--Fin Banner principal-->
+
+<!--Calendario Eventos-->
+<div class="contCalendar large-12">
+	<!--Filtro-->
+	<ul class="gEFilter">
+		<li>
+			<select class="customSelect">
+				<option>BOGOTÁ</option>
+				<option>CALI</option>
+				<option>MEDELLÍN</option>
+				<option>ARMENIA</option>
+				<option>PEREIRA</option>
+				<option>MANIZALES</option>
+				<option>IBAGUÉ</option>
+			</select>
+		</li>
+		<li>
+			<a href="#" class="btnPrev">prev</a>
+			<a href="#" class="btnNext">next</a>
+			<p><em>Noviembre</em> 2015</p>
+		</li>
+		<li>
+			<select class="customSelect">
+				<option>TIPO DE EVENTO: TODOS</option>
+				<option>TIPO EVENTO 1</option>
+				<option>TIPO EVENTO 2</option>
+				<option>TIPO EVENTO 3</option>
+				<option>TIPO EVENTO 4</option>
+				<option>TIPO EVENTO 5</option>
+				<option>TIPO EVENTO 6</option>
+			</select>
+		</li>
+		<li><a href="#" class="btnToday">HOY</a></li>
+	</ul><!--Fin Filtro-->
+	<!--Dias-->
+	<div class="contLDays">
+		<a href="#" class="btnPrev">prev</a>
+		<a href="#" class="btnNext">next</a>
+		<ul>
+			<li><a href="#">NOV. <em>03</em> <span>Martes <span class="circle">3</span></span></a></li>
+			<li><a href="#" class="active">NOV. 04 <strong>HOY</strong> <span>Miércoles <span class="circle">15</span></span></a></li>
+			<li><a href="#">NOV. <em>05</em> <span>Jueves <span class="alert"></span></span></a></li>
+			<li><a href="#">NOV. <em>06</em> <span>Viernes <span class="circle">8</span></span></a></li>
+			<li><a href="#">NOV. <em>07</em> <span>Sábado <span class="circle">10</span></span></a></li>
+			<li><a href="#">NOV. <em>08</em> <span>Domingo <span class="circle">12</span></span></a></li>
+			<li><a href="#">NOV. <em>09</em> <span>Lunes <span class="circle">5</span></span></a></li>
+			<li><a href="#">NOV. <em>10</em> <span>Martes <span class="circle">3</span></span></a></li>
+		</ul>
+	</div><!--Fin Dias-->
+	<!--Listado eventos-->
+	<section class="contGLEvents">
+		<h2>Eventos 1-3 de 15</h2>
+		<a href="#" class="btnPrev">prev</a>
+		<a href="#" class="btnNext">next</a>
+		<div class="contPager">
+			<span></span><span class="active"></span><span></span>
+		</div>
+		<div class="gListEvents">
+			<article>
+				<figure style="background-image:url(../../assets/img/banners/carousel1.jpg);"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></figure>
+				<header>
+					<span class="cate">EXPOSICIÓN</span>
+					<h2>Durero <br>Grabados 1496-1522</h2>
+					<p class="subInfo">Del 1º de Enero al 15 de Febrero <br>7:00 a.m a 8:00 p.m. <br>Museo de Arte del BR</p>
+					<a href="#" class="btnMore">ver más</a>
+					<ul class="listShare">
+						<li><a href="#" class="calendar">calendar</a></li>
+						<li><a href="#" class="email">email</a></li>
+						<li><a href="#" class="facebook">facebook</a></li>
+						<li><a href="#" class="twitter">twitter</a></li>
+					</ul>
+				</header>
+			</article>
+			<article>
+				<figure style="background-image:url(../../assets/img/banners/carousel2.jpg);"><img src="../../assets/img/banners/carousel2.jpg" alt="Nombre imagen"></figure>
+				<header>
+					<span class="cate">CONCIERTO</span>
+					<h2>Laboratorio de <br>pensamiento creativo</h2>
+					<p class="subInfo">Del 1º de Enero al 15 de Febrero <br>7:00 a.m a 8:00 p.m. <br>Museo de Arte del BR</p>
+					<a href="#" class="btnMore">ver más</a>
+					<ul class="listShare">
+						<li><a href="#" class="calendar">calendar</a></li>
+						<li><a href="#" class="email">email</a></li>
+						<li><a href="#" class="facebook">facebook</a></li>
+						<li><a href="#" class="twitter">twitter</a></li>
+					</ul>
+				</header>
+			</article>
+			<article>
+				<figure style="background-image:url(../../assets/img/banners/carousel3.jpg);"><img src="../../assets/img/banners/carousel3.jpg" alt="Nombre imagen"></figure>
+				<header>
+					<span class="cate">CONFERENCIA</span>
+					<h2>Mujeres constructoras de la paz. Por: Lydia Cacho</h2>
+					<p class="subInfo">Del 1º de Enero al 15 de Febrero <br>7:00 a.m a 8:00 p.m. <br>Museo de Arte del BR</p>
+					<a href="#" class="btnMore">ver más</a>
+					<ul class="listShare">
+						<li><a href="#" class="calendar">calendar</a></li>
+						<li><a href="#" class="email">email</a></li>
+						<li><a href="#" class="facebook">facebook</a></li>
+						<li><a href="#" class="twitter">twitter</a></li>
+					</ul>
+				</header>
+			</article>
+		</div>
+	</section><!--Fin Listado eventos-->
+</div>
+<!--Fin Calendario Eventos-->
+<!--Calendario Eventos-->
+		<div class="contCalendar large-12">
+			<!--Filtro-->
+			<ul class="gEFilter">
+				<li>
+					<select class="customSelect">
+						<option>BOGOTÁ</option>
+						<option>CALI</option>
+						<option>MEDELLÍN</option>
+						<option>ARMENIA</option>
+						<option>PEREIRA</option>
+						<option>MANIZALES</option>
+						<option>IBAGUÉ</option>
+					</select>
+				</li>
+				<li>
+					<a href="#" class="btnPrev">prev</a>
+					<a href="#" class="btnNext">next</a>
+					<p><em>Noviembre</em> 2015</p>
+				</li>
+				<li>
+					<select class="customSelect">
+						<option>TIPO DE EVENTO: TODOS</option>
+						<option>TIPO EVENTO 1</option>
+						<option>TIPO EVENTO 2</option>
+						<option>TIPO EVENTO 3</option>
+						<option>TIPO EVENTO 4</option>
+						<option>TIPO EVENTO 5</option>
+						<option>TIPO EVENTO 6</option>
+					</select>
+				</li>
+				<li><a href="#" class="btnToday">HOY</a></li>
+			</ul><!--Fin Filtro-->
+			<!--Dias-->
+			<div class="contLDays large-12">
+				<a href="#" class="btnPrev">prev</a>
+				<a href="#" class="btnNext">next</a>
+				<ul>
+					<li><a href="#">NOV. <em>03</em> <span>Martes <span class="circle">3</span></span></a></li>
+					<li><a href="#">NOV. 04 <strong>HOY</strong> <span>Miércoles <span class="circle">15</span></span></a></li>
+					<li><a href="#" class="active">NOV. <em>05</em> <span>Jueves <span class="alert"></span></span></a></li>
+					<li><a href="#">NOV. <em>06</em> <span>Viernes <span class="circle">8</span></span></a></li>
+					<li><a href="#">NOV. <em>07</em> <span>Sábado <span class="circle">10</span></span></a></li>
+					<li><a href="#">NOV. <em>08</em> <span>Domingo <span class="circle">12</span></span></a></li>
+					<li><a href="#">NOV. <em>09</em> <span>Lunes <span class="circle">5</span></span></a></li>
+					<li><a href="#">NOV. <em>10</em> <span>Martes <span class="circle">3</span></span></a></li>
+				</ul>
+			</div><!--Fin Dias-->
+			<!--Listado eventos-->
+			<section class="contGLEvents large-12">
+				<h2>Banco cerrado</h2>
+				<div class="gListEvents">
+					<div class="gMsg">
+						<h2>Esta sede del Banco de la República estará cerrada</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris.</p>
+					</div>
+				</div>
+			</section><!--Fin Listado eventos-->
+		</div><!--Fin Calendario Eventos-->
+<!--Slider Eventos-->
+<section class="contCarousel gEvents large-12 " ng-controller="EventosController">
+	<h2>Eventos</h2>
+<!--<div class="gCarousel">
+		<article  class="large-4" ng-repeat="event in events">
+			<figure style="background-image:url(' {{  event['imagen']['src'] }}')">
+				<a href="#"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></a>
+			</figure>
+			<header>
+				<span class="cate">EXPOSICIÓN</span>
+				<h2><a href="#">{{ event['title'] }}</a></h2>
+				<p class="subInfo">Agosto 1° a Noviembre 3 de 2014 <br>Bogotá | Museo de Arte del BR <br>Sala Lorem Ipsum Dolor</p>
+				<div class="desc">
+					 {{ event['body'] }}
+				</div>
+			</header>
+		</article>
+	</div>-->
+
+	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
+        <ul class="orbit-container">
+          <li class="is-active orbit-slide" ng-repeat="event in events">
+						<div class="gCarousel">
+								<article  class="large-4">
+									<figure style="background-image:url(' {{  event['imagen']['src'] }}')">
+										<a href="#"><img src="../../assets/img/banners/carousel1.jpg" alt="Nombre imagen"></a>
+									</figure>
+									<header>
+										<span class="cate">EXPOSICIÓN</span>
+										<h2><a href="#">{{ event['title'] }}</a></h2>
+										<p class="subInfo">Agosto 1° a Noviembre 3 de 2014 <br>Bogotá | Museo de Arte del BR <br>Sala Lorem Ipsum Dolor</p>
+										<div class="desc">
+											 {{ event['body'] }}
+										</div>
+									</header>
+								</article>
+							</div>
+        	</li>
+        </ul>
+        <nav class="orbit-bullets">
+         <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+      	</nav>
+  </div>
+	<div class="contArrows">
+		<span class="btnPrev">prev</span><div class="contPager"></div><span class="btnNext">next</span>
+	</div>
+</section>
+<!--Fin Slider Eventos-->
+<!--Banner 50%-->
+<div class="gAnuncio medium-12 large-6 ">
+	<a href="#">
+		<figure ><img src="../../assets/img/banners/anuncio3.jpg" alt="Nombre imagen"></figure>
+		<div>
+			<h2>Descargue aquí <br>la programación de noviembre</h2>
+		</div>
+	</a>
+</div>
+<div class="gAnuncio medium-12 large-6 ">
+	<div>
+		<figure ><img src="../../assets/img/banners/anuncio3.jpg" alt="Nombre imagen"></figure>
+		<div>
+			<h2>Anuncio pequeño <br>lorem ipsum</h2>
+		</div>
+	</div>
+</div>
+<!--Fin Banner 50%-->
+
+<!-- data
+article['Nid']
+article['title']
+article['Contenido']
+article['Imagen']['src'] 
+ -->
+<!--Slider noticias-->
+<section class="contCarousel large-12" ng-controller ="NoticiasController">
+	<h2>Noticias</h2>
+	<div class="gCarousel large-12">
+		<article ng-repeat="article in articles" >
+			<figure style="background-image:url(' {{ article['Imagen']['src'] }}');">
+				<span class="date">23 | 10 | 2015</span>
+				<a href="#"><img src="  " alt="Nombre imagen"></a>
+			</figure>
+			<header>
+				<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+				<h2><a href="#">{{ article['title'] }}</a></h2>
+				<div class="desc">
+					{{ article['Contenido'] }}
+				</div>
+			</header>
+		</article>
+	</div>
+	<div class="contArrows">
+		<span class="btnPrev">prev</span><div class="contPager"></div><span class="btnNext">next</span>
+	</div>
+</section><!--Fin Slider noticias-->
+<!--Slider contenido-->
+		<section class="contCarousel large-12">
+			<h2>Contenido</h2>
+			<div class="gCarousel large-12">
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel7.jpg);">
+						<a href="#"><img src="../../assets/img/banners/carousel7.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel8.jpg);">
+						<a href="#"><img src="../../assets/img/banners/carousel8.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel9.jpg);">
+						<a href="#"><img src="../../assets/img/banners/carousel9.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel10.jpg);">
+						<a href="#"><img src="../../assets/img/banners/carousel10.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+			</div> 
+			<div class="contArrows">
+				<span class="btnPrev">prev</span><div class="contPager"></div><span class="btnNext">next</span>
+			</div>
+		</section><!--Fin Slider contenido-->
+<!--Slider Noticias 75%-->
+		<section class="contCarousel columns large-8 ">
+			<h2>Noticias</h2>
+			<div class="gSlider75">
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel10.jpg);">
+						<span class="date">23 | 10 | 2015</span>
+						<a href="#"><img src="../../assets/img/banners/carousel10.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel7.jpg);">
+						<span class="date">23 | 10 | 2015</span>
+						<a href="#"><img src="../../assets/img/banners/carousel7.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel8.jpg);">
+						<span class="date">23 | 10 | 2015</span>
+						<a href="#"><img src="../../assets/img/banners/carousel8.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+				<article>
+					<figure style="background-image:url(../../assets/img/banners/carousel9.jpg);">
+						<span class="date">23 | 10 | 2015</span>
+						<a href="#"><img src="../../assets/img/banners/carousel9.jpg" alt="Nombre imagen"></a>
+					</figure>
+					<header>
+						<span class="cate">CATEGORÍA DE LA NOTICIA</span>
+						<h2><a href="#">Título de la historia lorem ipsum dolor sit</a></h2>
+						<div class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex, a scelerisque enim lorem in enim. Fusce eget rutrum metus. Aenean enim mauris...
+						</div>
+					</header>
+				</article>
+			</div>
+			<div class="contArrows">
+				<span class="btnPrev">prev</span><div class="contPager"></div><span class="btnNext">next</span>
+			</div>
+		</section><!--Fin Slider Noticias 75%-->
+<!--Listasdecorrreo?-->
+<div class="gSquare large-4 columns correo">
+			<h2>Listas de correo</h2>
+			<div class="cTable">
+				<form>
+					<h3>Inscríbase a nuestras <br>listas de correo</h3>
+					<p>
+						<label>CORREO ELECTRÓNICO</label>
+						<input type="text" placeholder="| Correo electrónico">
+						<input type="button" value="inscribirme" class="btnForm">
+					</p>
+				</form>
+			</div>
+		</div>  
+<!--Banner 100%-->
+		<div class="gAnuncio large-12">
+			<div>
+				<figure style="background-image:url(../../assets/img/banners/anuncio1.jpg);"><img src="../../assets/img/banners/anuncio1.jpg" alt="Nombre imagen"></figure>
+				<div>
+					<h2>Anuncio</h2>
+					<p>Lorem ipsum dolor sit amet consectetur</p>
+				</div>
+			</div>
+		</div><!--Fin Banner 100%-->
+<!--Cuadrados-->
+	<div class="large-12 row">
+		<div class="gSquare cBiblio medium-4 large-4 columns">
+			<h2>Catálogo de la BLAA <br>y su red de bibliotecas</h2>
+			<figure style="background-image:url(../../assets/img/banners/cubo5.jpg);"><img src="../../assets/img/banners/cubo5.jpg" alt="nombre imagen"></figure>
+			<div class="cTable">
+				<div class="cell">
+					<a href="#" class="btnWhite">SOY SOCIO</a>
+					<a href="#" class="btnWhite">NO SOY SOCIO</a>
+				</div>
+			</div>
+		</div>
+		<div class="gSquare cBiblio medium-4 large-4 columns"> 
+			<h2>Biblioteca Virtual</h2>
+			<figure style="background-image:url(../../assets/img/banners/cubo6.jpg);"><img src="../../assets/img/banners/cubo6.jpg" alt="nombre imagen"></figure>
+			<div class="cTable">
+				<form>
+					<a href="#" class="btnWhite">IR A LA BIBLIOTECA <br>VIRTUAL</a>
+					<p>
+						<input type="text" placeholder="| buscar">
+						<input type="button" value="buscar" class="btnForm">
+					</p>
+				</form>
+			</div>
+		</div>
+		<div class="gSquare cMusica medium-4 large-4 columns">
+			<h2>Compre aquí sus boletas</h2>
+			<figure style="background-image:url(../../assets/img/banners/cubo1.jpg);"><img src="../../assets/img/banners/cubo1.jpg" alt="nombre imagen"></figure>
+			<div class="cTable">
+				<a href="#" class="btnLink">
+					<img src="../../assets/img/icoTuBoleta.png" alt="Tu Boleta.com"><br><br><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex.</p>
+				</a>
+			</div>
+		</div>
+		<div class="gSquare cMusica medium-4 large-4 columns">
+			<h2>Rutas de acceso y servicios</h2>
+			<figure style="background-image:url(../../assets/img/banners/cubo2.jpg);"><img src="../../assets/img/banners/cubo2.jpg" alt="nombre imagen"></figure>
+			<div class="cTable">
+				<a href="#" class="btnLink">
+					<img src="../../assets/img/icoMap.png" alt="Ico Map"><br><br><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex.</p>
+				</a>
+			</div>
+		</div>
+		<div class="gSquare cMusica medium-4 large-4 columns">
+			<h2>Video destacado</h2>
+			<figure style="background-image:url(../../assets/img/banners/cubo3.jpg);"><img src="../../assets/img/banners/cubo3.jpg" alt="nombre imagen"></figure>
+			<div class="cTable">
+				<a href="http://www.youtube.com/embed/Mfn31pahhqc" class="btnLink openVideo">
+					<img src="../../assets/img/icoVideo.png" alt="Ico Video"><br><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex.</p>
+				</a>
+			</div>
+		</div>
+		<div class="gSquare cMusica medium-4 large-4 columns">
+			<h2>Señal clásica en vivo</h2>
+			<figure style="background-image:url(../../assets/img/banners/cubo4.jpg);"><img src="../../assets/img/banners/cubo4.jpg" alt="nombre imagen"></figure>
+			<div class="cTable">
+				<a href="#" class="btnLink">
+					<img src="../../assets/img/icoSClasica.png" alt="Señal Clasica en vivo"><br><br><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, mi vitae maximus maximus, sem est semper ex.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+		<!--Fin Cuadrados-->
+<!--Banner 100%-->
+		<div class="gAnuncio large-12">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/anuncio2.jpg);"><img src="../../assets/img/banners/anuncio2.jpg" alt="Nombre imagen"></figure>
+				<div>
+					<h2>Anuncio</h2>
+					<p>Lorem ipsum dolor sit amet consectetur</p>
+				</div>
+			</a>
+		</div><!--Fin Banner 100%-->
+<!--Enlaces con imagen-->
+<div class="large-12 row">
+		<div class="linkImage medium-3 large-3  columns">
+			<a href="#" >
+				<figure style="background-image:url(../../assets/img/banners/linkImage1.jpg);"><img src="../../assets/img/banners/linkImage1.jpg" alt="Nombre imagen"></figure>
+				<span>TEMPORADA <br>NACIONAL</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage2.jpg);"><img src="../../assets/img/banners/linkImage2.jpg" alt="Nombre imagen"></figure>
+				<span>SEMANA <br>DE LA GUITARRA</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage3.jpg);"><img src="../../assets/img/banners/linkImage3.jpg" alt="Nombre imagen"></figure>
+				<span>JÓVENES <br>INTÉRPRETES</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage4.jpg);"><img src="../../assets/img/banners/linkImage4.jpg" alt="Nombre imagen"></figure>
+				<span>LA MÚSICA <br>SE HABLA</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage5.jpg);"><img src="../../assets/img/banners/linkImage5.jpg" alt="Nombre imagen"></figure>
+				<span>BLOG DE LA SALA <br>DE CONCIERTOS</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage6.jpg);"><img src="../../assets/img/banners/linkImage6.jpg" alt="Nombre imagen"></figure>
+				<span>ARCHIVO <br>HISTÓRICO</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage7.jpg);"><img src="../../assets/img/banners/linkImage7.jpg" alt="Nombre imagen"></figure>
+				<span>COLECCIÓN <br>DE ARTE</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage8.jpg);"><img src="../../assets/img/banners/linkImage8.jpg" alt="Nombre imagen"></figure>
+				<span>CASA GÓMEZ <br>CAMPUZANO</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage9.jpg);"><img src="../../assets/img/banners/linkImage9.jpg" alt="Nombre imagen"></figure>
+				<span>MUSEO <br>BOTERO</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage10.jpg);"><img src="../../assets/img/banners/linkImage10.jpg" alt="Nombre imagen"></figure>
+				<span>CASA DE <br>MONEDA</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage11.jpg);"><img src="../../assets/img/banners/linkImage11.jpg" alt="Nombre imagen"></figure>
+				<span>MUSEO <br>DE ARTE</span>
+			</a>
+		</div>
+		<div class="linkImage medium-3 large-3 columns">
+			<a href="#">
+				<figure style="background-image:url(../../assets/img/banners/linkImage12.jpg);"><img src="../../assets/img/banners/linkImage12.jpg" alt="Nombre imagen"></figure>
+				<span>SERVICIOS <br>EDUCATIVOS</span>
+			</a>
+		</div>
+</div>
+		<!--Fin Enlaces con imagen-->
+

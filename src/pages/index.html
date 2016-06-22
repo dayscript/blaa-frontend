@@ -1,14 +1,30 @@
-{{>submenu}}
-{{>migadepan}}
-{{>bannerprincipal}}
-{{>calendarioeventos1}}
-{{>calendarioeventos2}}
-{{>slidereventos}}
-{{>noticias}}
-{{>contenido}}
-{{>noticias2}}
-{{>listasdecorreo}}
-{{>anuncios}}
-{{>cuadrados}}
-{{>banner2}}
-{{>enlacesconimagen}}
+<!DOCTYPE HTML>
+<html  >
+  <head>
+    <meta charset="UTF-8">
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Banco de la República</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <script src="{{root}}assets/js/angular_core.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.min.js"></script>
+    <script src="{{root}}assets/js/jquery.js"></script>
+    <script src="{{root}}assets/js/foundation_sites.js"></script>
+  </head>
+  <body ng-app="blaaApp">
+    <div id="mainWrapper" ng-controller="PageController" ng-class=" GetClass() ">
+      <div class="mainContent" ng-view>
+
+      </div>
+      {{>footer}}
+    </div>
+  </body>
+  <script src="/assets/js/app.js"></script>
+  <script type="text/javascript">
+  setTimeout(function () {
+    $(document).foundation()
+  }, 2000);
+  </script>
+</html>
