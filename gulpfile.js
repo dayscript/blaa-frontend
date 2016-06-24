@@ -8,6 +8,7 @@ var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
 var minify   = require('gulp-minify');
 var fileinclude = require('gulp-file-include');
+var modRewrite = require('connect-modrewrite');
 // Check for --production flag
 var isProduction = !!(argv.production);
 
@@ -75,6 +76,7 @@ var PATHS = {
   ],
   custom:[
     'src/assets/js/angular/app-configure.js',
+    'src/assets/js/angular/app-route.js',
     'src/assets/js/angular/Controllers/*.js',
     'src/assets/js/angular/Class/*.js',
 
@@ -246,6 +248,11 @@ gulp.task('server', ['build'], function() {
   browser.init({
     server: 'dist',
     port: PORT,
+    middleware: [
+      modRewrite([
+        '!\\.\\w+$ /index.html [L]'
+      ])
+    ]
   });
 });
 // Build the site, run the server, and watch for file changes

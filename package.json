@@ -11,8 +11,10 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.10.0",
+    "connect-modrewrite": "^0.8.5",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-file-include": "^0.13.7",
     "gulp-concat": "^2.5.2",
     "gulp-extname": "^0.2.0",
     "gulp-if": "^2.0.0",

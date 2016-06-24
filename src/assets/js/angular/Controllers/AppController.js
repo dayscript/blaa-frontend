@@ -3,6 +3,4 @@ blaaApp.controller('SucursalController',['$scope','$http','$location','ENVIRONME
     $stateParams.sucursal ?  $rootScope.sucursal = $stateParams.sucursal:$rootScope.sucursal = 'Bogotá';
     $scope.breadcrumbs = 'Actividad Cultural'
     console.log('Sucursal:'+ $rootScope.sucursal);
-
-
 }])

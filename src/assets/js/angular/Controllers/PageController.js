@@ -3,8 +3,7 @@
   Biblioteca de clases para estilos
   copyrigth 2016 - Bogota-Colombia
 */
-blaaApp.controller('PageController',['$scope','$log','$location',function($scope, $log, $location) {
-  console.log('PageController')
+blaaApp.controller('PageController',['$scope','$log','$location', '$timeout' ,function($scope, $log, $location, $timeout) {
 
   var colourMap = {
     index : 'cIndex',
@@ -18,4 +17,8 @@ blaaApp.controller('PageController',['$scope','$log','$location',function($scope
     pathClass.shift()
     return colourMap[pathClass[0]];
   }
+
+  $timeout(function(){
+    $(document).foundation();
+  }, 3000);
 }]);

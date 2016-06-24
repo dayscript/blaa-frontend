@@ -63,30 +63,31 @@
 <!--Banner principal-->
 <section class="contBanner large-12" ng-controller="BannerPrincipalController">
 	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="fh9ekq-orbit" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-	        <ul class="orbit-container">
-	          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-	          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-	          <li class="orbit-slide" ng-repeat=" banner in banners">
-							<div class="sliderBig">
-									<article class="" >
-										<figure class="large-12"  class="large-12" style="background-image:url({{ banner['Imagen']['src'] }});">
-											<img src="" alt="Nombre imagen"></figure>
-										<header>
-											<div>
-												<h2>{{ banner['title'] }}</h2>
-												<p>{{ banner['Subtítulo'] }}</p>
-												<a href="#" class="btnMore">ver más</a>
-											</div>
-										</header>
-									</article>
-								</div>
-	          </li>
-	        </ul>
-	        <nav class="orbit-bullets contPager">
-	         <span class="is-active cycle-pager-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></span>
-	         <span data-slide="1"><span class="show-for-sr">Second slide details.</span></span>
-	       </nav>
-	  </div>
+        <ul class="orbit-container">
+			<button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+			<button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+			<li class="orbit-slide" ng-repeat=" banner in banners">
+				<div class="sliderBig">
+					<article class="" >
+						<figure class="large-12"  class="large-12" style="background-image:url({{ banner['Imagen']['src'] }});">
+							<img src="" alt="Nombre imagen">
+						</figure>
+						<header>
+							<div>
+								<h2>{{ banner['title'] }}</h2>
+								<p>{{ banner['Subtítulo'] }}</p>
+								<a href="#" class="btnMore">ver más</a>
+							</div>
+						</header>
+					</article>
+				</div>
+			</li>
+        </ul>
+        <nav class="orbit-bullets contPager">
+			<span class="is-active cycle-pager-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></span>
+			<span data-slide="1"><span class="show-for-sr">Second slide details.</span></span>
+       	</nav>
+  	</div>
 </section>
 <!--Fin Banner principal-->
 
@@ -561,15 +562,15 @@ article['Imagen']['src']
 	</div>
 		<!--Fin Cuadrados-->
 <!--Banner 100%-->
-		<div class="gAnuncio large-12">
-			<a href="#">
-				<figure style="background-image:url(../../assets/img/banners/anuncio2.jpg);"><img src="../../assets/img/banners/anuncio2.jpg" alt="Nombre imagen"></figure>
-				<div>
-					<h2>Anuncio</h2>
-					<p>Lorem ipsum dolor sit amet consectetur</p>
-				</div>
-			</a>
-		</div><!--Fin Banner 100%-->
+<div class="gAnuncio large-12">
+	<a href="#">
+		<figure style="background-image:url(../../assets/img/banners/anuncio2.jpg);"><img src="../../assets/img/banners/anuncio2.jpg" alt="Nombre imagen"></figure>
+		<div>
+			<h2>Anuncio</h2>
+			<p>Lorem ipsum dolor sit amet consectetur</p>
+		</div>
+	</a>
+</div><!--Fin Banner 100%-->
 <!--Enlaces con imagen-->
 <div class="large-12 row">
 		<div class="linkImage medium-3 large-3  columns">
