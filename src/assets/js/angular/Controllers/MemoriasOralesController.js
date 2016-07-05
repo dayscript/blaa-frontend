@@ -3,64 +3,77 @@
   Biblioteca de clases para estilos
   copyrigth 2016 - Bogota-Colombia
 */
-blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT', function($scope, $http, ENVIRONMENT) {
+blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT','$timeout', '$q', function($scope, $http, ENVIRONMENT, $timeout, $q) {
   
   $scope.collections = [];
 
-  $http.get(ENVIRONMENT+'colecciones/json').success(function(data) {
+  var promises = [];
+  promises.push($http.get(ENVIRONMENT+'colecciones/json').success(function(data) {
     var temporal = [];
-
-    $scope.collections.push({
+    var slider = {
       "title": "Lo más Reciente",
-      "nodes": [],
-    });
+      "nodes": []
+    };
+
 
     angular.forEach(data.nodes, function(collection, key) {
       if((key+1) % 4 == 0 || key == data.nodes.length){
-        $scope.collections[0].nodes.push(temporal);
+        slider.nodes.push(temporal);
         temporal = [];
       }else{
         temporal.push(collection);
       }
     });
-  }); 
+
+    $scope.collections.push(slider);
+  })); 
    
-  $http.get(ENVIRONMENT+'colecciones/json/destacados').success(function(data) {
+  promises.push($http.get(ENVIRONMENT+'colecciones/json/destacados').success(function(data) {
     var temporal = [];
-
-    $scope.collections.push({
+    var slider = {
       "title": "Lo más Destacado",
-      "nodes": [],
-    });
+      "nodes": []
+    };
 
     angular.forEach(data.nodes, function(collection, key) {
       if((key+1) % 4 == 0 || key == data.nodes.length){
-        $scope.collections[1].nodes.push(temporal);
+        slider.nodes.push(temporal);
         temporal = [];
       }else{
         temporal.push(collection);
       }
     });
-  });   
+    $scope.collections.push(slider);
+  }));   
 
-  $http.get(ENVIRONMENT+'colecciones/json/populares').success(function(data) {
+  promises.push($http.get(ENVIRONMENT+'colecciones/json/populares').success(function(data) {
     var temporal = [];
-
-    $scope.collections.push({
+    var slider = {
       "title": "Lo más Popular",
-      "nodes": [],
-    });
+      "nodes": []
+    };
 
     angular.forEach(data.nodes, function(collection, key) {
       if((key+1) % 4 == 0 || key == data.nodes.length){
-        $scope.collections[2].nodes.push(temporal);
+        slider.nodes.push(temporal);
         temporal = [];
       }else{
         temporal.push(collection);
       }
     });
 
-    console.log($scope.collections);
+    $scope.collections.push(slider);
+  }));
+
+  // wait to all promises resolve
+  var all = $q.all(promises);
+
+  all.then(function(){
+
+    $timeout(function() {
+      $(document).foundation();
+    }, 0);
+
   });
 
 
