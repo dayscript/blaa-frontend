@@ -9,6 +9,10 @@ blaaApp.config(['$routeProvider','$locationProvider',function($routeProvider, $l
         templateUrl: 'memorias-orales.html',
         controller: 'MemoriasOralesController'
     })
+        .when('/bibliotecas/memorias-orales/noticias', {
+            templateUrl: 'noticias.html',
+            controller: 'MemoriasOralesController'
+        })
     .otherwise({
         redirectTo: '/404'
     });
