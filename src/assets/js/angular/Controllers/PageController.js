@@ -12,7 +12,7 @@ blaaApp.controller('PageController',['$scope','$log','$location', '$timeout' ,fu
 
   $scope.GetClass = function(){
     var pathClass = $location.path()
-    console.log(pathClass)
+    //console.log(pathClass)
     pathClass = pathClass.split('/')
     pathClass.shift()
     return colourMap[pathClass[0]];

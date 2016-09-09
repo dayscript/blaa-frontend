@@ -4,31 +4,32 @@
   copyrigth 2016 - Bogota-Colombia
 */
 blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT','$timeout', '$q', function($scope, $http, ENVIRONMENT, $timeout, $q) {
-  
+
   $scope.collections = [];
 
   var promises = [];
-  promises.push($http.get(ENVIRONMENT+'colecciones/json').success(function(data) {
+  promises.push($http.get(ENVIRONMENT+'colecciones/json/mas-recientes/Memoria oral').success(function(data) {
     var temporal = [];
     var slider = {
       "title": "Lo más Reciente",
       "nodes": []
     };
 
-
     angular.forEach(data.nodes, function(collection, key) {
-      if((key+1) % 4 == 0 || key == data.nodes.length){
+      console.log(key)
+      if( (key+1) %  4 == 0 || key == data.nodes.length){
         slider.nodes.push(temporal);
         temporal = [];
       }else{
         temporal.push(collection);
-      }
+      }    
     });
 
     $scope.collections.push(slider);
-  })); 
-   
-  promises.push($http.get(ENVIRONMENT+'colecciones/json/destacados').success(function(data) {
+
+  }));
+
+  promises.push($http.get(ENVIRONMENT+'colecciones/json/mas-destacados/Memoria oral').success(function(data) {
     var temporal = [];
     var slider = {
       "title": "Lo más Destacado",
@@ -44,9 +45,9 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
       }
     });
     $scope.collections.push(slider);
-  }));   
+  }));
 
-  promises.push($http.get(ENVIRONMENT+'colecciones/json/populares').success(function(data) {
+  promises.push($http.get(ENVIRONMENT+'colecciones/json/mas-populares/Memoria oral').success(function(data) {
     var temporal = [];
     var slider = {
       "title": "Lo más Popular",
@@ -63,6 +64,7 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
     });
 
     $scope.collections.push(slider);
+    console.log($scope.collections);
   }));
 
   // wait to all promises resolve
