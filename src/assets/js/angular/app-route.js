@@ -6,7 +6,7 @@ blaaApp.config(['$routeProvider','$locationProvider',function($routeProvider, $l
         templateUrl: 'home.html'
     })
     .when('/bibliotecas/memorias-orales', {
-        templateUrl: 'memorias-orales.html',
+        templateUrl: '/bibliotecas/memorias-orales/memorias-orales.html',
         controller: 'MemoriasOralesController'
     })
         .when('/bibliotecas/memorias-orales/noticias', {
