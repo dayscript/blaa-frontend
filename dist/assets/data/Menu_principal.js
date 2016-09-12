@@ -5,7 +5,7 @@
         "label": "Actividad cultural<br>del Banco de la <br>Republica",
         "title": "Actividad cultural",
         "subtitle": "Banco de la República",
-        "url": "/",
+        "url": "http://www.banrepcultural.org",
         "style": "cIndex",
         "options":{
           "info-general":{
@@ -42,7 +42,7 @@
         "label": "Áreas<br>culturales<br>en el país",
         "title": "Áreas culturales en el país",
         "subtitle": "Banco de la República",
-        "url": "/areas-culturales",
+        "url": "http://www.banrepcultural.org/areas-culturales",
         "style": "cAreas",
         "options":{
           "/areas/todas-las-redes":{
@@ -67,7 +67,7 @@
         "label": "Arte y<br>numismática",
         "title": "Arte y numismática",
         "subtitle": "Banco de la República",
-        "url": "/arte-y-numismatica",
+        "url": "http://www.banrepcultural.org/museos-y-colecciones",
         "style": "cArte",
         "options":{
           "/arte/información-general":{
@@ -107,25 +107,53 @@
         "url": "/bibliotecas/memorias-orales",
         "style": "cBiblio",
         "options":{
-          "/bibliotecas/memorias-orales/memorias":{
+          "/memorias-orales/memorias":{
             "label":"memorias",
-            "url":"/bibliotecas/noticias-y-anuncios"
+            "url":"/memorias-orales/memorias",
+            "menu":[
+              {
+                "label": "Historias de Vida",
+                "url": "memorias-orales/memorias/historias-de-vida-274583"
+              },
+              {
+                "label": "Relatos Comunes",
+                "url": "memorias-orales/memorias/relatos-comunes"
+              },
+              {
+                "label": "Otras Memorias",
+                "url": "memorias-orales/memorias/otras-memorias-274584"
+              }
+            ]
           },
-          "/bibliotecas/memorias-orales/como-usar-este-archivo":{
+          "/memorias-orales/como-usar-este-archivo":{
             "label":"como usar este archivo",
-            "url":"/bibliotecas/información-general"
+            "url":"/memorias-orales/información-general"            
           },
-          "/bibliotecas/memorias-orales/como-hacer-memoria-oral":{
+          "/memorias-orales/como-hacer-memoria-oral":{
             "label":"como hacer memoria oral",
-            "url":"/bibliotecas/hágase-socio"
+            "url":"/memorias-orales/como-hacer-memoria-oral-274568"
           },
-          "/bibliotecas/memorias-orales/acerca-del-cmo":{
+          "/memorias-orales/acerca-del-cmo":{
             "label":"arcerca del cmo",
-            "url":"/bibliotecas/fonoteca"
+            "url":"/memorias-orales/acerca-del-cmo-274577",
+            "menu":[
+              {
+                "label": "Historias de Vida",
+                "url": "memorias-orales/memorias/el-centro-de-memorias-orales-274578"
+              },
+              {
+                "label": "Otras Iniciativas",
+                "url": "memorias-orales/memorias/otras-iniciativas-274579"
+              },
+              {
+                "label": "Otras Memorias",
+                "url": "memorias-orales/memorias/otras-memorias"
+              }
+            ]
           },
-          "/bibliotecas/memorias-orales/quiero-practicar":{
+          "/memorias-orales/quiero-practicar":{
             "label":"quiero participar",
-            "url":"/bibliotecas/colecciones-especiales"
+            "url":"/memorias-orales/colecciones-especiales"
           }
         }
       },
@@ -133,7 +161,7 @@
         "label": "BVirtual",
         "title": "BVirtual",
         "subtitle": "Banco de la República",
-        "url": "/bvirtual",
+        "url": "http://www.banrepcultural.org/bvirtual/indice",
         "style": "cBvirtual",
         "options":{
           "/bvirtual/inicio":{
@@ -170,7 +198,7 @@
         "label": "Museo<br>del Oro",
         "title": "Museo del Oro",
         "subtitle": "Banco de la República",
-        "url": "/museo-del-oro",
+        "url": "http://www.banrepcultural.org/museo-del-oro",
         "style": "cMuseo",
         "options":{
           "/museo/english":{
@@ -211,7 +239,7 @@
         "label": "Música",
         "title": "Opus",
         "subtitle": "Histórico de conciertos del Banco de la República",
-        "url": "/musica.html",
+        "url": "http://www.banrepcultural.org/musica",
         "style": "cMusica",
         "options": {
           "/musica/temporada": { 
