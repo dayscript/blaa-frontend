@@ -21,6 +21,7 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
         temporal = [];
       }else{
         collection.links = collection.links.split(',')
+        collection.color = {'background-color':collection.color}
         temporal.push(collection);
 
       }
@@ -42,6 +43,8 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
         temporal = [];
       }else{
         collection.links = collection.links.split(',')
+        collection.color = {'background-color':collection.color}
+
         temporal.push(collection);
       }
     });
@@ -61,6 +64,7 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
         temporal = [];
       }else{
         collection.links = collection.links.split(',')
+        collection.color = {'background-color':collection.color}
         temporal.push(collection);
       }
     });
@@ -68,6 +72,7 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
 
   }));
   console.log($scope.collections)
+
   // wait to all promises resolve
   var all = $q.all(promises);
 

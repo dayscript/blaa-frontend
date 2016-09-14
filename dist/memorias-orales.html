@@ -72,8 +72,8 @@
 										<img src="{{ collection.imagen.src }}" alt="{{ collection.imagen.alt }}">
 								</figure>
 								<div class="typeM">
-									<span style="background-color:#6C3361;"></span>
-									<img src="assets/img/memorias-orales/tipo1.png" alt="Nombre ico">
+									<span ng-style=collection.color></span>
+									<img ng-src="assets/img/memorias-orales/{{collection.tags}}.png" alt="Nombre ico">
 		                            <strong>{{ collection.tags }}</strong>
 								</div>
 								<header>
