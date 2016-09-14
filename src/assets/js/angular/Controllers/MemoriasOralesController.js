@@ -16,17 +16,17 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
     };
 
     angular.forEach(data.nodes, function(collection, key) {
-      console.log(key)
       if( (key+1) %  4 == 0 || key == data.nodes.length){
         slider.nodes.push(temporal);
         temporal = [];
       }else{
+        collection.links = collection.links.split(',')
         temporal.push(collection);
-      }    
+
+      }
     });
 
     $scope.collections.push(slider);
-
   }));
 
   promises.push($http.get(ENVIRONMENT+'colecciones/json/mas-destacados/Memoria oral').success(function(data) {
@@ -41,6 +41,7 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
         slider.nodes.push(temporal);
         temporal = [];
       }else{
+        collection.links = collection.links.split(',')
         temporal.push(collection);
       }
     });
@@ -59,14 +60,14 @@ blaaApp.controller('MemoriasOralesController',['$scope', '$http', 'ENVIRONMENT',
         slider.nodes.push(temporal);
         temporal = [];
       }else{
+        collection.links = collection.links.split(',')
         temporal.push(collection);
       }
     });
-
     $scope.collections.push(slider);
-    console.log($scope.collections);
-  }));
 
+  }));
+  console.log($scope.collections)
   // wait to all promises resolve
   var all = $q.all(promises);
 

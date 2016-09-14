@@ -25,11 +25,10 @@
 								<h2>\{{ collection.title }}</h2>
 								<p>\{{ collection.location }}</p>
 								<ul>
+									<li ng-if="collection.links[1]">
+										<button class="btnPlay" data-src="collection.links[1]" data-format="mp3" data-title="Título de la historia 2 lorem ipsum dolor sit amet, consectetur adipiscing elit porttitor massa eu blandit hendrerit." data-info="31 | 10 | 2016 - Ciudad donde fue grabada" data-link="interna-audio.html">ESCUCHAR <br>FRAGMENTO</button>									</li>
 									<li>
-										<button class="btnPlay" data-src="http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3" data-format="mp3" data-title="Título de la historia 2 lorem ipsum dolor sit amet, consectetur adipiscing elit porttitor massa eu blandit hendrerit." data-info="31 | 10 | 2016 - Ciudad donde fue grabada" data-link="interna-audio.html">ESCUCHAR <br>FRAGMENTO</button>
-									</li>
-									<li>
-										<a href="\{{ collection.url_babel }}" class="btnMore">SABER <br>MÁS</a>
+										<a href="\{{ collection.links[0]}}" class="btnMore">SABER<br>MÁS</a>
 									</li>
 								</ul>
 							</header>
