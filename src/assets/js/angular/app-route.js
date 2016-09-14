@@ -9,10 +9,14 @@ blaaApp.config(['$routeProvider','$locationProvider',function($routeProvider, $l
         templateUrl: '/bibliotecas/memorias-orales/memorias-orales.html',
         controller: 'MemoriasOralesController'
     })
-        .when('/bibliotecas/memorias-orales/noticias', {
-            templateUrl: 'noticias.html',
-            controller: 'MemoriasOralesController'
-        })
+    .when('/bibliotecas/memorias-orales/:titleId', {
+        templateUrl: '/bibliotecas/memorias-orales/interna-colecciones.html',
+        controller: 'NodeController'
+      })
+    .when('/bibliotecas/memorias-orales/noticias', {
+        templateUrl: '/bibliotecas/memorias-orales/noticias-interna.html',
+        controller: 'MemoriasOralesController'
+      })
     .otherwise({
         redirectTo: '/404'
     });

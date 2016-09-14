@@ -109,51 +109,51 @@
         "options":{
           "/memorias-orales/memorias":{
             "label":"memorias",
-            "url":"/memorias-orales/memorias",
+            "url":"/bibliotecas/memorias-orales/memorias",
             "menu":[
               {
                 "label": "Historias de Vida",
-                "url": "memorias-orales/memorias/historias-de-vida-274583"
+                "url": "/bibliotecas/memorias-orales/memorias/historias-de-vida-274583"
               },
               {
                 "label": "Relatos Comunes",
-                "url": "memorias-orales/memorias/relatos-comunes"
+                "url": "/bibliotecas/memorias-orales/memorias/relatos-comunes"
               },
               {
                 "label": "Otras Memorias",
-                "url": "memorias-orales/memorias/otras-memorias-274584"
+                "url": "/bibliotecas/memorias-orales/memorias/otras-memorias-274584"
               }
             ]
           },
-          "/memorias-orales/como-usar-este-archivo":{
+          "/bibliotecas/memorias-orales/como-usar-este-archivo":{
             "label":"como usar este archivo",
-            "url":"/memorias-orales/información-general"            
+            "url":"/bibliotecas/memorias-orales/información-general"
           },
-          "/memorias-orales/como-hacer-memoria-oral":{
+          "/bibliotecas/memorias-orales/como-hacer-memoria-oral":{
             "label":"como hacer memoria oral",
-            "url":"/memorias-orales/como-hacer-memoria-oral-274568"
+            "url":"/bibliotecas/memorias-orales/como-hacer-memoria-oral-274568"
           },
-          "/memorias-orales/acerca-del-cmo":{
+          "/bibliotecas/memorias-orales/acerca-del-cmo":{
             "label":"arcerca del cmo",
-            "url":"/memorias-orales/acerca-del-cmo-274577",
+            "url":"/bibliotecas/memorias-orales/acerca-del-cmo-274577",
             "menu":[
               {
                 "label": "Historias de Vida",
-                "url": "memorias-orales/memorias/el-centro-de-memorias-orales-274578"
+                "url": "/bibliotecas/memorias-orales/memorias/el-centro-de-memorias-orales-274578"
               },
               {
                 "label": "Otras Iniciativas",
-                "url": "memorias-orales/memorias/otras-iniciativas-274579"
+                "url": "/bibliotecas/memorias-orales/memorias/otras-iniciativas-274579"
               },
               {
                 "label": "Otras Memorias",
-                "url": "memorias-orales/memorias/otras-memorias"
+                "url": "/bibliotecas/memorias-orales/memorias/otras-memorias"
               }
             ]
           },
-          "/memorias-orales/quiero-practicar":{
+          "/bibliotecas/memorias-orales/quiero-practicar":{
             "label":"quiero participar",
-            "url":"/memorias-orales/colecciones-especiales"
+            "url":"/bibliotecas/memorias-orales/colecciones-especiales"
           }
         }
       },
@@ -242,7 +242,7 @@
         "url": "http://www.banrepcultural.org/musica",
         "style": "cMusica",
         "options": {
-          "/musica/temporada": { 
+          "/musica/temporada": {
             "label": "Temporada nacional de conciertos",
             "url":"/musica/temporada"
           },
@@ -250,7 +250,7 @@
             "label": "Programación académica",
             "url":"/musica/programacion"
           },
-          "/musica/jovenes": { 
+          "/musica/jovenes": {
             "label": "Convocatoria jóvenes intérpretes",
             "url":"/musica/jovenes"
           },
@@ -262,7 +262,7 @@
             "label": "Programas especiales",
             "url":"/musica/especiales"
           },
-          "/musica/boleteria": { 
+          "/musica/boleteria": {
             "label": "Boletería",
             "url":"/musica/boleteria"
           },

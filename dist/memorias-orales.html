@@ -36,10 +36,10 @@
 			</h2>
 		</div>
 		<div class="lFiltro large-4 columns">
-			<select class="customSelect" style="display:block!important" ng-model='sucursal' ng-change="onChangeCiudad()" >
+			<!--<select class="customSelect" style="display:block!important" ng-model='sucursal' ng-change="onChangeCiudad()" >
 				<option>Bogotá</option>
 				<option ng-repeat="sucursal in sucursales"  value="{{sucursal.node.title}}" >{{sucursal.node.title}}</option>
-			</select>
+			</select>-->
 		</div>
 	</div>
 	<ul class="menu">
@@ -47,6 +47,13 @@
 			<a ui-sref="{{ suboption.url }}">
 				<span ng-bind-html="suboption.label"></span>
 			</a>
+			<ul ng-if="suboption.menu">
+				<li ng-repeat="submenuoption in suboption.menu">
+					<a href="{{ submenuoption.url }}">
+						<span ng-bind-html="submenuoption.label"></span>
+					</a>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </nav>

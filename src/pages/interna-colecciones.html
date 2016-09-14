@@ -1,0 +1,20 @@
+
+<article class="gIntern" ng-controller="NodeController">
+	<figure ng-if="node.field_image">
+    	<img src="images/prueba/interna.jpg" alt="Nombre imagen">
+        <figcaption>Estilo para el pie de foto lorem ipsum dolor sit amet</figcaption>
+    </figure>
+    <div>
+    	<header>
+        	<time datetime="2015-10-23"></time>
+            <h1>{{ node.title }}</h1>
+            <span class="author">{{ node.body.und[0].author }}</span>
+        </header>
+        <!-- <div class="gIntro">
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat sagittis nisi a sollicitudin. Praesent lacinia, nulla iaculis lobortis vestibulum, dui elit iaculis nisl, vitae venenatis massa risus quis arcu. Vestibulum elementum orci quis volutpat consectetur. Donec sed urna vitae metus posuere mollis</p>
+        </div> -->
+        <div class="gContent" ng-if="node.body.und[0].safe_value" ng-bind-html="node.body.und[0].safe_value">
+            
+        </div>
+    </div>
+</article>
