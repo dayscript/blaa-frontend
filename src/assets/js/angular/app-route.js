@@ -1,6 +1,10 @@
-blaaApp.config(['$routeProvider','$locationProvider',function($routeProvider, $locationProvider) {
+blaaApp.config(['$routeProvider','$locationProvider','AnalyticsProvider',function($routeProvider, $locationProvider,AnalyticsProvider) {
     $locationProvider.hashPrefix('!');
     $locationProvider.html5Mode(true);
+    
+    AnalyticsProvider.useAnalytics(false);
+    AnalyticsProvider.setAccount('UA-43463194-1');
+    AnalyticsProvider.trackPages(true);
 
     $routeProvider.when('/', {
         templateUrl: 'home.html'

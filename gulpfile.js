@@ -68,6 +68,9 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.toggler.js',
     'bower_components/foundation-sites/js/foundation.tooltip.js',
   ],
+  analytics:[
+    'bower_components/angular-google-analytics/dist/angular-google-analytics.min.js'
+  ],
   jquery:[
     'src/assets/js/jquery-1.11.3.min.js',
     'src/assets/js/jquery.colorbox-min.js',
@@ -216,6 +219,18 @@ gulp.task('javascript_custom', function() {
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/js'));
 });
+gulp.task('analytics', function() {
+  var uglify = $.if(isProduction, $.uglify()
+    .on('error', function (e) {
+      console.log(e);
+    }));
+  return gulp.src(PATHS.analytics)
+    .pipe($.sourcemaps.init())
+    .pipe($.concat('analytics.js'))
+    //.pipe(minify({}))
+    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe(gulp.dest('dist/assets/js'));
+});
 gulp.task('javascript_blaa', function() {
   var uglify = $.if(isProduction, $.uglify()
     .on('error', function (e) {
@@ -241,7 +256,7 @@ gulp.task('images', function() {
 });
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['fileinclude','pages', 'sass','javascript_angular','javascript_foundation','javascript_jquery','javascript_custom','javascript_blaa', 'images', 'copy'], 'styleguide', done);
+  sequence('clean', ['fileinclude','pages', 'sass','javascript_angular','analytics','javascript_foundation','javascript_jquery','javascript_custom','javascript_blaa', 'images', 'copy'], 'styleguide', done);
 });
 // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
@@ -269,6 +284,8 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['src/assets/js/**/*.js'], ['javascript_jquery', browser.reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['javascript_custom', browser.reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['javascript_blaa', browser.reload]);
+  gulp.watch(['src/assets/js/**/*.js'], ['analytics', browser.reload]);
+
   gulp.watch(['src/assets/img/**/*'], ['images', browser.reload]);
   gulp.watch(['src/styleguide/**'], ['styleguide', browser.reload]);
 });

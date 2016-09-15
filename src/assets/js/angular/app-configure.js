@@ -1,12 +1,13 @@
 'use strict';
 var blaaApp = angular.module('blaaApp', ['ngSanitize','ngRoute','ncy-angular-breadcrumb',
                                          'ngPrettyJson','chieffancypants.loadingBar',
-                                         'ngAnimate','ngPrettyJson'])
+                                         'ngAnimate','ngPrettyJson','angular-google-analytics'])
     .constant('ENVIRONMENT', 'http://blaa.demodayscript.com/')
     .constant('ENVIRONMENTFRONT', '/')
     .config(function(cfpLoadingBarProvider) {
       cfpLoadingBarProvider.includeSpinner = true;
-    });
+    })
+
 
 blaaApp.filter('extractNidString', function() {
   return function(string) {
