@@ -1,25 +1,27 @@
 blaaApp.config(['$routeProvider','$locationProvider','AnalyticsProvider',function($routeProvider, $locationProvider,AnalyticsProvider) {
     $locationProvider.hashPrefix('!');
     $locationProvider.html5Mode(true);
-    
-    AnalyticsProvider.useAnalytics(false);
-    AnalyticsProvider.setAccount('UA-43463194-1');
-    AnalyticsProvider.trackPages(true);
+
 
     $routeProvider.when('/', {
         templateUrl: 'home.html'
     })
     .when('/bibliotecas/memorias-orales', {
         templateUrl: '/bibliotecas/memorias-orales/memorias-orales.html',
-        controller: 'MemoriasOralesController'
+        controller: 'MemoriasOralesController',
+         pageTrack: '/bibliotecas/memorias-orales'
     })
     .when('/bibliotecas/memorias-orales/:titleId', {
         templateUrl: '/bibliotecas/memorias-orales/interna-colecciones.html',
-        controller: 'NodeController'
+        controller: 'NodeController',
+        pageTrack: '/bibliotecas/memorias-orales'
+
       })
     .when('/bibliotecas/memorias-orales/noticias', {
         templateUrl: '/bibliotecas/memorias-orales/noticias-interna.html',
-        controller: 'MemoriasOralesController'
+        controller: 'MemoriasOralesController',
+        pageTrack: '/bibliotecas/memorias-orales/noticias'
+
       })
     .otherwise({
         redirectTo: '/404'

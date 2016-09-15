@@ -7,7 +7,11 @@ var blaaApp = angular.module('blaaApp', ['ngSanitize','ngRoute','ncy-angular-bre
     .config(function(cfpLoadingBarProvider) {
       cfpLoadingBarProvider.includeSpinner = true;
     })
-
+    .config(function (AnalyticsProvider) {
+      AnalyticsProvider.useAnalytics(false);
+      AnalyticsProvider.setAccount('UA-43463194-1');
+      AnalyticsProvider.trackPages(true);
+    });
 
 blaaApp.filter('extractNidString', function() {
   return function(string) {
