@@ -7,7 +7,7 @@ blaaApp.controller('MenuController', ['$scope', '$http', '$location','ENVIRONMEN
 
         $http.get(ENVIRONMENTFRONT+'assets/data/Menu_principal.js').success(function (data) {
             $scope.menu = data.nodes[0];
-            //console.log($scope.menu);
+            console.log($scope.menu);
         });
         $http.get(ENVIRONMENT+'sucursales/json').success(function (data) {
             delete data.nodes[2];

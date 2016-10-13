@@ -27,12 +27,12 @@
 <!--Fin Encabezado-->
 
 <!--Menu seccion-->
-<nav class="subMenu large-12" ng-controller="MenuController" ng-class="menu[path].style">
+<nav class="subMenu large-12" ng-controller="MenuController" ng-class="menu['/bibliotecas/memorias-orales'].style">
 	<div class="subContent large-12">
 		<div class="large-8 columns">
 			<h2>
-				<span ng-bind-html="menu[path].title"></span>
-				<em>{{ menu[path].subtitle }}</em>
+				<span ng-bind-html="menu['/bibliotecas/memorias-orales'].title"></span>
+				<em>{{ menu['/bibliotecas/memorias-orales'].subtitle }}</em>
 			</h2>
 		</div>
 		<div class="lFiltro large-4 columns">
@@ -43,7 +43,7 @@
 		</div>
 	</div>
 	<ul class="menu">
-		<li ng-repeat="(url,suboption) in menu[path].options">
+		<li ng-repeat="(url,suboption) in menu['/bibliotecas/memorias-orales'].options">
 			<a ui-sref="{{ suboption.url }}">
 				<span ng-bind-html="suboption.label"></span>
 			</a>
