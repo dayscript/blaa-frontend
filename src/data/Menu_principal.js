@@ -107,9 +107,9 @@
         "url": "/bibliotecas/memorias-orales",
         "style": "cBiblio",
         "options":{
-          "/memorias-orales/memorias":{
+          "/memorias-orales":{
             "label":"memorias",
-            "url":"/bibliotecas/memorias-orales/memorias",
+            "url":"/bibliotecas/memorias-orales",
             "menu":[
               {
                 "label": "Historias de Vida",
@@ -133,7 +133,7 @@
             "label":"como hacer memoria oral",
             "url":"/bibliotecas/memorias-orales/como-hacer-memoria-oral-274568"
           },
-          "/bibliotecas/memorias-orales/acerca-del-cmo":{
+          "/bibliotecas/memorias-orales/acerca-del-cmo":{ 
             "label":"arcerca del cmo",
             "url":"/bibliotecas/memorias-orales/acerca-del-cmo-274577",
             "menu":[

@@ -44,7 +44,7 @@
 	</div>
 	<ul class="menu">
 		<li ng-repeat="(url,suboption) in menu['/bibliotecas/memorias-orales'].options">
-			<a ui-sref="{{ suboption.url }}">
+			<a href="{{ suboption.url }}">
 				<span ng-bind-html="suboption.label"></span>
 			</a>
 			<ul ng-if="suboption.menu">
