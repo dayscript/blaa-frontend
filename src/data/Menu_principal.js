@@ -113,15 +113,15 @@
             "menu":[
               {
                 "label": "Historias de Vida",
-                "url": "/bibliotecas/memorias-orales/memorias/historias-de-vida-274583"
+                "url": "/bibliotecas/memorias-orales/historias-de-vida-274583"
               },
               {
                 "label": "Relatos Comunes",
-                "url": "/bibliotecas/memorias-orales/memorias/relatos-comunes"
+                "url": "/bibliotecas/memorias-orales/relatos-comunes"
               },
               {
                 "label": "Otras Memorias",
-                "url": "/bibliotecas/memorias-orales/memorias/otras-memorias-274584"
+                "url": "/bibliotecas/memorias-orales/otras-memorias-274584"
               }
             ]
           },
@@ -139,15 +139,15 @@
             "menu":[
               {
                 "label": "Historias de Vida",
-                "url": "/bibliotecas/memorias-orales/memorias/el-centro-de-memorias-orales-274578"
+                "url": "/bibliotecas/memorias-orales/el-centro-de-memorias-orales-274578"
               },
               {
                 "label": "Otras Iniciativas",
-                "url": "/bibliotecas/memorias-orales/memorias/otras-iniciativas-274579"
+                "url": "/bibliotecas/memorias-orales/otras-iniciativas-274579"
               },
               {
                 "label": "Otras Memorias",
-                "url": "/bibliotecas/memorias-orales/memorias/otras-memorias"
+                "url": "/bibliotecas/memorias-orales/otras-memorias"
               }
             ]
           },

@@ -10,7 +10,7 @@ blaaApp.controller('NodeController',
 
   $http.get(ENVIRONMENT+'api/node/'+$scope.nid+'.json').success(function(data) {
     $scope.node = data;
-
+    console.log(ENVIRONMENT+'api/node/'+$scope.nid+'.json');
     if('body' in $scope.node && 'und' in $scope.node.body){
       $scope.node.body.und[0].safe_value = $sce.trustAsHtml(data.body.und[0].safe_value);
     }
