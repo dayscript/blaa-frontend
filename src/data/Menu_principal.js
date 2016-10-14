@@ -100,6 +100,10 @@
           }
         }
       },
+
+
+
+
       "/bibliotecas/memorias-orales": {
         "label": "Bibliotecas",
         "title": "Centro de memorias orales",
@@ -109,36 +113,78 @@
         "options":{
           "/memorias-orales":{
             "label":"memorias",
-            "url":"/bibliotecas/memorias-orales",
+            "url":"/bibliotecas/memorias-orales/memorias-274615",
             "menu":[
-              {
-                "label": "Historias de Vida",
-                "url": "/bibliotecas/memorias-orales/historias-de-vida-274583"
+              { 
+                "label": "Historias Comunes",
+                "url": "/bibliotecas/memorias-orales/historias-comunes-274582"
               },
               {
-                "label": "Relatos Comunes",
-                "url": "/bibliotecas/memorias-orales/relatos-comunes"
+                "label": "Relatos de vida",
+                "url": "/bibliotecas/memorias-orales/relatos-de-vida-274583"
               },
               {
-                "label": "Otras Memorias",
+                "label": "Otras memorias",
                 "url": "/bibliotecas/memorias-orales/otras-memorias-274584"
               }
             ]
           },
+
           "/bibliotecas/memorias-orales/como-usar-este-archivo":{
             "label":"como usar este archivo",
-            "url":"/bibliotecas/memorias-orales/información-general"
+            "url":"/bibliotecas/memorias-orales/información-general",
+             "menu":[
+              { 
+                "label": "Investigación",
+                "url": "/bibliotecas/memorias-orales/como-usar-memoria-oral-investigadores-274574"
+              },
+              {
+                "label": "Salón de clases",
+                "url": "/bibliotecas/memorias-orales/como-hacer-memoria-oral-aulas-de-clase-274567"
+              },
+              {
+                "label": "Comunidad",
+                "url": "/bibliotecas/memorias-orales/como-hacer-memoria-oral-comunidad-274575"
+              },
+              {
+                "label": "Medios de comunicación:",
+                "url": "/bibliotecas/memorias-orales/como-hacer-memoria-oral-medios-de-comunicacion-274576"
+              }
+            ]
           },
+
           "/bibliotecas/memorias-orales/como-hacer-memoria-oral":{
             "label":"como hacer memoria oral",
-            "url":"/bibliotecas/memorias-orales/como-hacer-memoria-oral-274568"
+            "url":"/bibliotecas/memorias-orales/como-hacer-memoria-oral-274568",
+            "menu":[
+              { 
+                "label": "Tutoriales",
+                "url": "/bibliotecas/memorias-orales/tutoriales-274569"
+              },
+              {
+                "label": "Salón de clases",
+                "url": "/bibliotecas/memorias-orales/derechos-de-autor-274570"
+              },
+              {
+                "label": "Caja de Herramientas",
+                "url": "/bibliotecas/memorias-orales/como-hacer-memoria-oral-comunidad-274575"
+              },
+              {
+                "label": "Equipos técnicos",
+                "url": "/bibliotecas/memorias-orales/equipos-tecnicos-274572"
+              },
+              {
+                "label": "Bibliografía recomendada",
+                "url": "/bibliotecas/memorias-orales/bibliografia-recomendada-274573"
+              }
+            ]
           },
           "/bibliotecas/memorias-orales/acerca-del-cmo":{ 
             "label":"arcerca del cmo",
             "url":"/bibliotecas/memorias-orales/acerca-del-cmo-274577",
             "menu":[
               {
-                "label": "Historias de Vida",
+                "label": "El centro de Memorias Orales",
                 "url": "/bibliotecas/memorias-orales/el-centro-de-memorias-orales-274578"
               },
               {
@@ -146,17 +192,22 @@
                 "url": "/bibliotecas/memorias-orales/otras-iniciativas-274579"
               },
               {
-                "label": "Otras Memorias",
-                "url": "/bibliotecas/memorias-orales/otras-memorias"
+                "label": "Noticias",
+                "url": "/bibliotecas/memorias-orales/noticias-274580"
+              },
+              {
+                "label": "Preguntas frecuentes",
+                "url": "/bibliotecas/memorias-orales/preguntas-frecuentes-274581"
               }
             ]
           },
           "/bibliotecas/memorias-orales/quiero-practicar":{
             "label":"quiero participar",
-            "url":"/bibliotecas/memorias-orales/colecciones-especiales"
+            "url":"/bibliotecas/memorias-orales/quiero-participar-274585"
           }
         }
       },
+    
       
       "/bvirtual": {
         "label": "BVirtual",
