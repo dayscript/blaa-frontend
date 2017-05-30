@@ -510,8 +510,8 @@ button{
 	h1{
 		font-family: 'Roboto', sans-serif;
 		font-size: 40px;
-		line-height: 50px;
-		padding-top: 2em;
+		padding-top: 1.5em;
+		line-height: 40px;
 	}
 	
 	.line{
@@ -1121,13 +1121,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 #servicios{
 	
+	.servicio{
+		padding: 20px 0;
+		font-size: 16px;
+		line-height: 20px;
+		
+		h4{
+			font-size: 18px;
+		}
+		
+	}
+	
 	h3{
 		color: #000;
 		text-align: left;
 		font-size: 32px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 		
 	}
 	padding: 50px 0;
@@ -1153,6 +1164,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	
 	.tit{
 		position: relative;
+		overflow: hidden;margin: 30px auto;
 	}
 	
 }
@@ -1165,10 +1177,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	padding-top: 10px;
 	display: inline-block;
 	
+	
+	
 	.icon-right{
 		color: #ff3e34;
 	}
 }
 
+.ir_todos:hover{
+	color: #1b1b1b;
+}
+
+
+
+@media screen  and (max-width: 39.9375em) {
+	
+	#servicios{
+		
+		.tit{
+			margin-right: 20px;
+    		margin-left: 20px;
+		}
+	
+		.servicio{
+			padding-bottom: 20px;
+			width: 50%;
+			margin: 0px;
+			float: left;
+			text-align: center;
+				.text-right{
+				text-align: center;
+			
+			}
+		}
+		
+		h3{
+			font-size: 26px;
+			text-align: center;
+		}
+		
+		
+	}
+	
+	.servicios-tit .text-right{
+		text-align: center;
+	}
+	
+}
 
 
