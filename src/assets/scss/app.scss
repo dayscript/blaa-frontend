@@ -622,6 +622,11 @@ button{
 	
 }
 
+.button:hover{
+	background: #000;
+	
+}
+
 #calendario{
 	padding-top: 40px;
 	
@@ -1189,8 +1194,105 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 
+#socio{
+	
+	background: url(../img/suscribirse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	background-attachment: fixed;
+	padding: 30px 0;
+	color: #fff;
+	font-size: 14px;
+	color: #ffe1e1;
+
+	
+	h3{
+		color: #fff;
+		font-size: 24px;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	
+	.button{
+		width: 100%;
+		padding: 15px;
+		text-transform: uppercase;
+		font-size: 12px;
+		margin-top: 5px;
+	
+	}
+	
+	
+	
+	
+}
+
 
 @media screen  and (max-width: 39.9375em) {
+	
+	#suscribirse{
+		text-align: center;
+		font-size: 18px;
+		line-height: 18px;
+		padding: 20px 0;
+		
+		.input-group{
+			margin-top: 1rem;
+			margin-bottom: 0px;
+		}
+	}
+	
+	#socio{
+		text-align: center;
+		font-size: 18px;
+		line-height: 18px;
+		padding: 20px 0;
+		
+		.input-group{
+			margin-top: 1rem;
+			margin-bottom: 0px;
+		}
+	}
+	
+	#calendario{
+		.text-right{
+			text-align: left;
+		}
+		padding-top: 20px;
+		.buscador_actividades select{
+			margin-bottom: 20px;
+		
+		}
+	}
+	
+	.fullscreen-image-slider {
+		
+		.orbit-bullets button{
+			width: 30px;
+		}
+		
+		
+		.paginador{
+			margin-top: -50px;
+		}
+		h1{
+			font-size: 25px;
+			line-height: 25px;
+			padding-top: 1em;
+		}
+		.line{
+			background: #ff3e34;
+			margin-bottom: 0px;
+			width: 50px;
+		}
+		
+		.read-more{
+			margin-top: 10px;
+		}
+		
+	}
 	
 	#servicios{
 		
