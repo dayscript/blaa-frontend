@@ -1,151 +1,852 @@
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Welcome to Foundation for Sites</h1>
-  </div>
-</div> 
+{{> header}}
+{{> menu}}
 
-<div class="row">
-  <div class="large-12 columns">
-    <div class="callout">
-      <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-      <p>Once you've exhausted the fun in this document, you should check out: diego</p>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowledge.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 medium-push-2 columns">
-          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-        </div>
-        <div class="large-4 medium-4 medium-pull-2 columns">
-          <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-        </div>        
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="row">
-  <div class="large-8 medium-8 columns">
-    <h5>Here&rsquo;s your basic grid:</h5>
-    <!-- Grid Example -->
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="primary callout">
-          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-    </div>
-    
-    <hr />
-            
-    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-12.columns" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <div class="row collapse">
-            <label>Input Label</label>
-            <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="input-group" />
-              <span class="input-group-label">.com</span>
-            </div>
+
+
+
+
+<div class="fullscreen-image-slider">
+  <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit data-options="animInFromLeft:scale-in-down; animInFromRight:scale-in-down; animOutToLeft:scale-in-up; animOutToRight:scale-in-up;">
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <img class="orbit-image" src="{{root}}assets/img/slider.jpg" alt="Space">
+       
+        <figcaption class="orbit-caption">
+         <div class="row">
+         	<div class="medium-6 columns end">
+			  <h1>105 obras del Museo Botero  <br>en alta resolución</h1>
+			  <div class="line"></div>
+			  Google Art Project incluyó nuevos países y galerías en su colección, ahora el Museo Botero y el Museo del Oro hacen parte de este proyecto.
+			  <a href="#" class="read-more">Conoce el proyecto <i class="demo-icon icon-right"></i></a>
+			 </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Select Box</label>
-          <select>
-            <option value="husker">Husker</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <label>Choose Your Favorite</label>
-          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <label>Check these out</label>
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Textarea Label</label>
-          <textarea placeholder="small-12.columns"></textarea>
-        </div>
-      </div>
-    </form>
-  </div>     
-
-  <div class="large-4 medium-4 columns">
-    <h5>Try one of these buttons:</h5>
-    <p><a href="#" class="small button">Simple Button</a><br/>          
-    <a href="#" class="medium success button">Success Btn</a><br/>
-    <a href="#" class="medium alert button">Alert Btn</a><br/>
-    <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-    <div class="callout">
-      <h5>So many components, girl!</h5>
-      <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-    </div>
+        </figcaption>
+       
+      </li>
+      <li class="orbit-slide">
+        <img class="orbit-image" src="{{root}}assets/img/slider.jpg" alt="Space">
+        <figcaption class="orbit-caption">
+         <div class="row">
+         	<div class="medium-6 columns end">
+			  <h1>105 obras del Museo Botero  <br>en alta resolución</h1>
+			  <div class="line"></div>
+			  Google Art Project incluyó nuevos países y galerías en su colección, ahora el Museo Botero y el Museo del Oro hacen parte de este proyecto.
+			  <a href="#" class="read-more">Conoce el proyecto <i class="demo-icon icon-right"></i></a>
+			 </div>
+          </div>
+        </figcaption>
+      </li>
+      <li class="orbit-slide">
+       <img class="orbit-image" src="{{root}}assets/img/slider.jpg" alt="Space">
+        <figcaption class="orbit-caption">
+         <div class="row">
+         	<div class="medium-6 columns end">
+			  <h1>105 obras del Museo Botero  <br>en alta resolución</h1>
+			  <div class="line"></div>
+			  Google Art Project incluyó nuevos países y galerías en su colección, ahora el Museo Botero y el Museo del Oro hacen parte de este proyecto.
+			  <a href="#" class="read-more">Conoce el proyecto <i class="demo-icon icon-right"></i></a>
+			 </div>
+          </div>
+        </figcaption>
+      </li>
+      <li class="orbit-slide">
+       <img class="orbit-image" src="{{root}}assets/img/slider.jpg" alt="Space">
+        <figcaption class="orbit-caption">
+         <div class="row">
+         	<div class="medium-6 columns end">
+			  <h1>105 obras del Museo Botero  <br>en alta resolución</h1>
+			  <div class="line"></div>
+			  Google Art Project incluyó nuevos países y galerías en su colección, ahora el Museo Botero y el Museo del Oro hacen parte de este proyecto.
+			  <a href="#" class="read-more">Conoce el proyecto <i class="demo-icon icon-right"></i></a>
+			 </div>
+          </div>
+        </figcaption>
+      </li>
+    </ul>
+    
+    <div class="row paginador">
+    
+    	 <div class="medium-12 columns">
+			<nav class="orbit-bullets">
+			  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+			  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+			  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+			  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+			</nav>
+		 </div>
+        
+	  </div>
+    
+    
   </div>
 </div>
+
+
+
+
+
+
+
+<div class="row">
+  <div class="large-12 columns">
+   
+   <div id="search">
+   
+   
+   
+   		<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" data-tabs id="deeplinked-tabs">
+		  <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true"><i class="demo-icon icon-search"></i> Búsqueda en el sitio</a></li>
+		  <li class="tabs-title"><a href="#panel2d"><i class="demo-icon icon-catalogo"></i>Catálogo físico</a></li>
+		  <li class="tabs-title"><a href="#panel3d"><i class="demo-icon icon-biblioteca"></i>Biblioteca Virtual</a></li>
+		  <li class="tabs-title"><a href="#panel4d"><i class="demo-icon icon-lapiz"></i>Ayuda de tareas</a></li>
+		</ul>
+
+		<div class="tabs-content" data-tabs-content="deeplinked-tabs">
+		  <div class="tabs-panel is-active" id="panel1d">
+			<div class="input-group">
+			  <input class="input-group-field" type="search" placeholder="Busca museos, centros culturales, tesis y artículos académicos, servicios, eventos, noticias y más..">
+			  <div class="input-group-button">
+				  <button type="submit" class="button">Buscar</button>
+			  </div>
+			</div>
+		  </div>
+		  <div class="tabs-panel" id="panel2d">
+			<div class="input-group">
+			  <input class="input-group-field" type="search" placeholder="Busca museos, centros culturales, tesis y artículos académicos, servicios, eventos, noticias y más..">
+			  <div class="input-group-button">
+				  <button type="submit" class="button">Buscar</button>
+			  </div>
+			</div>
+		  </div>
+		  <div class="tabs-panel" id="panel3d">
+			<div class="input-group">
+			  <input class="input-group-field" type="search" placeholder="Busca museos, centros culturales, tesis y artículos académicos, servicios, eventos, noticias y más..">
+			  <div class="input-group-button">
+				  <button type="submit" class="button">Buscar</button>
+			  </div>
+			</div>
+		  </div>
+		  <div class="tabs-panel" id="panel4d">
+			<div class="input-group">
+			  <input class="input-group-field" type="search" placeholder="Busca museos, centros culturales, tesis y artículos académicos, servicios, eventos, noticias y más..">
+			  <div class="input-group-button">
+				  <button type="submit" class="button">Buscar</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		
+   </div>
+   
+    
+  </div>
+</div>
+
+
+
+
+<div id="calendario">
+
+	<form>
+	  <div class="row buscador_actividades">
+		<div class="small-2 columns">
+		  <label for="right-label" class="text-right">Actividades en:</label>
+		</div>
+		<div class="small-2 columns">
+		 <select>
+			<option value="Bucaramanga">Bucaramanga</option>
+		  </select>
+
+		</div>
+		<div class="small-1 columns">
+		  <label for="right-label" class="text-right">Tipo:</label>
+		</div>
+		<div class="small-2 columns">
+		  <select>
+			<option value="Bucaramanga">Todas</option>
+		  </select>
+		</div>
+		<div class="small-1 columns">
+		  <label for="right-label" class="text-right">Mes:</label>
+		</div>
+		<div class="small-2 columns end">
+		  <select>
+			<option value="Bucaramanga">Septiembre</option>
+		  </select>
+		</div>
+	  </div>
+	</form>
+	
+	
+	 <div class="row">
+		<div class="medium-12 columns">
+	
+			<div class="slide_calendario">	
+
+				<div class="ecommerce-product-slider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+			  	<button class="orbit-previous"><i class="demo-icon icon-left-open-big"></i></button>
+					<button class="orbit-next"><i class="demo-icon icon-right-open-big"></i></button>
+				  <ul class="orbit-container">
+					
+					<li class="is-active orbit-slide">
+					  <div class="row">
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad1.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									CLUB DE LECTURA
+								</div>
+								<div class="fecha">SEP <span>27</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat1">ADQUIERE TUS entradas</div>
+						  <h2>Experimento hipsométrico de Caldas</h2>
+						  <div class="desc">Biblioteca Luis Ángel Arango<bR>
+		Bucaramanga
+						  </div>
+						</div> 
+
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad2.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									CONVERSACIÓN
+								</div>
+								<div class="fecha">SEP <span>28</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat2">entrada gratuita</div>
+						  <h2>Lo que aprendemos a callar: cómic, mujer y resistencia</h2>
+						  <div class="desc">Museo de Arte del Banco de la República<br>
+		Bucaramanga
+						  </div>
+						</div> 
+
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad3.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									VISITA TEMÁTICA
+								</div>
+								<div class="fecha">SEP <span>28</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat1">ADQUIERE TUS entradas</div>
+						  <h2>Frente al otro: dibujos en el posconflicto</h2>
+						  <div class="desc">Sala de exposiciones<br>
+		Bucaramanga
+						  </div>
+						</div> 
+
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad4.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									CLUB DE LECTURA
+								</div>
+								<div class="fecha">SEP <span>28</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat3">inscríbete</div>
+						  <h2>Claves para entender el acuerdo de paz</h2>
+						  <div class="desc">Biblioteca Luis Ángel Arango<br>
+		Bucaramanga
+						  </div>
+						</div> 
+
+					  </div>
+					</li>
+
+					<li class="orbit-slide">
+					  <div class="row">
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad1.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									CLUB DE LECTURA
+								</div>
+								<div class="fecha">SEP <span>27</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat1">ADQUIERE TUS entradas</div>
+						  <h2>Experimento hipsométrico de Caldas</h2>
+						  <div class="desc">Biblioteca Luis Ángel Arango<bR>
+		Bucaramanga
+						  </div>
+						</div> 
+
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad2.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									CONVERSACIÓN
+								</div>
+								<div class="fecha">SEP <span>28</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat2">entrada gratuita</div>
+						  <h2>Lo que aprendemos a callar: cómic, mujer y resistencia</h2>
+						  <div class="desc">Museo de Arte del Banco de la República<br>
+		Bucaramanga
+						  </div>
+						</div> 
+
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad3.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									VISITA TEMÁTICA
+								</div>
+								<div class="fecha">SEP <span>28</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat1">ADQUIERE TUS entradas</div>
+						  <h2>Frente al otro: dibujos en el posconflicto</h2>
+						  <div class="desc">Sala de exposiciones<br>
+		Bucaramanga
+						  </div>
+						</div> 
+
+						<div class="medium-3 columns">
+						  <div class="info_calendario">
+							<img src="{{root}}assets/img/actividad4.jpg">
+							<div class="actividad">
+								<div class="titulo">
+									CLUB DE LECTURA
+								</div>
+								<div class="fecha">SEP <span>28</span></div>
+								<div class="clr"></div>
+							</div>
+						  </div>
+						  <div class="cat cat3">inscríbete</div>
+						  <h2>Claves para entender el acuerdo de paz</h2>
+						  <div class="desc">Biblioteca Luis Ángel Arango<br>
+		Bucaramanga
+						  </div>
+						</div> 
+
+					  </div>
+					</li>
+
+				 </ul>
+				  
+				  
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<div class="row">
+		<div class="medium-12 columns seguir">
+			<a href="#">
+				
+				<i class="demo-icon icon-calendar"></i>
+				<br>
+				ir al calendario
+			</a>
+		</div>
+	</div>
+	
+	
+	
+
+</div>
+
+
+
+
+<div id="suscribirse">
+	
+	<div class="row">
+		<div class="medium-7 columns">
+			<h3>Suscríbete a nuestras listas de correo</h3>
+			Y sé el primero en enterarte de todos nuestros eventos, exposiciones, noticias y más. 
+		</div>
+		<div class="medium-5 columns">
+			<div class="input-group">
+			  <input class="input-group-field" type="search" placeholder="Ingresa tu correo electrónico">
+			  <div class="input-group-button">
+				  <button type="submit" class="button">Suscribirme</button>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+
+
+<div id="destacados">
+	
+	<div class="row">
+		<div class="medium-12 columns">
+		
+			
+				<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" data-tabs id="deeplinked-tabs">
+				  <li class="tabs-title is-active"><a href="#panel1a" aria-selected="true">Recomendados</a></li>
+				  <li class="tabs-title"><a href="#panel2a">Noticias</a></li>
+				  <li class="tabs-title"><a href="#panel3a">Colecciones</a></li>
+				  <li class="tabs-title"><a href="#panel4a">Convocatorias</a></li>
+				  <li class="tabs-title"><a href="#panel5a">Proyectos</a></li>
+				  <li class="tabs-title"><a href="#panel6a">Para niños y jovenes</a></li>
+				  <li class="tabs-title"><a href="#panel7a">Tienda</a></li>
+				  
+				</ul>
+
+				<div class="tabs-content" data-tabs-content="deeplinked-tabs">
+				  <div class="tabs-panel is-active" id="panel1a">
+				  
+				  	<div class="row">
+				  		
+				  		<div class="medium-6 columns no-padding">
+				  		
+				  			<div class="destacado">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/recomendado1.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											<div class="ciudad">
+												BUCARAMANGA
+											</div>
+											<div class="clr"></div>
+											<div class="categoria">
+												Centros culturales
+											</div><br>
+											Seminario Internacional Música y Transformación Social
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+						</div>
+			  		
+			  			<div class="medium-3 columns no-padding">
+							<div class="destacado min">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/recomendado1.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											<div class="ciudad">
+												BUCARAMANGA
+											</div>
+											<div class="clr"></div>
+											<div class="categoria">
+												Centros culturales
+											</div><br>
+											Seminario Internacional Música y Transformación Social
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+							<div class="destacado min">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/recomendado1.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											<div class="ciudad">
+												BUCARAMANGA
+											</div>
+											<div class="clr"></div>
+											<div class="categoria">
+												Centros culturales
+											</div><br>
+											Seminario Internacional Música y Transformación Social
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+							
+
+						</div>
+			  		
+			  			<div class="medium-3 columns no-padding">
+			  			
+			  				<div class="destacado min">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/recomendado1.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											<div class="ciudad">
+												BUCARAMANGA
+											</div>
+											<div class="clr"></div>
+											<div class="categoria">
+												Centros culturales
+											</div><br>
+											Seminario Internacional Música y Transformación Social
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+							<div class="destacado min">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/recomendado1.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											<div class="ciudad">
+												BUCARAMANGA
+											</div>
+											<div class="clr"></div>
+											<div class="categoria">
+												Centros culturales
+											</div><br>
+											Seminario Internacional Música y Transformación Social
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+			  			
+			  			
+						</div>
+				  		
+				  	</div>
+				  	
+				  	
+				  	<div class="row">
+						<div class="medium-12 columns seguir">
+							<a href="#">
+
+								<i class="demo-icon icon-plus"></i>
+								<br>
+								más recomendados
+							</a>
+						</div>
+					</div>
+					
+				  </div>
+				  <div class="tabs-panel" id="panel2a">
+					
+				  </div>
+				  <div class="tabs-panel" id="panel3a">
+					
+				  </div>
+				  <div class="tabs-panel" id="panel4a">
+					
+				  </div>
+				  <div class="tabs-panel" id="panel5a">
+					
+				  </div>
+				  <div class="tabs-panel" id="panel6a">
+					
+				  </div>
+				  <div class="tabs-panel" id="panel7a">
+					
+				  </div>
+				</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<div id="museos">
+	<div class="row">
+	
+	
+		<h3>Museos y exposiciones destacadas</h3>
+	
+		<div class="medium-12 columns">
+				<div class="slide_museos">	
+
+				<div class="ecommerce-product-slider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+			  	<button class="orbit-previous"><i class="demo-icon icon-left-open-big"></i></button>
+				<button class="orbit-next"><i class="demo-icon icon-right-open-big"></i></button>
+				  <ul class="orbit-container">
+					
+					<li class="is-active orbit-slide">
+					  <div class="row">
+						<div class="medium-4 columns">
+						 	<div class="museo">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/museo.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											
+											
+											<div class="categoria">
+												museo
+											</div>
+											<div class="info">
+												Museo del Oro
+											</div>
+											<div class="fecha">
+												Octubre de 2015 - Enero de 2016
+											</div>
+											<div class="ciudad">
+												bogotá
+											</div>
+											
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+						</div> 
+
+						<div class="medium-4 columns">
+							<div class="museo">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/museo.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											
+											
+											<div class="categoria">
+												exposición
+											</div>
+											<div class="info">
+												Museo del Oro
+											</div>
+											<div class="fecha">
+												Octubre de 2015 - Enero de 2016
+											</div>
+											<div class="ciudad">
+												bogotá
+											</div>
+											
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div> 
+						</div> 
+
+						<div class="medium-4 columns">
+						  	<div class="museo">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/museo.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											
+											
+											<div class="categoria">
+												museo
+											</div>
+											<div class="info">
+												Museo del Oro
+											</div>
+											<div class="fecha">
+												Octubre de 2015 - Enero de 2016
+											</div>
+											<div class="ciudad">
+												bogotá
+											</div>
+											
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+						</div>
+
+					  </div>
+					</li>
+					
+					<li class="is-active orbit-slide">
+					  <div class="row">
+						<div class="medium-4 columns">
+						 	<div class="museo">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/museo.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											
+											
+											<div class="categoria">
+												museo
+											</div>
+											<div class="info">
+												Museo del Oro
+											</div>
+											<div class="fecha">
+												Octubre de 2015 - Enero de 2016
+											</div>
+											<div class="ciudad">
+												bogotá
+											</div>
+											
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+						</div> 
+
+						<div class="medium-4 columns">
+							<div class="museo">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/museo.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											
+											
+											<div class="categoria">
+												exposición
+											</div>
+											<div class="info">
+												Museo del Oro
+											</div>
+											<div class="fecha">
+												Octubre de 2015 - Enero de 2016
+											</div>
+											<div class="ciudad">
+												bogotá
+											</div>
+											
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div> 
+						</div> 
+
+						<div class="medium-4 columns">
+						  	<div class="museo">
+				  			
+								<a href="#">
+								<img src="{{root}}assets/img/museo.jpg" alt="destacado">
+									<div class="info_destacado">
+										<div class="info_main">
+											
+											
+											<div class="categoria">
+												museo
+											</div>
+											<div class="info">
+												Museo del Oro
+											</div>
+											<div class="fecha">
+												Octubre de 2015 - Enero de 2016
+											</div>
+											<div class="ciudad">
+												bogotá
+											</div>
+											
+										</div>
+
+									</div>
+
+								</a>
+							
+							</div>
+						</div>
+
+					  </div>
+					</li>
+
+				 </ul>
+				 <nav class="orbit-bullets">
+					<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+				  </nav>
+
+				</div>
+
+			</div>
+		</div>
+	</div>		
+	
+</div>
+
+<div id="servicios">
+	
+	<div class="row">
+	
+		<div class="medium-6 columns">
+		
+			<h3>Museos y exposiciones destacadas</h3>
+		</div>
+		<div class="medium-6 columns text-right">
+			<a href="#" class="ir_todos">ir a todos los servicios <i class="demo-icon icon-right"></i></a>
+		
+		</div>
+	</div>
+	
+	
+	<div class="row tit">
+		<div class="medium-2 small-centered">
+			<div class="tit_seccion">
+				Generales
+			</div>
+		</div>
+		<div class="linea_titulo"></div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="medium-4 small-6">
+			<div class="tit_seccion">
+				Generales
+			</div>
+		</div>
+		<div class="linea_titulo"></div>
+	</div>
+	
+	
+	
+</div>
+
+
+		
+		
+		
+
