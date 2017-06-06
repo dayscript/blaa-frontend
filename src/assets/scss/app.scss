@@ -82,8 +82,8 @@
  
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
+  width: auto;
+  margin-right: 3px;
   text-align: center;
   /* opacity: .8; */
  
@@ -92,11 +92,11 @@
   text-transform: none;
  
   /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
+  line-height: 10px;
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 3px;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -141,6 +141,7 @@
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-grafico:before { content: '\e81a'; } /* '' */
 
 body{
 	font-family: 'Roboto', sans-serif;
@@ -198,6 +199,7 @@ font-family: 'Roboto', sans-serif;
 	width: 25px;
 	height: 25px;
 	font-size: 12px;
+	text-align: center;
 }
 
 .top-bar-right a:hover{
@@ -231,12 +233,12 @@ font-family: 'Roboto', sans-serif;
 .menu > li > a{
 	color: #000000;
 	font-size: 17px;
-	padding:  0.7rem 0;
+	padding:  8px 0;
 	font-family: 'Roboto', sans-serif;
 }
 
 .menu > li{
-	padding: 0px 1em;
+	padding: 0px 15px;
 }
 
 .menu > li:hover{
@@ -295,7 +297,7 @@ font-family: 'Roboto', sans-serif;
 
 .menu  li  li > a{
 	font-size: 15px;
-	padding: 0.9em 0;
+	padding: 15px 0;
 }
 
 .menu  li  li > a .icon-dot{
@@ -450,6 +452,10 @@ font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	
 }
 
 .servicios h2 .demo-icon{
@@ -573,7 +579,7 @@ button{
 			
 			a{
 				border-right:2px dotted #7d7971;
-				padding: 0.5em 1em;
+				padding: 10px 15px;
 				text-align: center;
 				color: #8d8980;
 				font-size: 16px;
@@ -605,7 +611,7 @@ button{
 	
 	.tabs-panel{
 		padding: 0px;
-		padding-top:  1em;
+		padding-top:  15px;
 	}
 
 	
@@ -822,10 +828,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 #suscribirse{
 	
 	background: url(../img/suscribirse.jpg);
-    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center bottom;
 	padding: 30px 0;
 	color: #fff;
 	font-size: 14px;
@@ -948,7 +954,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			display: block;
 			position: relative;
 			background: #000;
-			padding: 0em !important;
+			padding: 0px !important;
 			
 		}
 		img{
@@ -1110,7 +1116,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			display: block;
 			position: relative;
 			background: #000;
-			padding: 0em !important;
+			padding: 0px !important;
 			
 		}
 		img{
@@ -1196,15 +1202,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 #socio{
 	
+	
+
 	background: url(../img/suscribirse.jpg);
-    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center bottom;
 	padding: 30px 0;
 	color: #fff;
 	font-size: 14px;
 	color: #ffe1e1;
+	
+	
+	
 
 	
 	h3{
@@ -1229,17 +1240,277 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	
 }
 
+#multimedia{
+	
+	padding-top: 30px;
+	padding-bottom: 15px;
+	background: #f8f8f8;
+	
+	h3{
+		color: #000;
+		text-align: left;
+		font-size: 32px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		margin-bottom: 0px;
+		padding-bottom: 30px;
+		
+	}
+	
+	.destacado img{
+		transition: transform .3s ease-in-out;
+		width: 100%;
+	}
+	
+	.thumbs{
+		
+		font-size: 16px;
+		color: #000;
+		margin-bottom: 18px;
+		
+		
+		img{
+			width: 100%;
+		}
+		
+		.thumb{
+			position: relative;
+		}
+			.thumb_fondo{
+				position: absolute;
+				width: 100%;
+				bottom: 0px;
+				background: rgba(0,0,0,0.3);
+				top: 0px;
+				color: #fff;
+				padding-top: 10px;
+				padding-left: 10px;
+				font-size: 23px;
+				overflow: hidden;
+		}
+		
+		.categoria{
+			font-weight: 700;
+			border-top: 1px solid #000;
+			padding: 9px 0;
+			text-transform: uppercase;
+			display: inline-block;
+			font-size: 12px;
+			clear: both;
+		}
+	}
+	
+	
+
+	.destacado a:hover img{
+		transform: scale3d(1.1,1.1,1);
+	}
+	
+	.destacado{
+		cursor:pointer;
+		display:block;
+		overflow:hidden;
+		position: relative;
+		margin-bottom: 15px;
+		
+		.info_multimedia{
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			padding: 20px;
+			color: #fff;
+			.categoria{
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: 700;
+				border-top: 1px solid #fff;
+				display: inline-block;
+				padding-top: 10px;
+			}
+			.titulo{
+				font-size: 18px;
+			}
+		}
+		
+		
+		.info_icono{
+			position: absolute;
+			top: 50%;
+			transform: translate(0%, -50%);
+			text-align: center;
+			font-size: 65px;
+			color: #fff;
+			width: 100%;
+			
+		}
+		
+		.info_fondo{
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+			background: rgba(0,0,0,0.3);
+			top: 0px;
+			
+
+		}
+		
+		a{
+			display: block;
+			position: relative;
+			background: #000;
+			padding: 0px !important;
+			
+		}
+		img{
+			transition: transform .3s ease-in-out;
+			width: 100%;
+		}
+		
+		
+
+		
+	}
+	
+}
+
+
+footer{
+	background: #4a4741;
+	border-top: 3px solid #6a665d;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	padding-bottom: 40px;
+	
+	ul{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		
+		li{
+			
+			
+			a{
+				padding: 6px 0;
+				font-size: 13px;
+				color: #fff;
+				text-transform: uppercase;
+				text-decoration: none;
+				display: block;
+			}
+			a:hover{
+				color: #fefefe;
+			}
+		}
+		
+		
+		
+	}
+	
+	.divisor{
+		width: 3px;
+		background:  url(../img/divisor.jpg) repeat-y;
+		height: 400px;
+		margin: 0 auto;
+	}
+	
+	a{
+		color: #c0bdb5;
+		text-decoration: underline;
+	}
+	
+	font-size: 13px;
+	color: #fff;
+	
+	h2{
+		font-size: 14px;
+		font-weight: 300;
+		padding-bottom: 15px;
+	}
+	
+	.links{
+		padding-top: 40px;
+	}
+
+	
+	.social{
+		
+		li{
+			display: inline-block;
+		}
+		padding-top:20px;
+		 a{
+			color: #fff;
+			display: inline-block;
+			border: 1px solid #fff;
+			padding: 3px;
+			border-radius: 50px;
+			margin-left: 5px;
+			width: 25px;
+			height: 25px;
+			font-size: 12px;
+			 text-align: center;
+		}
+
+		 a:hover{
+			color:#4a4741;
+			background:#e5e4e1;
+			border: 1px solid #e5e4e1;
+		}
+		
+		
+	}
+
+
+	
+}
+
 
 @media screen  and (max-width: 39.9375em) {
+	
+	
+	#multimedia{
+		text-align: center;
+		h3{
+			text-align: center;
+			font-size: 36px;
+			padding-bottom: 0px;
+		}
+		
+		.text-right{
+			text-align: center;
+			padding-bottom: 30px;
+		}
+		
+	}
+	
+	footer{
+		
+		ul{
+			-moz-column-count: 2;
+			-moz-column-gap: 20px;
+			-webkit-column-count: 2;
+			-webkit-column-gap: 20px;
+			column-count: 2;
+			column-gap: 20px;
+
+		}
+		
+		.logo_footer{
+			text-align: center;
+			padding-bottom: 20px;
+		}
+		
+	}
 	
 	#suscribirse{
 		text-align: center;
 		font-size: 18px;
 		line-height: 18px;
 		padding: 20px 0;
+		background-attachment: inherit;
 		
 		.input-group{
-			margin-top: 1rem;
+			margin-top: 15px;
 			margin-bottom: 0px;
 		}
 	}
@@ -1249,9 +1520,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		font-size: 18px;
 		line-height: 18px;
 		padding: 20px 0;
+		background-attachment: inherit;
 		
 		.input-group{
-			margin-top: 1rem;
+			margin-top: 15px;
 			margin-bottom: 0px;
 		}
 	}
@@ -1280,7 +1552,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		h1{
 			font-size: 25px;
 			line-height: 25px;
-			padding-top: 1em;
+			padding-top: 15px;
 		}
 		.line{
 			background: #ff3e34;
