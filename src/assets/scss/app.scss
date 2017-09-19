@@ -4077,3 +4077,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
     font-weight: 300;
   }
 }
+
+hr{
+	&.actividades{
+		border-color: white;
+		margin: 30px auto;
+	}
+	&.actividades2{
+		border-color: white;
+		margin: 20px auto;
+	}
+}
