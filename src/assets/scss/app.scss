@@ -78,42 +78,42 @@
 */
 
 
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: auto;
   margin-right: 3px;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 10px;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: 3px;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 
 .icon-cometa:before { content: '\e800'; } /* '' */
 .icon-search:before { content: '\e801'; } /* '' */
@@ -266,7 +266,7 @@ font-family: 'Roboto', sans-serif;
 .menu > li:hover .dropdown-pane{
 	visibility: visible; /* shows sub-menu */
   opacity: 1;
- 
+
 
 }
 
@@ -282,7 +282,7 @@ font-family: 'Roboto', sans-serif;
     margin: 0 auto !important;
     left: 0% !important;
     right: 0% !important;
-	
+
 	 visibility: hidden; /* hides sub-menu */
 	  opacity: 0;
 	 /* Standard syntax */
@@ -353,7 +353,7 @@ font-family: 'Roboto', sans-serif;
 	bottom: 0px;
 	background: rgba(0,0,0,0.5);
 	top: 0px;
-	
+
 }
 
 .destacados li a{
@@ -371,7 +371,7 @@ font-family: 'Roboto', sans-serif;
 
 .destacados li a:hover img{
 	transform: scale3d(1.1,1.1,1);
-		
+
 }
 
 
@@ -432,17 +432,17 @@ font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     speak: none;
-   display: inline-block; 
+   display: inline-block;
     text-decoration: inherit;
     text-align: center;
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-   
-	
-	
-	
+
+
+
+
 }
 
 .tipos ul li.referencia:before{
@@ -457,14 +457,14 @@ font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     speak: none;
-    display: inline-block; 
+    display: inline-block;
     text-decoration: inherit;
     text-align: center;
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
 }
 
 .tipos h2{
@@ -491,15 +491,15 @@ font-family: 'Roboto', sans-serif;
 	padding: 15px;
 	padding-top: 20px;
 	padding-bottom: 0px;
-	
+
 }
 
 .servicios h2 .demo-icon{
 	font-size: 30px;
 	line-height: 30px;
 	height: 30px;
-	
-	
+
+
 }
 
 .servicios li:last-child a{
@@ -521,7 +521,7 @@ button{
 
 
 .fullscreen-image-slider {
-  
+
   .orbit-caption {
    top:0px;
 	  bottom: auto;
@@ -531,16 +531,16 @@ button{
     font-weight: bold;
 	 text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
   }
-	
+
 	.orbit-bullets{
 		text-align: right;
 	}
-	
+
 	.paginador{
 		position: relative;
 		margin-top: -100px;
 	}
-	
+
 	.orbit-bullets button{
 		border-radius: 0px;
 		height: 4px;
@@ -548,11 +548,11 @@ button{
 		background: none;
 		border: 1px solid #fff;
 	}
-	
+
 	.orbit-bullets button.is-active{
 		background: #fff;
 	}
-	
+
 	.tipo{
 		font-size: 12px;
 		padding-bottom: 10px;
@@ -561,15 +561,15 @@ button{
 		text-transform: uppercase;
 		line-height: 12px;
 	}
-	
+
 	.multimedia{
-		
-		
+
+
 		h1{
 			padding-top: 10px;
 		}
 	}
-	
+
 	.icon-play{
 		font-size: 80px;
 		line-height: 80px;
@@ -578,22 +578,22 @@ button{
 		height: 80px !important;
 		line-height: 80px !important;
 	}
-	
+
 	h1{
 		font-family: 'Roboto', sans-serif;
 		font-size: 40px;
 		padding-top: 1.5em;
 		line-height: 40px;
 	}
-	
+
 	.line{
 		width: 100px;
 		height: 2px;
 		background: #fff;
 		margin-bottom: 30px;
-		
+
 	}
-	
+
 	.read-more{
 		clear: both;
 		display: inline-block;
@@ -601,7 +601,7 @@ button{
 		color: #fff;
 		text-transform: uppercase;
 		font-size: 12px;
-		
+
 		.icon-right{
 			color:#ff3e34;
 			line-height: 20px;
@@ -609,11 +609,11 @@ button{
 			height: 15px;
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }
 
 
@@ -624,29 +624,29 @@ button{
     padding: 1rem;
     border-radius: 0;
 	overflow: hidden;
-	
+
 	.demo-icon{
 		overflow:visible;
 	}
-	
+
 	.tabs{
 		border: 0px;
 		background: none;
-		
+
 		.tabs-title > a:focus, .tabs-title > a[aria-selected='true'], .tabs-title > a:hover{
 			background: none;
 			color: #fff;
 		}
-		
+
 		li:last-child a{
 			border: none;
 		}
-		
+
 		li{
-			
+
 			width: 25%;
 			display: inline-block;
-			
+
 			a{
 				border-right:2px dotted #7d7971;
 				padding: 10px 15px;
@@ -654,65 +654,65 @@ button{
 				color: #8d8980;
 				font-size: 16px;
 				line-height: 30px;
-				
+
 				.demo-icon{
 					font-size: 25px;
 					display: inline-block;
 					margin-right: 10px;
 				}
 			}
-			
-			
-			
-			
+
+
+
+
 		}
-		
+
 	}
-	
+
 	.tabs-content{
 		border: none;
 		background: none;
-		
+
 	}
-	
+
 	.input-group{
 		margin-bottom: 0px;
 	}
-	
+
 	.tabs-panel{
 		padding: 0px;
 		padding-top:  15px;
 	}
 
-	
+
 	.button:before{
 		content: '\e801';
 		 font-family: 'fontello';
 		margin-right: 5px;
-		
+
 	}
 }
 
 .button{
 	background: #ff3e34;
-	
+
 }
 
 .button:hover{
 	background: #000;
-	
+
 }
 
 #calendario{
 	padding-top: 40px;
-	
+
 	.buscador_actividades{
-		
+
 		label{
 			font-weight: 300;
 			font-size: 22px;
 		}
-		
+
 		select{
 			border: 1px solid #eeeeee;
 			font-size: 16px;
@@ -720,15 +720,15 @@ button{
 			background: url(../img/select.jpg) no-repeat right #fff;
     -webkit-appearance: none;
 			margin-bottom: 30px;
-   
+
 		}
-		
+
 	}
-	
+
 	.slide_calendario{
-		
-		
-		
+
+
+
 		.orbit-previous, .orbit-next{
 			font-size: 40px;
 			background: #fff;
@@ -740,68 +740,68 @@ button{
 			text-align: center;
 			box-shadow:         0px 2px 10px 0px rgba(0, 0, 0, 0.4);
 		}
-		
+
 		.orbit-previous{
 			left: -30px;
-	
+
 		}
 		 .orbit-next{
 			 right: -30px;
 		}
-		
+
 		.desc{
 			font-size: 14px;
 		color: #666666;
 		line-height: 16px;
 		}
-		
-		
-		
+
+
+
 		img{
 			width: 100%;
 			display: block;
 		}
-		
+
 		.cat{
 			font-weight: 700;
 			text-align: center;
 			color: #fff;
 			text-transform: uppercase;
 			font-size: 12px;
-			
+
 			padding: 10px 0;
 			display: block;
-			
+
 		}
-		
+
 		.cat1{
 			background: #1e7899;
 		}
-		
+
 		.cat2{
 			background: #3fb780;
 		}
-		
+
 		.cat3{
 			background: #e5c03e;
 		}
-		
+
 		.cat4{
 			background: #ff3e34;
 		}
-		
+
 		h2{
 			font-size: 18px;
 			color: #000;
 			padding: 10px 0;
 			margin: 0px;
 			line-height: 20px;
-			
+
 		}
-		
+
 		.info_calendario{
 			position: relative;
-			
+
 			.actividad{
 				position: absolute;
 				top: 0px;
@@ -812,8 +812,8 @@ background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); 
 background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-				
-				
+
+
 				.titulo{
 					float: left;
 					border-top: 1px solid #fff;
@@ -821,10 +821,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					color: #fff;
 					font-weight: 700;
 					font-size: 12px;
-				
-					
+
+
 				}
-				
+
 				.fecha{
 					float: right;
 					color: #fff;
@@ -832,22 +832,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					font-size: 12px;
 					line-height: 20px;
 					text-align: center;
-					
+
 					span{
 						font-size: 25px;
 						display: block;
-						
+
 					}
 				}
-				
+
 			}
 		}
-		
+
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 .demo-icon{
@@ -858,13 +858,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 
 .seguir{
-		
+
 		text-align: center;
 		padding: 25px 0;
-	
-	
-		
-		
+
+
+
+
 		.icono{
 			border-radius: 50%;
 			background: #000;
@@ -877,9 +877,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			width: 60px;
 			height: 60px;
 		}
-		
+
 		.demo-icon{
-			
+
 			color: #fff;
 			border-radius: 50%;
 			background: #000;
@@ -888,21 +888,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			display: inline-block;
 			font-size: 33px;
 			line-height: 60px;
-			
+
 		}
-		
-		
+
+
 		a{
 			color: #ff3e34;
 			text-transform: uppercase;
 			font-size: 14px;
 		}
-		
+
 	}
 
 
 #suscribirse{
-	
+
 	background: url(../img/suscribirse.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -913,75 +913,75 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	font-size: 14px;
 	color: #ffe1e1;
 
-	
+
 	h3{
 		color: #fff;
 		font-size: 24px;
 		margin: 0px;
 		padding: 0px;
-		
+
 	}
-	
+
 	.button:before{
 		content: '\e804';
 		font-family: 'fontello';
 		margin-right: 5px;
 	}
-	
-	
-	
+
+
+
 }
 
 #destacados{
 	padding: 45px 0;
-	
+
 	.tabs{
 		border: none;
 		border-bottom: 1px solid #ff3e34;
 		text-align: center;
-		
+
 		.tabs-title{
 			float: none;
 			display: inline-block;
 		}
-		
+
 		.tabs-title > a{
 			background: none;
 			color: #bbbbbb;
 			font-size: 15px;
 			text-transform: uppercase;
 		}
-		
+
 		.tabs-title.is-active > a{
 			color: #000000;
-			border-bottom: 3px solid #ff3e34; 
+			border-bottom: 3px solid #ff3e34;
 		}
-		
-		
+
+
 	}
 	.tabs-content{
 			border: none;
 	}
-	
+
 	.destacado.min .info_main{
 			font-size: 16px;
 			line-height: 16px;
 	}
-	
+
 	.no-padding{
 		padding: 0 8px;
 	}
-	
-	
-	
+
+
+
 	.destacado{
 		cursor:pointer;
 		display:block;
 		overflow:hidden;
 		position: relative;
 		margin-bottom: 15px;
-		
-		
+
+
 		.info_main{
 			position: absolute;
 			top: 50%;
@@ -993,7 +993,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			padding: 0 20px;
 			line-height: 26px;
 			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
-			
+
 			.ciudad{
 				display: inline-block;
 				background: #ff3e34;
@@ -1004,7 +1004,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				font-size: 15px;
 				text-shadow: none;
 			}
-			
+
 			.categoria{
 				text-transform: uppercase;
 				color: #fff;
@@ -1014,53 +1014,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				margin-top: 10px;
 				clear: both;
 				font-size: 15px;
-				
+
 			}
-			
+
 		}
-		
-		
-	
-		
+
+
+
+
 		.info_destacado{
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
 			background: rgba(0,0,0,0.3);
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
 
-		
+
 	}
 
-	
+
 	.destacado a:hover img{
 		transform: scale3d(1.1,1.1,1);
 
 	}
-	
+
 	.destacado a:hover .info_destacado{
-		
+
 		background: rgba(0,0,0,0.6);
-		
-		
+
+
 	}
-	
-	
+
+
 }
 
 .orbit .demo-icon{
@@ -1070,10 +1070,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 #museos{
-	
+
 	background: #ff3e34;
 	padding: 35px 0;
-	
+
 	h3{
 		color: #fff;
 		text-align: center;
@@ -1081,19 +1081,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		margin-bottom: 30px;
-		
+
 	}
-	
+
 	.orbit-bullets button{
 		background: #fff;
 		border: 2px solid #fff;
 	}
-	
+
 	.orbit-bullets button.is-active{
 		border: 2px solid #fff;
 		background: transparent;
 	}
-	
+
 	.orbit-previous, .orbit-next{
 			font-size: 40px;
 			background: #fff;
@@ -1105,25 +1105,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			text-align: center;
 			box-shadow:         0px 2px 10px 0px rgba(0, 0, 0, 0.4);
 		}
-		
+
 		.orbit-previous{
 			left: -30px;
-	
+
 		}
 		 .orbit-next{
 			 right: -30px;
 		}
-	
+
 	.museo{
 		cursor:pointer;
 		display:block;
 		overflow:hidden;
 		position: relative;
 		margin-bottom: 15px;
-		
-		
-		
-		
+
+
+
+
 		 a:hover img{
 			transform: scale3d(1.1,1.1,1);
 
@@ -1136,19 +1136,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 		}
 
-		
+
 		.info_main{
 			position: absolute;
 			top: 50%;
 			transform: translate(0%, -50%);
 			text-align: center;
-		
+
 			color: #fff;
 			width: 100%;
 			padding: 0 20px;
-			
+
 			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
-			
+
 			.ciudad{
 				color: #fff;
 				text-transform: uppercase;
@@ -1158,7 +1158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				line-height: 14px;
 				text-shadow: none;
 			}
-			
+
 			.categoria{
 				text-transform: uppercase;
 				color: #fff;
@@ -1168,69 +1168,69 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				clear: both;
 				font-size: 14px;
 				line-height: 14px;
-				
+
 			}
-			
+
 			.fecha{
 				font-size: 14px;
 				line-height: 16px;
 				padding-bottom: 20px;
 			}
-			
+
 			.info{
 				font-size: 20px;
 				line-height: 20px;
 			}
-			
-			
-			
-			
+
+
+
+
 		}
-		
-		
-	
-		
+
+
+
+
 		.info_destacado{
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
 			background: rgba(0,0,0,0.5);
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
 
-		
+
 	}
 
 
 }
 
 #servicios{
-	
+
 	.servicio{
 		padding: 20px 0;
 		font-size: 16px;
 		line-height: 20px;
-		
+
 		h4{
 			font-size: 18px;
 		}
-		
+
 	}
-	
+
 	h3{
 		color: #000;
 		text-align: left;
@@ -1238,10 +1238,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		margin-bottom: 0px;
-		
+
 	}
 	padding: 50px 0;
-	
+
 	.tit_seccion{
 		font-size: 16px;
 		text-transform: uppercase;
@@ -1252,7 +1252,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		background: #fff;
     	z-index: 1;
 	}
-	
+
 	.linea_titulo{
 		position: absolute;
 		width: 100%;
@@ -1260,12 +1260,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		background: #000;
 		top: 50%;
 	}
-	
+
 	.tit{
 		position: relative;
 		overflow: hidden;margin: 30px auto;
 	}
-	
+
 }
 
 .ir_todos{
@@ -1275,9 +1275,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	text-transform: uppercase;
 	padding-top: 10px;
 	display: inline-block;
-	
-	
-	
+
+
+
 	.icon-right{
 		color: #ff3e34;
 		height: 16px;
@@ -1291,8 +1291,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 
 #socio{
-	
-	
+
+
 
 	background: url(../img/suscribirse.jpg);
     background-attachment: fixed;
@@ -1303,39 +1303,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	color: #fff;
 	font-size: 14px;
 	color: #ffe1e1;
-	
-	
-	
 
-	
+
+
+
+
 	h3{
 		color: #fff;
 		font-size: 24px;
 		margin: 0px;
 		padding: 0px;
-		
+
 	}
-	
+
 	.button{
 		width: 100%;
 		padding: 15px;
 		text-transform: uppercase;
 		font-size: 12px;
 		margin-top: 5px;
-	
+
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 #multimedia{
-	
+
 	padding-top: 30px;
 	padding-bottom: 15px;
 	background: #f8f8f8;
-	
+
 	h3{
 		color: #000;
 		text-align: left;
@@ -1344,25 +1344,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		font-weight: 300;
 		margin-bottom: 0px;
 		padding-bottom: 30px;
-		
+
 	}
-	
+
 	.destacado img{
 		transition: transform .3s ease-in-out;
 		width: 100%;
 	}
-	
+
 	.thumbs{
-		
+
 		font-size: 16px;
 		color: #000;
 		margin-bottom: 18px;
-		
-		
+
+
 		img{
 			width: 100%;
 		}
-		
+
 		.thumb{
 			position: relative;
 		}
@@ -1377,13 +1377,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				padding-left: 10px;
 				font-size: 23px;
 				overflow: hidden;
-				
+
 				.demo-icon{
 					height: 30px;
 				}
-				
+
 		}
-		
+
 		.categoria{
 			font-weight: 700;
 			border-top: 1px solid #000;
@@ -1394,22 +1394,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			clear: both;
 		}
 	}
-	
-	
+
+
 
 	.destacado a:hover img{
 		transform: scale3d(1.1,1.1,1);
 	}
-	
+
 	.destacado.mini{
 		margin-bottom: 30px;
-		
+
 		.info_icono{
 			top: 0px;
 			transform: none;
 			left: 10px;
 			top: 10px;
-			
+
 			font-size: 23px;
 			color: #fff;
 			width: 100%;
@@ -1418,17 +1418,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				height: 23px;
 				line-height: 23px;
 			}
-			
+
 		}
 	}
-	
+
 	.destacado{
 		cursor:pointer;
 		display:block;
 		overflow:hidden;
 		position: relative;
 		margin-bottom: 15px;
-		
+
 		.info_multimedia{
 			position: absolute;
 			bottom: 0px;
@@ -1448,8 +1448,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				line-height: 20px;
 			}
 		}
-		
-		
+
+
 		.info_icono{
 			position: absolute;
 			top: 50%;
@@ -1462,36 +1462,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				height: 65px;
 				line-height: 65px;
 			}
-			
+
 		}
-		
+
 		.info_fondo{
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
 			background: rgba(0,0,0,0.3);
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
-		
-		
 
-		
+
+
+
 	}
-	
+
 }
 
 
@@ -1501,15 +1501,15 @@ footer{
 	padding-top: 30px;
 	padding-bottom: 60px;
 	padding-bottom: 40px;
-	
+
 	ul{
 		margin: 0px;
 		padding: 0px;
 		list-style: none;
-		
+
 		li{
-			
-			
+
+
 			a{
 				padding: 6px 0;
 				font-size: 13px;
@@ -1522,39 +1522,39 @@ footer{
 				color: #fefefe;
 			}
 		}
-		
-		
-		
+
+
+
 	}
-	
+
 	.divisor{
 		width: 3px;
 		background:  url(../img/divisor.jpg) repeat-y;
 		height: 400px;
 		margin: 0 auto;
 	}
-	
+
 	a{
 		color: #c0bdb5;
 		text-decoration: underline;
 	}
-	
+
 	font-size: 13px;
 	color: #fff;
-	
+
 	h2{
 		font-size: 14px;
 		font-weight: 300;
 		padding-bottom: 15px;
 	}
-	
+
 	.links{
 		padding-top: 40px;
 	}
 
-	
+
 	.social{
-		
+
 		li{
 			display: inline-block;
 		}
@@ -1577,12 +1577,12 @@ footer{
 			background:#e5e4e1;
 			border: 1px solid #e5e4e1;
 		}
-		
-		
+
+
 	}
 
 
-	
+
 }
 
 .input-group-button a, .input-group-button input, .input-group-button button, .input-group-button label{
@@ -1592,100 +1592,100 @@ footer{
 
 
 .sticky.is-stuck.is-at-top {
-	
+
     top: 0;
     margin-top: 0px !important;
     max-width: 100% !important;
     width: 100%;
-	
+
 	.is-accordion-submenu-parent > a::after {
-   
+
     	border-color: #cccccc transparent transparent;
 	}
-	
-	
-	
+
+
+
 	#menu-resp{
 			position: absolute;
 			width: 80%;
 			background: #fbfbfb;
-			
-			
-		
+
+
+
 		.dropdown{
-			
+
 			padding-top: 40px;
 			overflow: scroll;
    			height: 600px;
-			
+
 			li{
 				display: block;
 				padding: 10px;
 				border-bottom: 1px solid #cccccc;
 			}
-			
+
 			ul.is-accordion-submenu{
 				background: #423f39
 			}
-			
+
 			li.is-accordion-submenu-parent{
 				padding: 0px;
 				a{
 					padding: 18px 10px;
-					
+
 				}
 				li{
 						padding: 0px;
 					}
 			}
-			
+
 		}
 	}
-		
-	
+
+
 	.title-bar{
 		background: #fff;
 		color: #000;
 		box-shadow: 0px 15px 48px -8px rgba(219,219,219,1);
 		z-index: 100;
     	position: relative;
-		
+
 		.icon-search{
 			float: right;
 			height: 30px;
 			margin-top: 20px;
 			width: 10%;
-			
+
 		}
-		
+
 		.menu-icon{
-			
+
 			margin: 0px;
 			text-align: center;
 		}
-		
+
 		.icon-search:before{
-			
+
 			font-size: 30px;
 			height: 30px;
 			line-height: 30px;
 		}
-		
+
 		.title-bar-title{
 			max-width:80%;
 			padding: 0px 10px;
 		}
-		
-		
+
+
 		.menu-icon::after{
 			height: 2px;
 			background: #000;
 			box-shadow: 0 7px 0 #000, 0 14px 0 #000;
 		}
-		
-		
+
+
 	}
-	
+
 }
 
 
@@ -1694,14 +1694,14 @@ footer{
 	background: #4a4741;
 	padding: 15px 0;
 	margin-top: 50px;
-	 
-	
+
+
 	ul {
 			width: 100%;
 			display: table;
 			margin: 0px;
 			padding: 0px;
-		
+
 			 li {
 				    display: table-cell;
     				width: 1%;
@@ -1711,28 +1711,28 @@ footer{
 				 a{
 					 font-size: 16px;
 					 color: #c3beb1;
-					 
+
 					 .demo-icon:before{
 						 font-size: 20px;
 						 line-height: 20px;
 					 }
-					 
+
 				 }
-				 
+
 				 a:hover{
 					 color: #fff;
 				 }
-				 
+
 			 }
-				 
+
 			 .active a {
 				 color: #fff;
 			}
-		
+
 		}
-	
-	
-	
+
+
+
 }
 
 .clr{
@@ -1740,10 +1740,9 @@ footer{
 }
 
 #info{
-	
+
 	padding: 40px 0;
-	
-	
+
 	.info_principal{
 		background: #ff3e34;
 		padding: 30px 20px;
@@ -1751,72 +1750,90 @@ footer{
 		padding-top: 45px;
 		color: #fff;
 		margin-bottom: 15px;
-		
+      &.destaca{
+        min-height: 490px;
+      }
+
 		h3{
 			font-size: 22px;
 			margin: 0px;
 			padding: 0px;
 			margin-bottom: 10px;
 		}
-		
+
 		.row{
 			margin-bottom: 33px;
 		}
-		
+		.destaca{
+			font-size: 26px;
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: 10px;
+			font-weight: 300;
+			.icon{
+				font-weight: bold;
+				font-size: 91px;
+				border-bottom: 1px solid;
+				line-height: 8px;
+				margin: 33px 0px 21px 0px;
+				padding: 0;
+			}
+
+		}
 	}
-	
+
 	.info_boletas{
 		border: 4px solid #3e3e3e;
 		padding: 20px;
 		color: #4a4741;
 		font-size: 14px;
 		margin-bottom: 15px;
-		
+
 		.logo_tuboleta{
 			text-align: center;
 			padding-top: 30px;
 			padding-bottom: 20px;
 		}
-		
+
 		h3{
 			font-size: 22px;
 			color: #4a4741;
 			font-weight: 400;
 		}
-		
+
 		button{
 			margin-top: 10px;
 			text-transform: uppercase;
 			font-size: 12px;
 		}
 	}
-	
+
 	.icono-info{
 		text-align: center;
 	}
-	
-	
-	
-	
+
+
+
+
 	.destacado img{
 		transition: transform .3s ease-in-out;
 		width: 100%;
 	}
-	
-	
-	
+
+
+
 
 	.destacado a:hover img{
 		transform: scale3d(1.1,1.1,1);
 	}
-	
+
 	.destacado{
 		cursor:pointer;
 		display:block;
 		overflow:hidden;
 		position: relative;
 		margin-bottom: 20px;
-		
+
 		.info_multimedia{
 			position: absolute;
 			bottom: 0px;
@@ -1838,41 +1855,191 @@ footer{
 			}
 		}
 
-		
+
 		.info_fondo{
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
 			background: rgba(0,0,0,0.3);
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
-		
-		
 
-		
+
+
+
 	}
 
 }
 
+
+#info-centros{
+
+  padding: 0px 0px 20px 0px;
+
+  .info_principal{
+    background: #ff3e34;
+    padding: 30px 20px;
+    font-size: 16px;
+    padding-top: 45px;
+    color: #fff;
+    margin-bottom: 15px;
+    &.destaca{
+      min-height: 490px;
+    }
+
+    h3{
+      font-size: 22px;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+
+    .row{
+      margin-bottom: 33px;
+    }
+    .destaca{
+      font-size: 26px;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 10px;
+      font-weight: 300;
+      .icon{
+        font-weight: bold;
+        font-size: 91px;
+        border-bottom: 1px solid;
+        line-height: 8px;
+        margin: 33px 0px 21px 0px;
+        padding: 0;
+      }
+
+    }
+  }
+
+  .info_boletas{
+    border: 4px solid #3e3e3e;
+    padding: 20px;
+    color: #4a4741;
+    font-size: 14px;
+    margin-bottom: 15px;
+
+    .logo_tuboleta{
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    h3{
+      font-size: 22px;
+      color: #4a4741;
+      font-weight: 400;
+    }
+
+    button{
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+
+  .icono-info{
+    text-align: center;
+  }
+
+
+
+
+  .destacado img{
+    transition: transform .3s ease-in-out;
+    width: 100%;
+  }
+
+
+
+
+  .destacado a:hover img{
+    transform: scale3d(1.1,1.1,1);
+  }
+
+  .destacado{
+    cursor:pointer;
+    display:block;
+    overflow:hidden;
+    position: relative;
+    margin-bottom: 20px;
+
+    .info_multimedia{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 20px;
+      color: #fff;
+      .desc{
+        font-size: 14px;
+        display: inline-block;
+        padding-top: 5px;
+      }
+      .titulo{
+        font-size: 22px;
+      }
+      .fecha{
+        font-weight: 700;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+    }
+
+
+    .info_fondo{
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      background: rgba(0,0,0,0.3);
+      top: 0px;
+
+
+    }
+
+    a{
+      display: block;
+      position: relative;
+      background: #000;
+      padding: 0px !important;
+
+    }
+    img{
+      transition: transform .3s ease-in-out;
+      width: 100%;
+    }
+
+
+
+
+  }
+
+}
+
+
+
+
 #ubicacion{
-	
+
 	font-size: 16px;
 	padding-bottom: 30px;
-	
+
 	h3{
 		font-size: 32px;
 		color: #000000;
@@ -1893,14 +2060,14 @@ footer{
 #espacios{
 	padding-top: 40px;
 	padding-bottom: 40px;
-	
+
 	.buscador_actividades{
-		
+
 		label{
 			font-weight: 300;
 			font-size: 22px;
 		}
-		
+
 		select{
 			border: 1px solid #eeeeee;
 			font-size: 16px;
@@ -1908,15 +2075,15 @@ footer{
 			background: url(../img/select.jpg) no-repeat right #fff;
     -webkit-appearance: none;
 			margin-bottom: 30px;
-   
+
 		}
-		
+
 	}
-	
+
 	.slide_espacios{
-		
-		
-		
+
+
+
 		.orbit-previous, .orbit-next{
 			font-size: 40px;
 			background: #fff;
@@ -1928,40 +2095,40 @@ footer{
 			text-align: center;
 			box-shadow:         0px 2px 10px 0px rgba(0, 0, 0, 0.4);
 		}
-		
+
 		.orbit-previous{
 			left: -30px;
-	
+
 		}
 		 .orbit-next{
 			 right: -30px;
 		}
-		
-		
+
+
 		img{
 			width: 100%;
 			display: block;
 		}
-		
+
 		.cat{
-			
+
 			text-align: left;
 			color: #fff;
-		
+
 			font-size:22px;
 			background: #ff3e34;
 			padding: 10px;
 			display: block;
 			min-height: 100px;
 			line-height: 28px;
-			
+
 		}
-		
-		
-		
+
+
+
 		.info_espacio{
 			position: relative;
-			
+
 			.actividad{
 				position: absolute;
 				top: 0px;
@@ -1972,8 +2139,8 @@ background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); 
 background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-				
-				
+
+
 				.titulo{
 					float: left;
 					border-top: 1px solid #fff;
@@ -1981,20 +2148,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					color: #fff;
 					font-weight: 700;
 					font-size: 12px;
-				
-					
+
+
 				}
-				
-			
-				
+
+
+
 			}
 		}
-		
+
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 #bread{
@@ -2005,32 +2172,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	color: #999999;
 	background: url(../img/bread.jpg) repeat-x;
 	span{
-		
+
 		color: #000;
 		display: inline-block;
 		padding: 0 5px;
-		
+
 	}
 	a{
 		color: #999999;
 		display: inline-block;
 		padding: 0 5px;
 	}
-	
-	
+
+
 }
 
 
 .biblioteca-main{
-	
+
 		.fullscreen-image-slider .paginador{
 			margin-top: -250px;
 		}
-	
+
 	#menu_secundario{
 		margin-top: 44px;
 	}
-	
+
 }
 
 
@@ -2045,15 +2212,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 .biblioteca-virtual-main{
-	
-	
+
+
 	.fullscreen-image-slider .paginador{
 	margin-top: -270px;
-	
-	
+
+
 	}
-	
-	
+
+
 }
 
 
@@ -2064,14 +2231,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	color: #fff;
 	padding-top: 10px;
 	font-size: 14px;
-	
+
 	input{
 		margin-right: 10px;
 		 -moz-transform: scale(1.3); /* FF */
   -webkit-transform: scale(1.3); /* Safari and Chrome */
   -o-transform: scale(1.3); /* Opera */
 	}
-	
+
 }
 
 
@@ -2081,10 +2248,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 
 .sidebar{
-	
-	
-	
-	
+
+
+
+
 	.volver{
 		font-size: 12px;
 		font-weight: 700;
@@ -2097,23 +2264,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			color: #000;
 		}
 	}
-	
-	
-	
-	
-		
-	
+
+
+
+
+
+
 	ul.menu{
-		
+
 		padding-bottom: 30px;
-		
+
 		a{
 			padding: 18px 0 !important;
 			padding-right: 30px !important;
 			color: #000 !important;
-			
+
 		}
-		
+
 		.menu{
 			padding-bottom: 0px;
 		}
@@ -2121,34 +2288,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		li:hover a{
 			color: #fff !important;
 		}
-		
+
 		li.is-accordion-submenu-parent{
 			background: none !important;
 			color: #000 !important;
 			padding-left: 10px;
-			
-			
+
+
 			li:hover{
 				background: #ff3e34 !important;
 				color: #fff !important;
-				
+
 				a{
 					color: #fff !important;
 					text-decoration: none;
 				}
-				
+
 			}
-			
-			
+
+
 		}
-		
+
 		li.is-accordion-submenu-parent:hover{
 			a{
 				color: #000 !important;
 			}
 			color: #000 !important;
 		}
-		
+
 	   .is-accordion-submenu-parent > a::after{
 		   color: transparent;
 		   background: url(../img/plus.png) no-repeat;
@@ -2159,29 +2326,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			top: 0px;
 		   border: none;
 		   margin-top: 8px;
-		
-		
+
+
 		}
-		
+
 		.is-accordion-submenu-parent[aria-expanded='true'] > a::after{
 			background: url(../img/menos2.png) no-repeat;
-			
+
 		}
-		
+
 		.nested{
 			margin-left: 0px;
 			list-style: inside;
-			
+
 			li{
-				
+
 				a{
 					text-transform: uppercase;
 					font-size: 12px;
 					color: #4a4741;
 				}
-				
+
 			}
-			
+
 			li:before{
 				content: "●";
 				float: left;
@@ -2190,41 +2357,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				padding-top: 8px;
 				margin-right: 10px;
 			}
-			
-			
+
+
 		}
-		
+
 	}
-	
+
 }
 
 .content{
-	
+
 	color: #4a4741;
 	font-family: 'Roboto', sans-serif;
 	padding-bottom: 30px;
-	
+
 	img{
 		margin-bottom: 10px;
 		width: 100%;
 		max-width: none;
 		margin-top: 10px;
 	}
-	
+
 	a{
 		color: #ff3e34;
 		text-decoration: underline;
 	}
-	
+
 	span.red{
 		color: #ff3e34;
 		font-weight: 700;
 	}
-	
+
 	.demo-icon{
 		line-height: 30px;
 	}
-	
+
 	h2{
 		font-size: 22px;
 		font-weight: 300;
@@ -2237,15 +2404,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		line-height: 25px;
 		margin-bottom: 20px
 	}
-	
-	
+
+
 	.no-full{
 		width: auto;
 		max-width: 100%;
 		margin-right: 20px;
-		
+
 	}
-	
+
 	label{
 		color: #4a4741;
 		font-size: 12px;
@@ -2255,13 +2422,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			color: #ff3e34;
 		}
 	}
-	
+
 	label.big{
 		font-weight: 300;
 		font-size:  20px;
 		text-transform: none;
 	}
-	
+
 	input{
 		background: #f7f7f7;
 		border: none;
@@ -2269,20 +2436,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		margin-bottom: 20px;
 		font-family: 'Roboto', sans-serif;
 	}
-	
+
 	.inscribirse{
 		text-align: center;
-		
-		
+
+
 		button{
 			padding-left: 30px;
 			padding-right: 30px;
 			margin-top: 20px;
 			font-size: 12px;
 		}
-		
+
 	}
-	
+
 	select{
 		border: 1px solid #eeeeee;
 		font-size: 16px;
@@ -2293,7 +2460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		box-shadow: none;
 		font-family: 'Roboto', sans-serif;
 	}
-	
+
 	.terminos{
 		a{
 			text-decoration: underline;
@@ -2302,7 +2469,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			color: #4a4741;
 		}
 	}
-	
+
 	input[type="checkbox"]{
 	  width: 20px; /*Desired width*/
 	  height: 20px; /*Desired height*/
@@ -2319,25 +2486,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	input[type="checkbox"]:checked{
 	  background-color: #ff3e34;
 	}
-	
+	.ir_todos{
+		font-weight: 700;
+		font-size: 14px;
+		color: #000000;
+		text-transform: uppercase;
+		padding-top: 30px;
+		display: inline-block;
+		text-decoration: none;
+
+
+
+
+		.icon-right{
+			color: #ff3e34;
+			height: 16px;
+		}
+	}
+
+	.ir_todos:hover{
+		color: #1b1b1b;
+
+	}
 }
 
 
 .main{
-	
+
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
-	
-	
+
+
 	h1{
 		font-size: 32px;
 		color: #000;
 		font-weight: 300;
 		font-family: 'Roboto', sans-serf;
 	}
-	
-	
-	
+
+
+
 	.sidebar{
 
 		.tags{
@@ -2363,11 +2551,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			}
 
 		}
-		
+
 		background: #f7f7f7;
 		padding-top:10px;
 		font-family: 'Roboto', sans-serif;
-		
+
 		h3{
 			font-size: 22px;
 			color: #000;
@@ -2377,65 +2565,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			padding: 10px 0;
 			line-height: 25px;
 		}
-		
+
 		.compra{
 			padding-top: 20px;
 			background: #fff;
 			color: #4a4741;
 			font-size: 14px;
-			
+
 			a{
 				color: #ff3e34;
 			}
-			
+
 			h4{
 				font-size: 22px;
 				font-family: 'Roboto', sans-serif;
 			}
-			
-			
+
+
 			.main_compra{
 				border: 4px solid #3e3e3e;
     			padding: 20px;
 				margin: 0px;
 			}
-			
+
 			.button{
 				margin-top: 10px;
 				text-transform: uppercase;
-				
+
 			}
 		}
-		
+
 		.desc_evento{
-			
+
 			font-size: 16px;
 			color: #4a4741;
 			line-height: 20px;
 			padding-bottom: 15px;
-			
+
 			a{
 				color: #ff3e34;
 			}
-			
+
 			span{
 				font-size: 14px;
 			}
 		}
-		
+
 		.social{
-			
+
 			margin-bottom: 15px;
-			
+
 			ul{
 				margin: 0px;
 				padding: 0px;
-				
+
 				li{
 					display: inline-block;
 				}
 
-				
+
 				 a{
 					color: #4a4741;
 					display: inline-block;
@@ -2455,24 +2643,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					border: 1px solid #4a4741;
 				}
 
-				
+
 			}
-		
-			
+
+
 
 		}
-		
+
 		.divisor{
 			padding: 15px 0 !important;
 			padding-bottom: 25px !important;
 		}
-		
+
 		.form-field{
 			font-size: 16px;
 			color: #000;
 			padding-top: 5px;
 			clear: both;
-			
+
 			input[type="checkbox"]{
 			  width: 30px; /*Desired width*/
 			  height: 30px; /*Desired height*/
@@ -2485,43 +2673,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				margin-right: 20px;
 				margin-bottom: 5px;
 			}
-			
+
 			input[type="checkbox"]:checked{
 			  background-color: #ff3e34;
 			}
-			
+
 		}
-		
+
 		hr{
 			border-bottom: 1px solid #e3e3e3;
 		}
-		
+
 		.botones{
 			clear: both;
 			font-weight: 700;
 			font-size: 12px;
 			padding: 5px 10px;
 			font-family: 'Roboto', sans-serif;
-			
+
 			.btn-left{
 				float: left;
 			}
-			
+
 			.btn-right{
 				float: right;
 				color: #ff3e34;
 			}
 		}
-		
-		
+
+
 		label{
 			font-weight: 300;
     		font-size: 22px;
 			padding: 7px 0;
 			clear: both;
-			
+
 		}
-		
+
 		.ir{
 			border: 1px solid #eeeeee;
 			font-size: 16px;
@@ -2532,38 +2720,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			padding: 8px 13px;
 			margin-bottom: 10px;
 		}
-		
+
 		.menos{
-			
+
 			background: url(../img/menos.jpg) no-repeat right;
-			
+
 		}
-		
+
 		.cal{
 			background: #fff;
 			padding: 15px;
 			font-size: 14px;
 			border: 1px solid #eeeeee;
-			
+
 			td{
 				text-align: center;
 				background:#fff;
 			}
-			
+
 			.heade_calendar{
 				padding: 10px;
 				font-size: 16px;
 			}
-			
+
 			.right{
 				float: right;
 				width: 20px;
 				height: 20px;
 				display: block;
 				background: url(../img/right.jpg) no-repeat;
-				
+
 			}
-			
+
 			.left{
 				float: right;
 				width: 20px;
@@ -2573,9 +2761,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				margin-right: 10px;
 				opacity: 0.5;
 			}
-			
+
 			.hoy{
-				
+
 				span{
 					background: #ff3e34;
 					border-radius: 50%;
@@ -2586,42 +2774,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					line-height: 30px;
 					margin: 0 auto;
 				}
-				
+
 			}
-			
-			
-				
-		
+
+
+
+
 			.fuera span{
 				color:#b3b3b3;
 			}
-				
+
 		}
-		
-		
-		
-		
+
+
+
+
 	}
-	
-	
-	
+
+
+
 	.box_main{
 		margin-bottom: 40px;
 	}
 	.box{
 			position: relative;
-		
-		
+
+
 		img{
 			max-width:none;
 			width: 100%;
 		}
-		
-		
+
+
 		.actividad2{
 			background: #f7f7f7;
 			margin-bottom: 40px;
-			
+
 			.titulo{
 					float: left;
 					border-top: 1px solid #000;
@@ -2630,10 +2818,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					color: #000;
 					font-weight: 700;
 					font-size: 12px;
-				
-					
+
+
 				}
-				
+
 				.fecha{
 					float: right;
 					color: #000;
@@ -2642,11 +2830,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					line-height: 20px;
 					text-align: center;
 					padding: 10px;
-					
+
 					span{
 						font-size: 25px;
 						display: block;
-						
+
 					}
 				}
 			.info_box{
@@ -2659,11 +2847,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					font-weight: 700;
 					width: 80%;
 					padding-bottom: 10px;
-					
+
 				}
-				
+
 		}
-			
+
 		.actividad{
 				position: absolute;
 				top: 0px;
@@ -2675,7 +2863,7 @@ background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); 
 background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-				
+
 				.info_box{
 					position: absolute;
 					bottom:10px;
@@ -2683,9 +2871,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					font-size: 22px;
 					color: #fff;
 					line-height: 22px;
-					
+
 				}
-				
+
 				.titulo{
 					float: left;
 					border-top: 1px solid #fff;
@@ -2693,10 +2881,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					color: #fff;
 					font-weight: 700;
 					font-size: 12px;
-				
-					
+
+
 				}
-				
+
 				.fecha{
 					float: right;
 					color: #fff;
@@ -2704,17 +2892,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 					font-size: 12px;
 					line-height: 20px;
 					text-align: center;
-					
+
 					span{
 						font-size: 25px;
 						display: block;
-						
+
 					}
 				}
-				
+
 			}
 		}
-	
+
 	 .cat {
 		font-weight: 700;
 		text-align: center;
@@ -2724,45 +2912,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		padding: 10px 0;
 		display: block;
 	}
-	
+
 	.cat1{
 			background: #1e7899;
 		}
-		
+
 		.cat2{
 			background: #3fb780;
 		}
-		
+
 		.cat3{
 			background: #e5c03e;
 		}
-		
+
 		.cat4{
 			background: #ff3e34;
 		}
-	
-	
-		
+
+
+	.destacado{
+		background: #ff3e34;
+		padding: 30px 20px;
+		font-size: 16px;
+		padding-top: 45px;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
 }
 
 
 .principal-evento{
-	
+
 	font-size: 16px;
 	color: #4a4741;
 	line-height: 18px;
 	font-family: 'Roboto', sans-serif;
-	
+
 	a{
 		color: #ff3e34;
 	}
-	
+
 	.img-evento img{
 		width: 100%;
 		max-width: none;
 		margin-bottom: 20px;
 	}
-	
+
 	.cat{
 		font-size: 14px;
 		color: #000000;
@@ -2773,21 +2969,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		line-height: 14px;
 		padding-bottom: 15px;
 	}
-	
+
 	h2{
-		
+
 		font-size: 32px;
 		line-height: 32px;
 		font-family: 'Roboto', sans-serif;
 	}
-	
+
 	h3{
-		
+
 		font-size: 20px;
 		line-height: 20px;
 		font-family: 'Roboto', sans-serif;
 	}
-	
+
 	.fecha{
 		margin-bottom: 25px;
 		text-align: center;
@@ -2797,13 +2993,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		font-weight: 700;
 		font-family: 'Roboto', sans-serif;
 		line-height: 18px;
-		
-		
+
+
 		.dia{
 			font-size: 38px;
 			line-height: 38px;
 		}
-		
+
 		.ciudad{
 			background: #ff3e34;
 			font-size: 12px;
@@ -2812,73 +3008,73 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			color: #fff;
 			padding: 4px 0;
 			margin-bottom: 10px;
-			
-			
+
+
 		}
 	}
-	
+
 }
 
 
 .destacado_distributiva{
-	
+
 	h1{
 		margin-bottom: 50px;
 		line-height: 35px;
 	}
-	
+
 	font-family: 'Roboto', sans-serif;
-	
+
 	strong{
 		font-weight: 700;
 	}
-	
+
 }
 
 .caja_dist{
-	
+
 	background: #f7f7f7;
 	font-family: 'Roboto', sans-serif;
 	padding-bottom: 20px;
 	margin-bottom: 40px;
-	
+
 	.info_dist{
 		padding: 0 15px;
 	}
-	
+
 	h4{
-		
+
 		color: #000000;
 		font-size: 20px;
 		margin: 0px;
 		padding: 0px;
 		margin-bottom: 20px;
-		
+
 	}
-	
+
 	img{
 		width: 100%;
 		max-width: none;
 		margin-bottom: 15px;
 	}
-	
+
 	.mas_info{
 		color: #ff3e34;
 		font-weight: 700;
 		font-size: 12px;
 		margin-top: 10px;
 		display: block;
-		
+
 		.icon-right{
 			line-height: 30px;
 		}
-		
+
 	}
-	
+
 }
 
 .servicios-main{
-	
+
 	#menu_secundario{
 		margin-top: 0px;
 	}
@@ -2886,14 +3082,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 
 #servicios-int{
-	
-	
-	
+
+
+
 	text-align: center;
 	font-size: 14px;
 	color: #2d2d2d;
 	padding-bottom: 40px;
-	
+
 	.linea_titulo{
 		position: absolute;
 		width: 100%;
@@ -2901,20 +3097,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		background: #000;
 		top: 50%;
 	}
-	
+
 	.tit{
 		position: relative;
 		overflow: hidden;
 		margin: 30px auto;
 		margin-bottom: 15px;
 	}
-	
+
 	.service{
 			text-align: left;
 	}
-	
+
 	.link{
-		
+
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
 		font-size: 12px;
@@ -2923,17 +3119,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		text-align: left;
 		padding: 10px 0;
 		display: block;
-		
+
 		.icon-right{
 			line-height: 30px;
 			color: #ff3e34;
-			
-		
+
+
 		}
-		
-		
+
+
 	}
-	
+
 	.tit_seccion{
 		font-size: 24px;
 		text-transform: uppercase;
@@ -2949,8 +3145,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		}
 		font-family: 'Roboto', sans-serif;
 	}
-	
-	
+
+
 }
 
 
@@ -2961,12 +3157,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		font-weight: 300;
 		font-family: 'Roboto', sans-serif;
 	}
-	
-	
+
+
 	font-size: 14px;
 	color: #2d2d2d;
 	padding-bottom: 40px;
-	
+
 	.linea_titulo{
 		position: absolute;
 		width: 100%;
@@ -2974,16 +3170,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		background: #000;
 		top: 50%;
 	}
-	
+
 	.tit{
 		position: relative;
 		overflow: hidden;
 		margin: 30px auto;
 		margin-bottom: 15px;
 	}
-	
-	
-	
+
+
+
 	.tit_seccion{
 		font-size: 16px;
 		text-transform: uppercase;
@@ -2999,15 +3195,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		}
 		font-family: 'Roboto', sans-serif;
 	}
-	
-	
+
+
 	.destacado{
 		cursor:pointer;
 		display:block;
 		overflow:hidden;
 		position: relative;
 		margin-bottom: 15px;
-		
+
 		.ciudad{
 				display: inline-block;
 				background: #ff3e34;
@@ -3021,8 +3217,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			left: 0px;
 			top: 0px;
 			}
-		
-		
+
+
 		.info_main{
 			position: absolute;
 			bottom: 15px;
@@ -3034,16 +3230,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			padding-right: 50px;
 			line-height: 25px;
 			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
-			
-			
+
+
 			.fecha{
 				font-size: 11px;
 				font-weight: bold;
 				text-transform: uppercase;
 			}
-			
+
 			.categoria{
-				
+
 				color: #fff;
 				display: inline-block;
 				clear: both;
@@ -3051,55 +3247,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 				line-height: 16px;
 				text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
 				padding-top: 10px;
-				
+
 			}
-			
+
 		}
-		
-		
-	
-		
+
+
+
+
 		.info_destacado{
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
 			background: rgba(0,0,0,0.3);
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
 
-		
+
 	}
 
-	
+
 	.destacado a:hover img{
 		transform: scale3d(1.1,1.1,1);
 
 	}
-	
+
 	.destacado a:hover .info_destacado{
-		
+
 		background: rgba(0,0,0,0.6);
-		
-		
+
+
 	}
-	
-	
-	
-	
+
+
+
+
 	.noticia{
 		cursor:pointer;
 		display:block;
@@ -3108,10 +3304,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 		background: #f7f7f7;
 		padding-bottom: 20px;
 		margin-bottom: 24px;
-		
+
 		.text{
 				display: inline-block;
-				
+
 				color: #fff;
 				text-transform: uppercase;
 				padding:5px 10px;
@@ -3123,7 +3319,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			top: 10px;
 			border-top: 1px solid #fff;
 			}
-		
+
 		.ciudad{
 				display: inline-block;
 				background: #ff3e34;
@@ -3137,9 +3333,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			left: 0px;
 			top: 0px;
 			}
-		
-		
-		
+
+
+
 		.info_main{
 			position: absolute;
 			bottom: 15px;
@@ -3151,22 +3347,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 			width: 100%;
 			line-height: 18px;
 			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
-			
-			
-			
+
+
+
 			.fecha{
 				font-size: 12px;
 				font-weight: bold;
 				text-transform: uppercase;
 			}
-			
-			
-			
+
+
+
 		}
-		
-		
-	
-		
+
+
+
+
 		.info_destacado{
 			position: absolute;
 			width: 100%;
@@ -3177,70 +3373,70 @@ background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.44) 58
 background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.44) 58%,rgba(0,0,0,1) 94%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
 			overflow: hidden;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
 
-		
+
 	}
 
-	
+
 	.noticia a:hover img{
 		transform: scale3d(1.1,1.1,1);
 
 	}
-	
+
 	.noticia a:hover .info_destacado{
-		
+
 		//background: rgba(0,0,0,0.6);
-		
-		
+
+
 	}
-	
+
 	.arrow{
 		background: url(../img/arrow.jpg) no-repeat center #f7f7f7;
 		height: 7px;
 		margin-bottom: 10px
-		
+
 	}
-	
+
 	.texto{
-		
-		
+
+
 		font-size: 14px;
 		padding: 0 15px;
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 
 #search_multimedia{
 	padding-top: 90px;
-	
-	
+
+
 	.buscador_actividades{
-		
+
 		label{
 			font-weight: 300;
 			font-size: 22px;
 		}
-		
+
 		select{
 			border: 1px solid #eeeeee;
 			font-size: 16px;
@@ -3248,11 +3444,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 			background: url(../img/select.jpg) no-repeat right #fff;
     -webkit-appearance: none;
 			margin-bottom: 30px;
-   
+
 		}
-		
+
 	}
-	
+
 }
 
 
@@ -3317,7 +3513,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 	}
 
 
-} 
+}
 
 .info_galeria{
 	padding: 50px 0;
@@ -3365,16 +3561,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 	.destacado a:hover img{
 		transform: scale3d(1.1,1.1,1);
 	}
-	
+
 	.destacado.mini{
 		margin-bottom: 30px;
-		
+
 		.info_icono{
 			top: 0px;
 			transform: none;
 			left: 10px;
 			top: 10px;
-			
+
 			font-size: 23px;
 			color: #fff;
 			width: 100%;
@@ -3383,17 +3579,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 				height: 23px;
 				line-height: 23px;
 			}
-			
+
 		}
 	}
-	
+
 	.destacado{
 		cursor:pointer;
 		display:block;
 		overflow:hidden;
 		position: relative;
 		margin-bottom: 15px;
-		
+
 		.info_multimedia{
 			position: absolute;
 			bottom: 0px;
@@ -3413,8 +3609,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 				line-height: 20px;
 			}
 		}
-		
-		
+
+
 		.info_icono{
 			position: absolute;
 			top: 50%;
@@ -3427,34 +3623,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 				height: 65px;
 				line-height: 65px;
 			}
-			
+
 		}
-		
+
 		.info_fondo{
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
 			background: rgba(0,0,0,0.3);
 			top: 0px;
-			
+
 
 		}
-		
+
 		a{
 			display: block;
 			position: relative;
 			background: #000;
 			padding: 0px !important;
-			
+
 		}
 		img{
 			transition: transform .3s ease-in-out;
 			width: 100%;
 		}
-		
-		
 
-		
+
+
+
 	}
 
 
@@ -3462,22 +3658,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 
 
 @media screen  and (max-width: 39.9375em) {
-	
+
 	#search_multimedia{
 	padding-top:30px;
 }
-	
+
 	.titulo-seccion{
 		font-size: 26px;
 	}
-	
+
 	#info{
 		padding: 20px 0;
 	}
-	
+
 	#ubicacion{
 		padding-bottom: 10px;
-	
+
 		h3{
 			font-size: 26px;
 			color: #000000;
@@ -3485,14 +3681,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 			text-align: left;
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	#menu_secundario{
 		margin-top: 0px;
-		
-		
+
+
 		ul{
 			white-space: nowrap;
 			overflow: auto;
@@ -3503,31 +3699,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
     				width: auto;
 				padding: 0 20px;
 			}
-			
-		}
-		
-	}
-	
-	
 
-	
+		}
+
+	}
+
+
+
+
 	#multimedia{
-		
+
 	h3{
 			text-align: center;
 			font-size: 26px;
 			padding-bottom: 0px;
 		}
-		
+
 		.text-right{
 			text-align: center;
 			padding-bottom: 30px;
 		}
-		
+
 	}
-	
+
 	footer{
-		
+
 		ul{
 			-moz-column-count: 2;
 			-moz-column-gap: 20px;
@@ -3535,72 +3731,72 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 			-webkit-column-gap: 20px;
 			column-count: 2;
 			column-gap: 20px;
-			
+
 			li{
 				padding-left: 20px;
 			}
 
 		}
-		
+
 		.social{
-			
+
 			padding-left: 15px;
-			
+
 			li{
 				padding-left: 0px;
 			}
 		}
-		
+
 		.logo_footer{
 			text-align: center;
 			padding-bottom: 20px;
 		}
-		
+
 	}
-	
+
 	#suscribirse{
 		text-align: center;
 		font-size: 18px;
 		line-height: 18px;
 		padding: 20px 0;
 		background-attachment: inherit;
-		
+
 		h3{
 			line-height: 20px;
 			margin-bottom: 10px;
 		}
-		
+
 		.input-group{
 			margin-top: 15px;
 			margin-bottom: 0px;
 		}
 	}
-	
+
 	#socio{
 		text-align: center;
 		font-size: 18px;
 		line-height: 18px;
 		padding: 20px 0;
 		background-attachment: inherit;
-		
+
 		.input-group{
 			margin-top: 15px;
 			margin-bottom: 0px;
 		}
-		
+
 		h3{
 			line-height: 22px;
 			padding-top: 5px;
 			margin-bottom: 10px;
 		}
 	}
-	
+
 	#calendario{
-		
+
 		.seguir{
 			margin-top: 15px;
 		}
-		
+
 		form{
 			margin-bottom: 20px;
 		}
@@ -3609,31 +3805,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 		}
 		padding-top: 20px;
 		.buscador_actividades {
-			
-			
+
+
 			select{
 			margin-bottom: 10px;
 			}
-			
+
 			label{
 				 font-weight: 300;
 				font-size: 21px;
 				padding-left: 8px;
 			}
-		
+
 		}
-		
+
 		.orbit-previous, .orbit-next{
 			display: none;
 		}
-		
-		   
+
+
 
 	}
-	
+
 	#espacios{
-		
-		
+
+
 		form{
 			margin-bottom: 20px;
 		}
@@ -3642,59 +3838,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 		}
 		padding-top: 20px;
 		.buscador_actividades {
-			
-			
+
+
 			select{
 			margin-bottom: 10px;
 			}
-			
+
 			label{
 				 font-weight: 300;
 				font-size: 21px;
 				padding-left: 8px;
 			}
-		
+
 		}
-		
+
 		.orbit-previous, .orbit-next{
 			display: none;
 		}
-		
+
 		.info_espacio{
 			width: 50%;
 			float: left;
-			
+
 		}
-		
-		 
+
+
 		.cat{
 			width: 50%;
 			float: left;
 			padding-left: 10px;
 		}
-		
+
 		.slide_espacios{
 			 .medium-3{
 			background: #ff3e34;
 			margin-bottom: 15px;
 		}
-			
+
 		}
-		
+
 
 	}
-	
+
 	.fullscreen-image-slider {
-		
+
 		.icon-play{
 			display: none;
 		}
-		
+
 		.orbit-bullets button{
 			width: 20px;
 		}
-		
-		
+
+
 		.paginador{
 			margin-top: -50px;
 		}
@@ -3708,40 +3904,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 			margin-bottom: 0px;
 			width: 50px;
 		}
-		
+
 		.read-more{
 			margin-top: 10px;
-			
-			
-			
+
+
+
 		}
-		
+
 		.orbit-image{
-		
+
 			margin-left: -50%;
 			max-width: none;
 			height: 300px;
 			width: auto;
-			
+
 		}
-		
+
 		.orbit-container{
 			height: 300px;
 		}
-		
+
 	}
-	
+
 	#servicios{
-		
+
 		padding: 20px 0;
-		
+
 		.tit{
 			margin-right: 20px;
     		margin-left: 20px;
 			margin-top: 0px;
 			margin-bottom: 0px;
 		}
-	
+
 		.servicio{
 			padding-bottom: 10px;
 			width: 50%;
@@ -3750,98 +3946,123 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', e
 			text-align: center;
 				.text-right{
 				text-align: center;
-			
+
 			}
 		}
-		
+
 		h3{
 			font-size: 26px;
 			text-align: center;
 		}
-		
-		
+
+
 	}
-	
+
 	.servicios-tit .text-right{
 		text-align: center;
 		margin-bottom: 10px;
 	}
-	
-	
+
+
 	.seguir{
-		
-		
+
+
 		padding: 0px;
 		padding-bottom: 10px;
 	}
-	
-	
+
+
 	#museos{
-		
+
 		padding: 20px 0;
 		padding-bottom: 10px;
 		h3{
 			font-size: 26px;
 			line-height: 28px;
 			margin-bottom: 10px;
-			
+
 		}
 		.orbit-previous, .orbit-next{
 			display: none;
 		}
-		
+
 		.orbit-bullets{
 			display: none;
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	#destacados{
-		
+
 		.tabs{
 			white-space: nowrap;
 			overflow: auto;
     		overflow-y: hidden;
-			
+
 			li{
 				float: none;
 				display: inline-block;
 			}
-			
-			
+
+
 		}
-		
+
 		.tabs-panel{
 			padding-bottom: 0px;
 		}
-		
+
 			padding: 20px 0px;
 		padding-bottom: 10px;
-		
+
 		 .destacado{
-		
+
 			 a{
 				 height: 200px;
-				 
+
 				 .info_main{
-					 
+
 					 font-size: 18px;
 					 line-height: 18px;
-					 
+
 					 .ciudad{
 						 line-height: 15px;
 					 }
-				 
+
 				 }
 			 }
-		
+
 		}
-		
+
 	}
-	
+
 }
 
-
+//Acordeon
+.accordion-item{
+  .accordion-title{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    &:hover,:focus{
+      background-color: #FFF;
+    }
+    &:before{
+      font-size: 3em;
+      font-weight: 100;
+    }
+  }
+  .accordion-content{
+    color: #4a4741;
+  }
+  &.is-active{
+    .accordion-title{
+      color: #ff3e34;
+      &:hover,:focus{
+        background-color: #FFF;
+      }
+    }
+  }
+}
