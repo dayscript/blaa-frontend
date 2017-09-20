@@ -1377,7 +1377,7 @@ button {
 
 }
 
-#multimedia, .mas-leido {
+#multimedia, .mas-leido, #espacios {
 
   padding-top: 30px;
   padding-bottom: 15px;
@@ -3000,7 +3000,7 @@ footer {
   }
 }
 
-#servicios-int {
+#servicios-int,#espacios {
 
   text-align: center;
   font-size: 14px;
@@ -3060,7 +3060,13 @@ footer {
     }
     font-family: 'Roboto', sans-serif;
   }
-
+  .info-espacios {
+    padding: 20px 80px;
+  }
+  .mapa{
+    border: 1px solid #000;
+    min-height: 380px;
+  }
 }
 
 #noticias-int {
@@ -3728,7 +3734,6 @@ footer {
       }
 
     }
-
   }
 
   .fullscreen-image-slider {
