@@ -1298,7 +1298,9 @@ button {
     h4 {
       font-size: 18px;
     }
-
+.resumen{
+  font-weight: 100;
+}
   }
 
   h3 {
@@ -2077,7 +2079,7 @@ footer {
   text-align: center;
 }
 
-#espacios {
+#espacios, #accesibilidad {
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -3031,9 +3033,9 @@ footer {
   }
 }
 
-#servicios-int, #espacios {
+#servicios-int, #espacios, #accesibilidad {
 
-  text-align: center;
+
   font-size: 14px;
   color: #2D2D2D;
   padding-bottom: 40px;
@@ -3094,10 +3096,29 @@ footer {
   .info-espacios {
     padding: 20px 80px;
   }
+  .info-accesibilidad {
+    padding: 10px 80px;
+    font-size: 16px;
+  }
   .mapa {
     border: 1px solid #000;
     min-height: 380px;
     background-color: #FFF;
+  }
+  .herramienta{
+    margin-bottom: 12px;
+  }
+  .enlace{
+    margin-top: 18px;
+    a{
+      text-transform: uppercase;
+      color:#FF3E34;
+      font-size: 11px;
+      letter-spacing: 1px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -3833,6 +3854,9 @@ footer {
         text-align: center;
 
       }
+      .resumen{
+        font-weight: 100;
+      }
     }
 
     h3 {
@@ -4034,4 +4058,35 @@ hr {
   float: right;
   margin-right: 7px;
   font-weight: normal;
+}
+
+//Recomendados accesibilidad
+.recomendado{
+  font-size: 16px;
+  margin: 20px 0;
+  a{
+    color:#FF3E34;
+    letter-spacing: 0px;
+    text-transform: lowercase;
+    margin-left: 12px;
+  }
+}
+.separador{
+  margin: 40px 0;
+}
+
+.publicacion{
+  margin-bottom: 40px;
+  .categoria {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 1px solid #000;
+    display: inline-block;
+    padding-top: 10px;
+  }
+  a{
+    color: #FF3E34;
+    font-size: 16px;
+  }
 }
