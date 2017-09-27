@@ -730,7 +730,19 @@ button {
   padding: 1rem;
   border-radius: 0;
   overflow: hidden;
-
+  h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+  }
+  .resultados {
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    strong {
+      font-weight: 400;
+    }
+  }
   .demo-icon {
     overflow: visible;
   }
@@ -1376,8 +1388,12 @@ button {
   }
 
 }
-
-#multimedia, .mas-leido, #espacios {
+#resultados{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: white !important;
+}
+#multimedia, .mas-leido, #espacios, #resultados {
 
   padding-top: 30px;
   padding-bottom: 15px;
@@ -1530,7 +1546,22 @@ button {
     }
 
   }
-
+  .ruta {
+    a {
+      color: #FF3E34;
+      font-size: 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .resumen {
+    font-size: 15px;
+    color: #666;
+  }
+  .resultado{
+    font-size: 18px;
+  }
 }
 
 footer {
@@ -2212,7 +2243,7 @@ footer {
 }
 
 .sidebar {
-
+  margin-bottom: 20px;
   .volver {
     font-size: 12px;
     font-weight: 700;
@@ -3000,7 +3031,7 @@ footer {
   }
 }
 
-#servicios-int,#espacios {
+#servicios-int, #espacios {
 
   text-align: center;
   font-size: 14px;
@@ -3063,10 +3094,10 @@ footer {
   .info-espacios {
     padding: 20px 80px;
   }
-  .mapa{
+  .mapa {
     border: 1px solid #000;
     min-height: 380px;
-    background-color: #fff;
+    background-color: #FFF;
   }
 }
 
@@ -3947,8 +3978,9 @@ hr {
   background: #F8F8F8;
   padding: 20px;
 }
+
 .red-title {
-  color: #fff;
+  color: #FFF;
   background-color: #FF3E34;
   text-align: left;
   font-size: 32px;
@@ -3958,6 +3990,7 @@ hr {
   padding: 10px 20px;
 
 }
+
 #detalle, #colecciones-centros {
   margin: 20px 0;
   h1 {
@@ -3965,26 +3998,40 @@ hr {
     color: #000;
     font-weight: 300;
   }
-  .ir_todos{
+  .ir_todos {
     padding-top: 10px;
   }
 }
-#error404{
-  background-color:#EEEEEE;
+
+#error404 {
+  background-color: #EEEEEE;
   display: block;
   padding: 50px 10px 80px 10px;
-  .error{
+  .error {
     font-size: 90px;
     text-transform: uppercase;
     letter-spacing: -6px;
   }
-  .icon-brujula{
+  .icon-brujula {
     font-size: 90px;
     height: 110px;
   }
-  .alerta{
+  .alerta {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 0px;
   }
+}
+
+//Buscador
+
+.search-container {
+  background: #4A4741;
+  margin-bottom: 24px;
+}
+
+.search-items {
+  float: right;
+  margin-right: 7px;
+  font-weight: normal;
 }
