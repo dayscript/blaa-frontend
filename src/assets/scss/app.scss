@@ -270,6 +270,9 @@
   content: '\e81a';
 }
 
+//Colores
+$rojo: #FF3E34;
+
 /* '' */
 
 body {
@@ -1298,9 +1301,9 @@ button {
     h4 {
       font-size: 18px;
     }
-.resumen{
-  font-weight: 100;
-}
+    .resumen {
+      font-weight: 100;
+    }
   }
 
   h3 {
@@ -1390,11 +1393,13 @@ button {
   }
 
 }
-#resultados{
+
+#resultados {
   padding-top: 0px;
   padding-bottom: 0px;
   background: white !important;
 }
+
 #multimedia, .mas-leido, #espacios, #resultados {
 
   padding-top: 30px;
@@ -1561,7 +1566,7 @@ button {
     font-size: 15px;
     color: #666;
   }
-  .resultado{
+  .resultado {
     font-size: 18px;
   }
 }
@@ -2490,7 +2495,7 @@ footer {
   }
 }
 
-.main {
+.main, #formulario {
 
   background: #FFF;
   font-family: 'Roboto', sans-serif;
@@ -2760,6 +2765,9 @@ footer {
   }
   .box {
     position: relative;
+    &.activa{
+      background-image: url("../img/active.png");
+    }
 
     img {
       max-width: none;
@@ -3035,7 +3043,6 @@ footer {
 
 #servicios-int, #espacios, #accesibilidad {
 
-
   font-size: 14px;
   color: #2D2D2D;
   padding-bottom: 40px;
@@ -3105,17 +3112,17 @@ footer {
     min-height: 380px;
     background-color: #FFF;
   }
-  .herramienta{
+  .herramienta {
     margin-bottom: 12px;
   }
-  .enlace{
+  .enlace {
     margin-top: 18px;
-    a{
+    a {
       text-transform: uppercase;
-      color:#FF3E34;
+      color: #FF3E34;
       font-size: 11px;
       letter-spacing: 1px;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -3854,7 +3861,7 @@ footer {
         text-align: center;
 
       }
-      .resumen{
+      .resumen {
         font-weight: 100;
       }
     }
@@ -4061,21 +4068,22 @@ hr {
 }
 
 //Recomendados accesibilidad
-.recomendado{
+.recomendado {
   font-size: 16px;
   margin: 20px 0;
-  a{
-    color:#FF3E34;
+  a {
+    color: #FF3E34;
     letter-spacing: 0px;
     text-transform: lowercase;
     margin-left: 12px;
   }
 }
-.separador{
+
+.separador {
   margin: 40px 0;
 }
 
-.publicacion{
+.publicacion {
   margin-bottom: 40px;
   .categoria {
     font-size: 12px;
@@ -4085,8 +4093,45 @@ hr {
     display: inline-block;
     padding-top: 10px;
   }
-  a{
+  a {
     color: #FF3E34;
     font-size: 16px;
+  }
+}
+
+//Formulario general
+
+#formulario {
+  h3 {
+    font-weight: 100;
+    margin-top: 18px;
+  }
+  .paso {
+    font-size: 28px;
+    font-weight: 100;
+    strong {
+      font-weight: 100;
+      font-size: 18px;
+    }
+  }
+  label, legend, a {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  input[type="checkbox"] {
+    background-color: $primary-color !important;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  [type='text'], select {
+    background-color: #F7F7F7;
+    box-shadow: none;
+    border: none;
+    font-weight: 100;
+    font-size: 14px;
   }
 }
