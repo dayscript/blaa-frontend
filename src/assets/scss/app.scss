@@ -2765,7 +2765,7 @@ footer {
   }
   .box {
     position: relative;
-    &.activa{
+    &.activa {
       background-image: url("../img/active.png");
     }
 
@@ -4133,5 +4133,54 @@ hr {
     border: none;
     font-weight: 100;
     font-size: 14px;
+  }
+}
+
+//Publicaciones
+#publicaciones, #ubicacion-publicaciones{
+  label {
+    font-weight: 300;
+    font-size: 22px;
+  }
+  .documento{
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    .info-container{
+      padding: 18px;
+      .titulo{
+        font-size: 18px;
+      }
+      .line{
+        border: 1px solid #000;
+        margin: 16px 0;
+        width: 60px;
+      }
+      .info{
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 22px;
+        strong{
+          font-weight: 500;
+        }
+        .precio{
+          text-transform: uppercase;
+          margin-top: 12px;
+          font-size: 13px;
+          letter-spacing: 1px;
+          strong{
+            font-weight: 600;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ubicacion-publicaciones{
+  strong{
+    font-size: 32px;
+    color: #000000;
+    font-weight: 300;
   }
 }
