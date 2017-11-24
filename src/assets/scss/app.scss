@@ -4184,3 +4184,55 @@ hr {
     font-weight: 300;
   }
 }
+
+//Index provisional
+
+.divider{
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.temporal{
+  h1{
+    margin-bottom: 24px;
+  }
+  .margin-42{
+    margin-top: 42px;
+  }
+  .intro{
+    font-weight: 100;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .enlaces{
+    margin-bottom: 42px;
+    .item{
+      margin-bottom: 18px;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 18px;
+    }
+    a{
+      color: #333;
+      text-transform: uppercase;
+      &:hover{
+        color:#FF3E34;
+      }
+    }
+  }
+}
+.enlaces-prov{
+  a{
+    text-transform: none;
+    font-size: 14px;
+    color: #c0bdb5;
+    &:hover{
+      color: white;
+    }
+  }
+
+}
+.divisor2 {
+  width: 3px;
+  background: url(../img/divisor.jpg) repeat-y;
+  height: 270px;
+  margin: 0 auto;
+}
